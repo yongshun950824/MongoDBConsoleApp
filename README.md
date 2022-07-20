@@ -24,7 +24,11 @@ Written Solutions for StackOverflow questions.
 | [Solution_008][15] | [Retrieving list of documents from collection by id in nested list][16] |
 | [Solution_009][17] | [How to Filter and get last entry based on date using C# and Mongo][18] |
 | [Solution_010][19] | [Filter.Lte(x=>x.Price, "9") getting wrong results][20] |
-
+| [Solution_011][21] | [Rename nested field in BsonDocument with MongoDB.Driver][22] |
+| [Solution_012][23] | [MongoDB .Net Driver update Cannot use the part ... to traverse the element][24] |
+| [Solution_013][25] |  |
+| [Solution_014][27] | [MongoDB.NET Driver query for $lte and $gte throwing error: An object representing an expression must have exactly one field][28] |
+| [Solution_015][29] | [Convert lambda expressions to json objects using MongoDB.Driver][30] |
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
 [2]: https://stackoverflow.com/questions/69079627/mongodb-net-driver-filter-builder-throwing-an-exception/69414324#69414324
@@ -55,3 +59,18 @@ Written Solutions for StackOverflow questions.
 
 [19]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_010.cs
 [20]: https://stackoverflow.com/questions/70729292/filter-ltex-x-price-9-getting-wrong-results/70729526#70729526
+
+[21]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_011.cs
+[22]: https://stackoverflow.com/questions/70742881/rename-nested-field-in-bsondocument-with-mongodb-driver/70749460#70749460
+  
+[23]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_012.cs
+[24]: https://stackoverflow.com/questions/70753460/mongodb-net-driver-update-cannot-use-the-part-to-traverse-the-element/70754899#70754899
+  
+[25]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_013.cs
+
+  
+[27]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_014.cs
+[28]: https://stackoverflow.com/questions/70765835/mongodb-net-driver-query-for-lte-and-gte-throwing-error-an-object-representin/70767786#70767786
+  
+[29]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_015.cs
+[30]: https://stackoverflow.com/questions/70795342/convert-lambda-expressions-to-json-objects-using-mongodb-driver
