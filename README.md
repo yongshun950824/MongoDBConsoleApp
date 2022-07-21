@@ -29,6 +29,11 @@ Written Solutions for StackOverflow questions.
 | [Solution_013][25] |  |
 | [Solution_014][27] | [MongoDB.NET Driver query for $lte and $gte throwing error: An object representing an expression must have exactly one field][28] |
 | [Solution_015][29] | [Convert lambda expressions to json objects using MongoDB.Driver][30] |
+| [Solution_016][31] | [How to write this MongoDB (Aggregate) query into C#][32] |
+| [Solution_017][33] | [Issue with data return in MongoDB][34] |
+| [Solution_018][35] | [C# MongoDB - How to select nested properties only][36] |
+| [Solution_019][37] | - [Not equal to operator for MongoDB query in C#][38] - [C# MongoDb Driver Convert string to DateTime and for Filter Builder][39] |
+| [Solution_020][40] | [MongoDB - How to push an embedded array into an existing document][41] |
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
 [2]: https://stackoverflow.com/questions/69079627/mongodb-net-driver-filter-builder-throwing-an-exception/69414324#69414324
@@ -74,3 +79,19 @@ Written Solutions for StackOverflow questions.
   
 [29]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_015.cs
 [30]: https://stackoverflow.com/questions/70795342/convert-lambda-expressions-to-json-objects-using-mongodb-driver
+  
+[31]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_016.cs
+[32]: https://stackoverflow.com/questions/70839664/how-to-write-this-mongodb-aggregate-query-into-c-sharp/70842890#70842890
+  
+[33]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_017.cs
+[34]: https://stackoverflow.com/questions/70928764/issue-with-data-return-in-mongodb/70934884#70934884
+  
+[35]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_018.cs
+[36]: https://stackoverflow.com/questions/71069862/c-sharp-mongodb-how-to-select-nested-properties-only/71077234#71077234
+  
+[37]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_019.cs
+[38]: https://stackoverflow.com/questions/71248390/not-equal-to-operator-for-mongodb-query-in-c-sharp/71248995#71248995
+[39]: https://stackoverflow.com/questions/71421359/c-sharp-mongodb-driver-convert-string-to-datetime-and-for-filter-builder/71422269#71422269
+  
+[40]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_020.cs
+[41]: https://stackoverflow.com/questions/71505601/mongodb-how-to-push-an-embedded-array-into-an-existing-document/71506079#71506079
