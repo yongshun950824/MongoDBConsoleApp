@@ -34,6 +34,12 @@ Written Solutions for StackOverflow questions.
 | [Solution_018][35] | [C# MongoDB - How to select nested properties only][36] |
 | [Solution_019][37] | - [Not equal to operator for MongoDB query in C#][38] - [C# MongoDb Driver Convert string to DateTime and for Filter Builder][39] |
 | [Solution_020][40] | [MongoDB - How to push an embedded array into an existing document][41] |
+| [Solution_021][42] | [c# and mongodb include or exclude element of array using projection][43] |
+| [Solution_021][44] | [MongoDB C# Driver: Nested Lookups - How do I "join" nested relations?][45] |
+| [Solution_021][46] |  |
+| [Solution_021][48] | [How can I flatten this array of subdocuments?][49] |
+| [Solution_021][50] | [How to "aggregate" with "project.priority" in MongoDB query in C#?][51] |
+
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
 [2]: https://stackoverflow.com/questions/69079627/mongodb-net-driver-filter-builder-throwing-an-exception/69414324#69414324
@@ -95,3 +101,18 @@ Written Solutions for StackOverflow questions.
   
 [40]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_020.cs
 [41]: https://stackoverflow.com/questions/71505601/mongodb-how-to-push-an-embedded-array-into-an-existing-document/71506079#71506079
+
+[42]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_021.cs
+[43]: https://stackoverflow.com/questions/71541098/c-sharp-and-mongodb-include-or-exclude-element-of-array-using-projection/71543925#71543925
+
+[44]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_022.cs
+[45]: https://stackoverflow.com/questions/71579890/mongodb-c-sharp-driver-nested-lookups-how-do-i-join-nested-relations/71582556#71582556
+
+[46]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_023.cs
+
+
+[48]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_024.cs
+[49]: https://stackoverflow.com/questions/71693040/how-can-i-flatten-this-array-of-subdocuments/71693509#71693509
+
+[50]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_025.cs
+[51]: https://stackoverflow.com/questions/72170723/how-to-aggregate-with-project-priority-in-mongodb-query-in-c/72171247#72171247
