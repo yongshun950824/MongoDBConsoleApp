@@ -35,10 +35,10 @@ Written Solutions for StackOverflow questions.
 | [Solution_019][37] | - [Not equal to operator for MongoDB query in C#][38] - [C# MongoDb Driver Convert string to DateTime and for Filter Builder][39] |
 | [Solution_020][40] | [MongoDB - How to push an embedded array into an existing document][41] |
 | [Solution_021][42] | [c# and mongodb include or exclude element of array using projection][43] |
-| [Solution_021][44] | [MongoDB C# Driver: Nested Lookups - How do I "join" nested relations?][45] |
-| [Solution_021][46] |  |
-| [Solution_021][48] | [How can I flatten this array of subdocuments?][49] |
-| [Solution_021][50] | [How to "aggregate" with "project.priority" in MongoDB query in C#?][51] |
+| [Solution_022][44] | [MongoDB C# Driver: Nested Lookups - How do I "join" nested relations?][45] |
+| [Solution_023][46] |  |
+| [Solution_024][48] | [How can I flatten this array of subdocuments?][49] |
+| [Solution_025][50] | [How to "aggregate" with "project.priority" in MongoDB query in C#?][51] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
