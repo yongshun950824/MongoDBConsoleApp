@@ -39,6 +39,9 @@ Written Solutions for StackOverflow questions.
 | [Solution_023][46] |  |
 | [Solution_024][48] | [How can I flatten this array of subdocuments?][49] |
 | [Solution_025][50] | [How to "aggregate" with "project.priority" in MongoDB query in C#?][51] |
+| [Solution_026][52] | [How to perform like on MongoDB document for integer values][53] |
+| [Solution_027][54] | [How can I materialize a string to the actual type?][55] |
+| [Solution_028][56] | [Count unread messages in MongoDb][57] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -116,3 +119,12 @@ Written Solutions for StackOverflow questions.
 
 [50]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_025.cs
 [51]: https://stackoverflow.com/questions/72170723/how-to-aggregate-with-project-priority-in-mongodb-query-in-c/72171247#72171247
+
+[52]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_026.cs
+[53]: https://stackoverflow.com/questions/72538606/how-to-perform-like-on-mongodb-document-for-integer-values/72540375#72540375
+  
+[54]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_027.cs
+[55]: https://stackoverflow.com/questions/72794815/how-can-i-materialize-a-string-to-the-actual-type/72795479#72795479
+  
+[56]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_028.cs
+[57]: https://stackoverflow.com/questions/72968801/count-unread-messages-in-mongodb/72974256#72974256
