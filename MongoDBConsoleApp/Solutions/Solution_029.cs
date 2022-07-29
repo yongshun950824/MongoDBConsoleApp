@@ -9,6 +9,11 @@ using System.Threading.Tasks;
 
 namespace MongoDBConsoleApp.Solutions
 {
+    /// <summary>
+    /// <a href="https://stackoverflow.com/questions/73109463/find-lastly-added-collection-with-some-condition-in-mongodb-and-c-sharp/73109820#73109820">
+    /// Question.
+    /// </a>
+    /// </summary>
     internal class Solution_029 : ISolution
     {
         public void Run(IMongoClient _client)
