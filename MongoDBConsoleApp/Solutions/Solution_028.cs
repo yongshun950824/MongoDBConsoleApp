@@ -5,7 +5,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MongoDBConsoleApp
+namespace MongoDBConsoleApp.Solutions
 {
     /// <summary>
     /// <a href="https://stackoverflow.com/questions/72968801/count-unread-messages-in-mongodb/72974256#72974256">

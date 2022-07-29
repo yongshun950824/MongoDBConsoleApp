@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MongoDBConsoleApp
+namespace MongoDBConsoleApp.Solutions
 {
     /// <summary>
     /// <a href="https://stackoverflow.com/questions/69582406/query-with-filter-builder-on-nested-array-using-mongodb-c-sharp-driver-with-a-gi/69583877#69583877">

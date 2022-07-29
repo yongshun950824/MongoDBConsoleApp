@@ -42,6 +42,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_026][52] | [How to perform like on MongoDB document for integer values][53] |
 | [Solution_027][54] | [How can I materialize a string to the actual type?][55] |
 | [Solution_028][56] | [Count unread messages in MongoDb][57] |
+| [Solution_029][58] | [Find lastly added collection with some condition in MongoDB and C#][59] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -128,3 +129,6 @@ Written Solutions for StackOverflow questions.
   
 [56]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_028.cs
 [57]: https://stackoverflow.com/questions/72968801/count-unread-messages-in-mongodb/72974256#72974256
+
+[58]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_029.cs
+[59]: https://stackoverflow.com/questions/73109463/find-lastly-added-collection-with-some-condition-in-mongodb-and-c-sharp/73109820#73109820

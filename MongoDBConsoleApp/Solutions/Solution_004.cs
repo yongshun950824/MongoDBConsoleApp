@@ -6,7 +6,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace MongoDBConsoleApp
+namespace MongoDBConsoleApp.Solutions
 {
     /// <summary>
     /// <a href="https://stackoverflow.com/questions/69601591/mongodb-net-driver-startswith-contains-with-loosely-typed-data/69601745#69601745">

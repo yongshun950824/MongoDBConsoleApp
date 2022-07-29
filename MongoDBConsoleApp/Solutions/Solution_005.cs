@@ -6,7 +6,7 @@ using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MongoDBConsoleApp
+namespace MongoDBConsoleApp.Solutions
 {
     /// <summary>
     /// <a href="https://stackoverflow.com/questions/69983653/mongodb-driver-buildersdynamic-dont-work-on-equal-to-date/69984438#69984438">

@@ -1,13 +1,15 @@
 ﻿using MongoDB.Bson.Serialization.Conventions;
 using MongoDB.Driver;
+using MongoDBConsoleApp.Solutions;
 using System;
 using System.Configuration;
+using System.Threading.Tasks;
 
 namespace MongoDBConsoleApp
 {
     public class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             var mongoUri = ConfigurationManager.ConnectionStrings["MongoUri"].ToString();
 
@@ -17,8 +19,8 @@ namespace MongoDBConsoleApp
 
             MongoClient _client = new MongoClient(settings);
 
-            ISolution solution = new Solution_028();
-            solution.Run(_client);
+            ISolution solution = new Solution_029();
+            await solution.RunAsync(_client);
 
             Console.ReadLine();
         }
