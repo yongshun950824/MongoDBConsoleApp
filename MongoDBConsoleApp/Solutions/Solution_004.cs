@@ -33,25 +33,25 @@ namespace MongoDBConsoleApp.Solutions
         }
 
         /// <summary>
-        /// Solution 1
+        /// Solution 1: Equal
         /// </summary>
         /// <returns></returns>
         private Expression<Func<BsonDocument, bool>> Filter1()
         {
-            return x => x["first_name"] == "john";
+            return x => x["title"] == "The";
         }
 
         /// <summary>
-        /// Solution 2
+        /// Solution 2: Contain
         /// </summary>
         /// <returns></returns>
         private Expression<Func<BsonDocument, bool>> Filter2()
         {
-            return x => ((string)x["first_name"]).Contains("john");
+            return x => ((string)x["title"]).Contains("The");
         }
 
         /// <summary>
-        /// Solution 3
+        /// Solution 3: Start with
         /// </summary>
         /// <returns></returns>
         private Expression<Func<BsonDocument, bool>> Filter3()

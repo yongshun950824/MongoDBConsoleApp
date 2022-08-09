@@ -43,6 +43,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_027][54] | [How can I materialize a string to the actual type?][55] |
 | [Solution_028][56] | [Count unread messages in MongoDb][57] |
 | [Solution_029][58] | [Find lastly added collection with some condition in MongoDB and C#][59] |
+| [Solution_030][60] | [C# Searching MongoDB string that starts with "xyz"][61] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -132,3 +133,6 @@ Written Solutions for StackOverflow questions.
 
 [58]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_029.cs
 [59]: https://stackoverflow.com/questions/73109463/find-lastly-added-collection-with-some-condition-in-mongodb-and-c-sharp/73109820#73109820
+
+[60]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_030.cs
+[61]: https://stackoverflow.com/questions/73267736/c-sharp-searching-mongodb-string-that-starts-with-xyz/73267990#73267990
