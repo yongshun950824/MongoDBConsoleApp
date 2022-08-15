@@ -45,6 +45,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_029][58] | [Find lastly added collection with some condition in MongoDB and C#][59] |
 | [Solution_030][60] | [C# Searching MongoDB string that starts with "xyz"][61] |
 | [Solution_031][62] | [How get all keys in all level in a mongo collection c#? LinQ Functions][63] |
+| [Solution_033][64] | [MongoDB - Search a field of type BsonDocument by their values][65] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -140,3 +141,6 @@ Written Solutions for StackOverflow questions.
 
 [62]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_031.cs
 [63]: https://stackoverflow.com/questions/73299041/how-get-all-keys-in-all-level-in-a-mongo-collection-c-linq-functions
+
+[64]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_033.cs
+[65]: https://stackoverflow.com/questions/73352502/mongodb-search-a-field-of-type-bsondocument-by-their-values/73356181#73356181

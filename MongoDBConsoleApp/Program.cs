@@ -19,7 +19,7 @@ namespace MongoDBConsoleApp
 
             MongoClient _client = new MongoClient(settings);
 
-            ISolution solution = new Solution_029();
+            ISolution solution = new Solution_033();
             await solution.RunAsync(_client);
 
             Console.ReadLine();
