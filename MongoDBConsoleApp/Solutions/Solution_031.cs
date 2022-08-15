@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 namespace MongoDBConsoleApp.Solutions
 {
-    /// <summary>
-    /// <a href="https://stackoverflow.com/questions/73299041/how-get-all-keys-in-all-level-in-a-mongo-collection-c-linq-functions">
-    /// Question.
-    /// </a>
-    /// </summary>
     internal class Solution_031 : ISolution
     {
+        /// <summary>
+        /// <a href="https://stackoverflow.com/questions/73299041/how-get-all-keys-in-all-level-in-a-mongo-collection-c-linq-functions">
+        /// Question.
+        /// </a>
+        /// </summary>
+        /// <param name="_client"></param>
         public void Run(IMongoClient _client)
         {
             var database = _client.GetDatabase("demo");
