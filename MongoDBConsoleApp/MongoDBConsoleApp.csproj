@@ -179,6 +179,7 @@
     <Compile Include="Solutions\Solution_005.cs" />
     <Compile Include="Solutions\Solution_029.cs" />
     <Compile Include="Solutions\Solution_030.cs" />
+    <Compile Include="Solutions\Solution_031.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

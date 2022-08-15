@@ -44,6 +44,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_028][56] | [Count unread messages in MongoDb][57] |
 | [Solution_029][58] | [Find lastly added collection with some condition in MongoDB and C#][59] |
 | [Solution_030][60] | [C# Searching MongoDB string that starts with "xyz"][61] |
+| [Solution_031][62] | [How get all keys in all level in a mongo collection c#? LinQ Functions][63] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -136,3 +137,6 @@ Written Solutions for StackOverflow questions.
 
 [60]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_030.cs
 [61]: https://stackoverflow.com/questions/73267736/c-sharp-searching-mongodb-string-that-starts-with-xyz/73267990#73267990
+
+[62]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_031.cs
+[63]: https://stackoverflow.com/questions/73299041/how-get-all-keys-in-all-level-in-a-mongo-collection-c-linq-functions
