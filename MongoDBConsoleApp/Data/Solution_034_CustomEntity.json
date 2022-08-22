@@ -1,0 +1,19 @@
+[
+  {
+    "_id": "6302c8fe15d26c689c8313ca",
+    "logs": [
+      {
+        "data": "abc",
+        "dataType": "System.string"
+      },
+      {
+        "data": "def",
+        "dataType": "System.string"
+      },
+      {
+        "data": "100",
+        "dataType": "System.int"
+      }
+    ]
+  }
+]

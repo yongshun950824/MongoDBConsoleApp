@@ -46,6 +46,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_030][60] | [C# Searching MongoDB string that starts with "xyz"][61] |
 | [Solution_031][62] | [How get all keys in all level in a mongo collection c#? LinQ Functions][63] |
 | [Solution_033][64] | [MongoDB - Search a field of type BsonDocument by their values][65] |
+| [Solution_034][66] | [MongoDb return filtered array elements out of one document in C#][67] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -144,3 +145,6 @@ Written Solutions for StackOverflow questions.
 
 [64]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_033.cs
 [65]: https://stackoverflow.com/questions/73352502/mongodb-search-a-field-of-type-bsondocument-by-their-values/73356181#73356181
+
+[66]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_034.cs
+[67]: https://stackoverflow.com/questions/73437201/mongodb-return-filtered-array-elements-out-of-one-document-in-c-sharp/73439241#73439241
