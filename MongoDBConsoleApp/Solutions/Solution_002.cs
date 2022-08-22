@@ -21,16 +21,10 @@ namespace MongoDBConsoleApp.Solutions
         {
             Helpers.RegisterCamelCasePack();
 
-            IMongoDatabase _database = _client.GetDatabase("dummy_db");
+            IMongoDatabase _database = _client.GetDatabase("demo");
             IMongoCollection<Store> _collection = _database.GetCollection<Store>("store");
 
-            _collection.InsertMany(new List<Store>
-            {
-                new Store { Name ="Store 1", Fruits = new string[] { "apples", "mangoes"} },
-                new Store { Name ="Store 2", Fruits = new string[] { "apples", "bananas", "papayas"} }
-            });
-
-            Thread.Sleep(2000);
+            InitData(_collection);
 
             string[] removedFruits = new string[] { "apples", "bananas" };
 
@@ -46,6 +40,17 @@ namespace MongoDBConsoleApp.Solutions
         public Task RunAsync(IMongoClient _client)
         {
             throw new NotImplementedException();
+        }
+
+        private void InitData(IMongoCollection<Store> _collection)
+        {
+            _collection.InsertMany(new List<Store>
+            {
+                new Store { Name = "Store 1", Fruits = new string[] { "apples", "mangoes" } },
+                new Store { Name = "Store 2", Fruits = new string[] { "apples", "bananas", "papayas" } }
+            });
+
+            Thread.Sleep(2000);
         }
 
         private void Update(IMongoCollection<Store> _collection, string[] removedFruits)

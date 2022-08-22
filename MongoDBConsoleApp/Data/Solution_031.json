@@ -1,0 +1,37 @@
+[
+  {
+    "_id": {
+      "$oid": "62f2fc0eb1789a65c177a0d4"
+    },
+    "CRM": {
+      "Teste": "true"
+    },
+    "Endereco": {
+      "Cidade": "MARINGA"
+    },
+    "Vendas": [
+      {
+        "idP": 34,
+        "txt": "001"
+      },
+      {
+        "idP": 34,
+        "txt": "002"
+      }
+    ],
+    "Tipos": [
+      {
+        "idT": 34,
+        "idTipo": 34
+      },
+      {
+        "idT": 34,
+        "idTipo": 34
+      }
+    ],
+    "Nums": [
+      1,
+      2
+    ]
+  }
+]

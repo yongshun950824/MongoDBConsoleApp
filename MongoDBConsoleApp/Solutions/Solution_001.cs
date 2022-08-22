@@ -18,21 +18,10 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            IMongoDatabase _database = _client.GetDatabase("dummy_db");
+            IMongoDatabase _database = _client.GetDatabase("demo");
             IMongoCollection<Record> _collection = _database.GetCollection<Record>("record");
 
-            Thread.Sleep(2000);
-
-            List<Record> recordsInserted = new List<Record>
-                {
-                    new Record { FirstName = "abc", LastName = "xyz" },
-                    new Record { FirstName = "def", LastName = "ghi" },
-                    new Record { FirstName = "123", LastName = "789" },
-                    new Record { FirstName = "opq", LastName = "rst" },
-                    new Record { FirstName = "456", LastName = "654" }
-                };
-
-            //_collection.InsertMany(recordsInserted);
+            InitData(_collection);
 
             var names = new List<Name>();
             names.Add(new Name { FirstName = "abc", LastName = "xyz" });
@@ -62,6 +51,22 @@ namespace MongoDBConsoleApp.Solutions
         public Task RunAsync(IMongoClient _client)
         {
             throw new NotImplementedException();
+        }
+
+        private void InitData(IMongoCollection<Record> _collection)
+        {
+            List<Record> recordsInserted = new List<Record>
+            {
+                new Record { FirstName = "abc", LastName = "xyz" },
+                new Record { FirstName = "def", LastName = "ghi" },
+                new Record { FirstName = "123", LastName = "789" },
+                new Record { FirstName = "opq", LastName = "rst" },
+                new Record { FirstName = "456", LastName = "654" }
+            };
+
+            _collection.InsertMany(recordsInserted);
+
+            Thread.Sleep(2000);
         }
 
         private void PrintOutput(List<Record> filteredRecords)
