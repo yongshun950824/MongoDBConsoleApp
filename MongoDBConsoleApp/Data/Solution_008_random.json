@@ -1,0 +1,82 @@
+[
+  {
+    "_id": {
+      "$oid": "61dcd1c85295714060aa0ca7"
+    },
+    "Source": "IGN",
+    "Family": [
+      {
+        "Countries": [
+          {
+            "uid": 17,
+            "name": "Japan"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "61dcd1c85295714060aa0cab"
+    },
+    "Source": "IGN",
+    "Family": [
+      {
+        "Countries": [
+          {
+            "uid": 14,
+            "name": "England"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "61dcd1c85295714060aa0ca8"
+    },
+    "Source": "VG",
+    "Family": [
+      {
+        "Countries": [
+          {
+            "uid": 17,
+            "name": "USA"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "61dcd1c85295714060aa0ca9"
+    },
+    "Source": "NRK",
+    "Family": [
+      {
+        "Countries": [
+          {
+            "uid": 17,
+            "name": "Germany"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "61dcd1c85295714060aa0caa"
+    },
+    "Source": "VG",
+    "Family": [
+      {
+        "Countries": [
+          {
+            "uid": 10,
+            "name": "France"
+          }
+        ]
+      }
+    ]
+  }
+]

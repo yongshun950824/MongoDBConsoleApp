@@ -1,0 +1,30 @@
+[
+  {
+    "_id": {
+      "$oid": "61e3f899d0d1470401cebe13"
+    },
+    "name": "Item A",
+    "price": "5"
+  },
+  {
+    "_id": {
+      "$oid": "61e3f8a2d0d1470401cebe15"
+    },
+    "name": "Item B",
+    "price": "10"
+  },
+  {
+    "_id": {
+      "$oid": "61e3f8c2d0d1470401cebe17"
+    },
+    "name": "Item C",
+    "price": "20"
+  },
+  {
+    "_id": {
+      "$oid": "61e3f8cfd0d1470401cebe19"
+    },
+    "name": "Item D",
+    "price": "9"
+  }
+]

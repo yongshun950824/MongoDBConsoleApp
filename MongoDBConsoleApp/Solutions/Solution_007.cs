@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace MongoDBConsoleApp.Solutions
 {
     /// <summary>
-    /// <a href="https://stackoverflow.com/questions/70702726/no-array-filter-found-for-identifier-1/70705559#70705559">
+    /// <a href="https://stackoverflow.com/questions/70298251/how-to-filter-and-get-last-entry-based-on-date-using-c-sharp-and-mongo/70299082#70299082">
     /// Question.
     /// </a>
     /// </summary>

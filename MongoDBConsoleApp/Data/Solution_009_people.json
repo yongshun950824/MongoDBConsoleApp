@@ -1,0 +1,25 @@
+[
+  {
+    "_id": 1,
+    "Friends": [
+      {
+        "_id": 2,
+        "FirstName": "Bobby",
+        "LastName": "Marley",
+        "Gender": "Female"
+      },
+      {
+        "_id": 3,
+        "Name": "Jonson",
+        "LastName": "Charles",
+        "Gender": "Male"
+      },
+      {
+        "_id": 4,
+        "Name": "Bob",
+        "LastName": "",
+        "Gender": "Male"
+      }
+    ]
+  }
+]

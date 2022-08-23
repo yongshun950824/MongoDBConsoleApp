@@ -1,0 +1,35 @@
+[
+  {
+    "_id": 1,
+    "name": "Tom",
+    "animals": [
+      "cat",
+      "dog",
+      "fish",
+      "bear",
+      "dog1",
+      "fish1",
+      "bear1"
+    ]
+  },
+  {
+    "_id": 2,
+    "name": "Rob",
+    "animals": [
+      "shark",
+      "snake",
+      "fish",
+      "bear",
+      "panda"
+    ]
+  },
+  {
+    "_id": 3,
+    "name": "Matt",
+    "animals": [
+      "cat",
+      "fish",
+      "bear"
+    ]
+  }
+]

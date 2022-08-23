@@ -9,6 +9,7 @@ Written Solutions for StackOverflow questions.
 - Program.cs: Entry point for calling the solution methods
 - ISolution.cs: An interface for `Solution` class.
 - Solution_XXX.cs: A class file which implements `ISolution` and with the written answer.
+- Data/Solution_XXX_<Collection>.json: Sample data collection for `Solution` class.
 
 **Solutions and Linked question:**
 
@@ -20,9 +21,9 @@ Written Solutions for StackOverflow questions.
 | [Solution_004][7] | [MongoDB .NET Driver - StartsWith & Contains with loosely typed data][8] |
 | [Solution_005][9] | [MongoDB Driver Builders<dynamic> dont work on equal to date][10] |
 | [Solution_006][11] | [MongoDB .NET Driver - Pagination on array stored in a document field][12] |
-| [Solution_007][13] | [No array filter found for identifier '-1'][14] |
+| [Solution_007][13] | [How to Filter and get last entry based on date using C# and Mongo][14] |
 | [Solution_008][15] | [Retrieving list of documents from collection by id in nested list][16] |
-| [Solution_009][17] | [How to Filter and get last entry based on date using C# and Mongo][18] |
+| [Solution_009][17] | [No array filter found for identifier '-1'][18] |
 | [Solution_010][19] | [Filter.Lte(x=>x.Price, "9") getting wrong results][20] |
 | [Solution_011][21] | [Rename nested field in BsonDocument with MongoDB.Driver][22] |
 | [Solution_012][23] | [MongoDB .Net Driver update Cannot use the part ... to traverse the element][24] |
@@ -68,13 +69,13 @@ Written Solutions for StackOverflow questions.
 [12]: https://stackoverflow.com/questions/70242147/mongodb-net-driver-pagination-on-array-stored-in-a-document-field/70242430#70242430
 
 [13]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_007.cs
-[14]: https://stackoverflow.com/questions/70702726/no-array-filter-found-for-identifier-1/70705559#70705559
+[14]: https://stackoverflow.com/questions/70298251/how-to-filter-and-get-last-entry-based-on-date-using-c-sharp-and-mongo/70299082#70299082
 
 [15]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_008.cs
 [16]: https://stackoverflow.com/questions/70660236/retrieving-list-of-documents-from-collection-by-id-in-nested-list/70660552#70660552
 
 [17]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_009.cs
-[18]: https://stackoverflow.com/questions/70298251/how-to-filter-and-get-last-entry-based-on-date-using-c-sharp-and-mongo/70299082#70299082
+[18]: https://stackoverflow.com/questions/70702726/no-array-filter-found-for-identifier-1/70705559#70705559
 
 [19]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_010.cs
 [20]: https://stackoverflow.com/questions/70729292/filter-ltex-x-price-9-getting-wrong-results/70729526#70729526

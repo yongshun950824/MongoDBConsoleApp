@@ -1,0 +1,42 @@
+[
+  {
+    "_id": {
+      "$oid": "61b2a49c39b6cb45e28d8be4"
+    },
+    "studentid": "stu-1234",
+    "dept": "geog",
+    "Carddetails": {
+      "LastSwipeTimestamp": "2021-11-25T10:50:00.5230694Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "61b2a4a739b6cb45e28d8be6"
+    },
+    "studentid": "stu-1234",
+    "dept": "geog",
+    "Carddetails": {
+      "LastSwipeTimestamp": "2021-11-25T11:50:00.5230694Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "61b2a4b539b6cb45e28d8be8"
+    },
+    "studentid": "stu-abc",
+    "dept": "geog",
+    "Carddetails": {
+      "LastSwipeTimestamp": "2021-11-25T09:15:00.5230694Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "61b2a4c439b6cb45e28d8bea"
+    },
+    "studentid": "stu-abc",
+    "dept": "geog",
+    "Carddetails": {
+      "LastSwipeTimestamp": "2021-11-25T11:30:00.5230694Z"
+    }
+  }
+]

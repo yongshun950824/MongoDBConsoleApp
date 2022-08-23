@@ -190,6 +190,11 @@
     <None Include="Core\Compression\Zstandard\lib\linux\libzstd.so" />
     <None Include="Core\Compression\Zstandard\lib\osx\libzstd.dylib" />
     <None Include="Data\Solution_003_produit.json" />
+    <None Include="Data\Solution_006_person.json" />
+    <None Include="Data\Solution_007_student.json" />
+    <None Include="Data\Solution_008_random.json" />
+    <None Include="Data\Solution_009_people.json" />
+    <None Include="Data\Solution_010_product.json" />
     <None Include="Data\Solution_031.json" />
     <None Include="Data\Solution_034_CustomEntity.json" />
     <None Include="libmongocrypt.dylib" />

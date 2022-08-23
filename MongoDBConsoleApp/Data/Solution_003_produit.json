@@ -1,71 +1,77 @@
-[{
-  "_id": "6152da609e0ced07f16a3fdc",
-  "uid": "20210915-67108",
-  "type": "N17",
-  "foobar": [
-    {
-      "uid": "STK-00113",
-      "nom": "JOHN DOE T15"
-    },
-    {
-      "uid": "STK-00112",
-      "nom": "JOHN DOE T16"
-    },
-    {
-      "uid": "STK-00111",
-      "nom": "JOHN DOE T17"
-    }
-  ]
-},{
-  "_id": "6152da109e0ced07f16a3fom",
-  "uid": "20210915-67102",
-  "type": "N1",
-  "foobar": [
-    {
-      "uid": "STK-00117",
-      "nom": "JOHN DOE T1"
-    },
-    {
-      "uid": "STK-00114",
-      "nom": "JOHN DOE T5"
-    }
-  ]
-},{
-  "_id": "6152da109e0ced07f16a3fxs",
-  "uid": "20210915-67108",
-  "type": "N5",
-  "foobar": [
-    {
-      "uid": "STK-00117",
-      "nom": "JOHN DOE T3"
-    }
-  ]
-},{
-  "_id": "6152da109e5ced07f16a3fdc",
-  "uid": "20210915-67108",
-  "type": "N12",
-  "foobar": [
-    {
-      "uid": "STK-00115",
-      "nom": "JOHN DOE T4"
-    },
-    {
-      "uid": "STK-00117",
-      "nom": "JOHN DOE T10"
-    },
-    {
-      "uid": "STK-00113",
-      "nom": "JOHN DOE T18"
-    }
-  ]
-},{
-  "_id": "6152da109e0ced07f16a3f5e",
-  "uid": "20210915-67108",
-  "type": "N16",
-  "foobar": [
-    {
-      "uid": "STK-00999",
-      "nom": "JOHN DOE T99"
-    }
-  ]
-}]
+[
+  {
+    "_id": "6152da609e0ced07f16a3fdc",
+    "uid": "20210915-67108",
+    "type": "N17",
+    "foobar": [
+      {
+        "uid": "STK-00113",
+        "nom": "JOHN DOE T15"
+      },
+      {
+        "uid": "STK-00112",
+        "nom": "JOHN DOE T16"
+      },
+      {
+        "uid": "STK-00111",
+        "nom": "JOHN DOE T17"
+      }
+    ]
+  },
+  {
+    "_id": "6152da109e0ced07f16a3fom",
+    "uid": "20210915-67102",
+    "type": "N1",
+    "foobar": [
+      {
+        "uid": "STK-00117",
+        "nom": "JOHN DOE T1"
+      },
+      {
+        "uid": "STK-00114",
+        "nom": "JOHN DOE T5"
+      }
+    ]
+  },
+  {
+    "_id": "6152da109e0ced07f16a3fxs",
+    "uid": "20210915-67108",
+    "type": "N5",
+    "foobar": [
+      {
+        "uid": "STK-00117",
+        "nom": "JOHN DOE T3"
+      }
+    ]
+  },
+  {
+    "_id": "6152da109e5ced07f16a3fdc",
+    "uid": "20210915-67108",
+    "type": "N12",
+    "foobar": [
+      {
+        "uid": "STK-00115",
+        "nom": "JOHN DOE T4"
+      },
+      {
+        "uid": "STK-00117",
+        "nom": "JOHN DOE T10"
+      },
+      {
+        "uid": "STK-00113",
+        "nom": "JOHN DOE T18"
+      }
+    ]
+  },
+  {
+    "_id": "6152da109e0ced07f16a3f5e",
+    "uid": "20210915-67108",
+    "type": "N16",
+    "foobar": [
+      {
+        "uid": "STK-00999",
+        "nom": "JOHN DOE T99"
+      }
+    ]
+  }
+]
