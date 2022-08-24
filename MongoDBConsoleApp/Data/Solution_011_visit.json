@@ -1,0 +1,23 @@
+[
+  {
+    "_id": {
+      "$oid": "61e61527b43445167053bcdf"
+    },
+    "CustomFields": {
+      "Time of arrival at the checkpoint": {
+        "FieldId": {
+          "$oid": "6149d5de44175b8324482905"
+        },
+        "Type": "DateTime",
+        "ValueBson": null
+      },
+      "Сheckpoint Comment-test": {
+        "FieldId": {
+          "$oid": "6149d5de44175b8324482904"
+        },
+        "Type": "Text",
+        "ValueBson": "test"
+      }
+    }
+  }
+]

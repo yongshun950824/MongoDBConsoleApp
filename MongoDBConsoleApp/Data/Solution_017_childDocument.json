@@ -1,0 +1,26 @@
+[
+  {
+    "_id": 1,
+    "sku": "almonds",
+    "description": "product 1",
+    "instock": 120
+  },
+  {
+    "_id": 2,
+    "sku": "bread",
+    "description": "product 2",
+    "instock": 80
+  },
+  {
+    "_id": 3,
+    "sku": "pecans",
+    "description": "product 4",
+    "instock": 70
+  },
+  {
+    "_id": 4,
+    "sku": "rms",
+    "description": "product5",
+    "instock": 80
+  }
+]

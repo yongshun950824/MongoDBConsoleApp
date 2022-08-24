@@ -22,7 +22,7 @@ namespace MongoDBConsoleApp.Solutions
         public void Run(IMongoClient _client)
         {
             IMongoDatabase _db = _client.GetDatabase("demo");
-            var _collection = _db.GetCollection<BsonDocument>("Student_2");
+            var _collection = _db.GetCollection<BsonDocument>("Student");
 
             FilterDefinition<BsonDocument> filter = new BsonDocument("$expr",
                 new BsonDocument("$ne",
@@ -50,12 +50,7 @@ namespace MongoDBConsoleApp.Solutions
                 }
             ));
 
-            Console.WriteLine(count.ToJson(
-                new JsonWriterSettings
-                {
-                    Indent = true
-                }
-            ));
+            Console.WriteLine(count);
         }
     }
 }

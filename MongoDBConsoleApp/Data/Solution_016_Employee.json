@@ -1,0 +1,31 @@
+[
+  {
+    "_id": {
+      "$oid": "61ef5b58255b1853e83ae680"
+    },
+    "EmpId": 1,
+    "Projects": [
+      {
+        "LastUpdated": {
+          "$date": {
+            "$numberLong": "1634918400000"
+          }
+        }
+      },
+      {
+        "LastUpdated": {
+          "$date": {
+            "$numberLong": "1636300800000"
+          }
+        }
+      },
+      {
+        "LastUpdated": {
+          "$date": {
+            "$numberLong": "1642867200000"
+          }
+        }
+      }
+    ]
+  }
+]

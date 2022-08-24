@@ -1,0 +1,35 @@
+[
+  {
+    "_id": {
+      "$oid": "61e69deb5c9e113ae443fe20"
+    },
+    "LastUpdateDate": {
+      "$date": {
+        "$numberLong": "1642493272008"
+      }
+    },
+    "Orders": [
+      {
+        "CustomFields": {
+          "Пара паков-тест": [
+            {
+              "FieldId": {
+                "$oid": "61e670f9c0fe1106a51a2e23"
+              },
+              "Type": "Text",
+              "ValueBson": "8989"
+            }
+          ]
+        },
+        "_id": {
+          "$oid": "61e6751027c21629e070091b"
+        },
+        "Number": [
+          [
+            "21312"
+          ]
+        ]
+      }
+    ]
+  }
+]

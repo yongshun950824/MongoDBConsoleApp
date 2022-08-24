@@ -1,0 +1,12 @@
+[
+  {
+    "_id": "123",
+    "section": "X",
+    "upperSection": "X"
+  },
+  {
+    "_id": "124",
+    "section": "X",
+    "upperSection": "Y"
+  }
+]

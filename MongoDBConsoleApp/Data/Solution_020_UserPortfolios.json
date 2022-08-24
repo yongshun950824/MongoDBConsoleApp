@@ -1,0 +1,24 @@
+[
+  {
+    "_id": {
+      "$oid": "6232814ef94da9221011ccad"
+    },
+    "username": "aaa",
+    "pflist": [
+      {
+        "pfName": "US TECH A",
+        "symbols": [
+          "GOOG",
+          "MSFT"
+        ]
+      },
+      {
+        "pfName": "US TECH C",
+        "symbols": [
+          "AAPL",
+          "TSLA"
+        ]
+      }
+    ]
+  }
+]

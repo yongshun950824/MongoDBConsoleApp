@@ -1,0 +1,27 @@
+[
+  {
+    "_id": {
+      "$oid": "6205f9164178b8e7814dd84b"
+    },
+    "Content": {
+      "CustInfo": [
+        {
+          "CustomerComment": {
+            "Id": "1",
+            "notes": "This is a note."
+          },
+          "Id": "123"
+        },
+        {
+          "CustomerComment": {
+            "Id": "2",
+            "notes": "This is a note 2."
+          },
+          "Id": "124"
+        }
+      ],
+      "Id": "1"
+    },
+    "ProjectID": "555"
+  }
+]

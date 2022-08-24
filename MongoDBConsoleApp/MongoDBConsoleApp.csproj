@@ -195,6 +195,14 @@
     <None Include="Data\Solution_008_random.json" />
     <None Include="Data\Solution_009_people.json" />
     <None Include="Data\Solution_010_product.json" />
+    <None Include="Data\Solution_011_visit.json" />
+    <None Include="Data\Solution_012_visitTask.json" />
+    <None Include="Data\Solution_016_Employee.json" />
+    <None Include="Data\Solution_017_childDocument.json" />
+    <None Include="Data\Solution_017_masterDocument.json" />
+    <None Include="Data\Solution_018_testA.json" />
+    <None Include="Data\Solution_019_Student.json" />
+    <None Include="Data\Solution_020_UserPortfolios.json" />
     <None Include="Data\Solution_031.json" />
     <None Include="Data\Solution_034_CustomEntity.json" />
     <None Include="libmongocrypt.dylib" />
