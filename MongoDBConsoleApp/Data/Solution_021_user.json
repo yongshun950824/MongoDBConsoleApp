@@ -1,0 +1,28 @@
+[
+  {
+    "_id": "5effaa5662679b5af2c58829",
+    "email": "email@example.com",
+    "name": {
+      "given": "Jesse",
+      "family": "Xiao"
+    },
+    "age": 31,
+    "addresses": [
+      {
+        "label": "home",
+        "street": "101 Elm Street",
+        "city": "Springfield",
+        "state": "CA",
+        "zip": "90000",
+        "country": "US"
+      },
+      {
+        "label": "mom",
+        "street": "555 Main Street",
+        "city": "Jonestown",
+        "province": "Ontario",
+        "country": "CA"
+      }
+    ]
+  }
+]

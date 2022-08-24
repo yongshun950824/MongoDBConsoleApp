@@ -1,0 +1,22 @@
+[
+  {
+    "_id": 1,
+    "title": "other item",
+    "category": "show"
+  },
+  {
+    "_id": 2,
+    "title": "THE ITEM THAT MUST BE RETURNED FIRST",
+    "category": "show"
+  },
+  {
+    "_id": 3,
+    "title": "other item 2",
+    "category": "show"
+  },
+  {
+    "_id": 4,
+    "title": "item not matching query",
+    "category": "hide"
+  }
+]

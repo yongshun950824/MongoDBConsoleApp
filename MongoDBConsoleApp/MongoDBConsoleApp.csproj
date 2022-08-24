@@ -203,6 +203,12 @@
     <None Include="Data\Solution_018_testA.json" />
     <None Include="Data\Solution_019_Student.json" />
     <None Include="Data\Solution_020_UserPortfolios.json" />
+    <None Include="Data\Solution_021_user.json" />
+    <None Include="Data\Solution_022_Company.json" />
+    <None Include="Data\Solution_022_Product.json" />
+    <None Include="Data\Solution_022_Store.json" />
+    <None Include="Data\Solution_024_course.json" />
+    <None Include="Data\Solution_025_item.json" />
     <None Include="Data\Solution_031.json" />
     <None Include="Data\Solution_034_CustomEntity.json" />
     <None Include="libmongocrypt.dylib" />

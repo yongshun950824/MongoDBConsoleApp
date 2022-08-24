@@ -23,7 +23,7 @@ namespace MongoDBConsoleApp.Solutions
                 new BsonDocument("$lookup",
                     new BsonDocument
                     {
-                        { "from", "_Store" },
+                        { "from", "Store" },
                         { "let",
                             new BsonDocument("stores", "$stores")
                         },
@@ -44,7 +44,7 @@ namespace MongoDBConsoleApp.Solutions
                                 new BsonDocument("$lookup",
                                     new BsonDocument
                                     {
-                                        { "from", "_Product" },
+                                        { "from", "Product" },
                                         { "let",
                                             new BsonDocument("products", "$products")
                                         },
@@ -74,7 +74,7 @@ namespace MongoDBConsoleApp.Solutions
                 )
             };
 
-            var result = _db.GetCollection<BsonDocument>("_Company")
+            var result = _db.GetCollection<BsonDocument>("Company")
                 .Aggregate<BsonDocument>(pipeline)
                 .ToList();
 

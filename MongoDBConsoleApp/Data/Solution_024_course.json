@@ -1,0 +1,24 @@
+[
+  {
+    "_id": {
+      "$oid": "6245aa47f62023a6bdd9672a"
+    },
+    "courseId": "624487662a2b383f7306c5ad",
+    "title": "My Course",
+    "description": "My Course Desc",
+    "topics": [
+      {
+        "topicId": null,
+        "title": "My Topic",
+        "description": "My Topic Desc",
+        "lessons": [
+          {
+            "lessonId": "Lessonid1",
+            "title": "My Lesson",
+            "description": "My Lesson Desc"
+          }
+        ]
+      }
+    ]
+  }
+]
