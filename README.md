@@ -9,7 +9,7 @@ Written Solutions for StackOverflow questions.
 - Program.cs: Entry point for calling the solution methods
 - ISolution.cs: An interface for `Solution` class.
 - Solution_XXX.cs: A class file which implements `ISolution` and with the written answer.
-- Data/Solution_XXX_<Collection>.json: Sample data collection for `Solution` class.
+- Data/Solution_XXX_`<Collection?>`.json: Sample data collection for `Solution` class.
 
 **Solutions and Linked question:**
 
