@@ -1,0 +1,54 @@
+[
+  {
+    "_id": "1",
+    "LastMessageDate": {
+      "$date": {
+        "$numberLong": "1655647830000"
+      }
+    },
+    "Members": [
+      {
+        "UserId": 1,
+        "LastReadDate": {
+          "$date": {
+            "$numberLong": "1655561430000"
+          }
+        }
+      },
+      {
+        "UserId": 2,
+        "LastReadDate": {
+          "$date": {
+            "$numberLong": "1655647830000"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "_id": "2",
+    "LastMessageDate": {
+      "$date": {
+        "$numberLong": "1655561430000"
+      }
+    },
+    "Members": [
+      {
+        "UserId": 2,
+        "LastReadDate": {
+          "$date": {
+            "$numberLong": "1655475030000"
+          }
+        }
+      },
+      {
+        "UserId": 3,
+        "LastReadDate": {
+          "$date": {
+            "$numberLong": "1655561430000"
+          }
+        }
+      }
+    ]
+  }
+]

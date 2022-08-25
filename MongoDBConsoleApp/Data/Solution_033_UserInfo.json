@@ -1,0 +1,16 @@
+[
+  {
+    "_id": {
+      "$oid": "62f8fe33127584b3e027060e"
+    },
+    "UserId": "7BCBCC2DA9624BCB8191AC2DBDC5CA71",
+    "UserName": "kaveh",
+    "UserThemes": {
+      "football": 10,
+      "basketball": 110,
+      "volleyball": 90,
+      "tennis": 50,
+      "golf": 25
+    }
+  }
+]

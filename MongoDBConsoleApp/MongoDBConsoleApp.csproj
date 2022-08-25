@@ -199,6 +199,8 @@
     <None Include="Data\Solution_012_visitTask.json" />
     <None Include="Data\Solution_016_Employee.json" />
     <None Include="Data\Solution_017_childDocument.json" />
+    <None Include="Data\Solution_023_User.json" />
+    <None Include="Data\Solution_027_masterDocument.json" />
     <None Include="Data\Solution_017_masterDocument.json" />
     <None Include="Data\Solution_018_testA.json" />
     <None Include="Data\Solution_019_Student.json" />
@@ -209,7 +211,11 @@
     <None Include="Data\Solution_022_Store.json" />
     <None Include="Data\Solution_024_course.json" />
     <None Include="Data\Solution_025_item.json" />
+    <None Include="Data\Solution_026_book.json" />
+    <None Include="Data\Solution_028_ChatGroup.json" />
+    <None Include="Data\Solution_029_HotelResult.json" />
     <None Include="Data\Solution_031.json" />
+    <None Include="Data\Solution_033_UserInfo.json" />
     <None Include="Data\Solution_034_CustomEntity.json" />
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />

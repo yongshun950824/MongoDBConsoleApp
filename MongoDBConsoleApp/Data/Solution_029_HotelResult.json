@@ -1,0 +1,70 @@
+[
+  {
+    "_id": {
+      "$oid": "62df9474170f02c5414fc726"
+    },
+    "hotelCode": 2,
+    "CreatedAt": {
+      "$date": {
+        "$numberLong": "1658807426000"
+      }
+    },
+    "RateKey": "1"
+  },
+  {
+    "_id": {
+      "$oid": "62df9492170f02c5414fc729"
+    },
+    "hotelCode": 2,
+    "CreatedAt": "2022-07-26T03:51:26Z",
+    "RateKey": "1"
+  },
+  {
+    "_id": {
+      "$oid": "62df94a7170f02c5414fc72b"
+    },
+    "hotelCode": 2,
+    "CreatedAt": {
+      "$date": {
+        "$numberLong": "1658807546000"
+      }
+    },
+    "RateKey": "1"
+  },
+  {
+    "_id": {
+      "$oid": "62df94c1170f02c5414fc72d"
+    },
+    "hotelCode": 2,
+    "CreatedAt": {
+      "$date": {
+        "$numberLong": "1658807666000"
+      }
+    },
+    "RateKey": "1"
+  },
+  {
+    "_id": {
+      "$oid": "62df94ff170f02c5414fc72f"
+    },
+    "hotelCode": 4,
+    "CreatedAt": {
+      "$date": {
+        "$numberLong": "1658807546000"
+      }
+    },
+    "RateKey": "5"
+  },
+  {
+    "_id": {
+      "$oid": "62df9514170f02c5414fc731"
+    },
+    "hotelCode": 4,
+    "CreatedAt": {
+      "$date": {
+        "$numberLong": "1658807726000"
+      }
+    },
+    "RateKey": "5"
+  }
+]

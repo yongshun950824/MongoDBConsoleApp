@@ -1,0 +1,26 @@
+[
+  {
+    "_id": {
+      "$oid": "62a018a1c22864ad723495b2"
+    },
+    "name": "Book 2000",
+    "year": 2000,
+    "subject": "Subject 1"
+  },
+  {
+    "_id": {
+      "$oid": "62a018bbc22864ad723495b5"
+    },
+    "name": "Book 1999",
+    "year": 1999,
+    "subject": "Subject 2"
+  },
+  {
+    "_id": {
+      "$oid": "62a0193bc22864ad723495b7"
+    },
+    "name": "Book 1998",
+    "year": 1998,
+    "subject": "Subject 3"
+  }
+]
