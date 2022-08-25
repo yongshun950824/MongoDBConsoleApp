@@ -33,7 +33,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_016][31] | [How to write this MongoDB (Aggregate) query into C#][32] |
 | [Solution_017][33] | [Issue with data return in MongoDB][34] |
 | [Solution_018][35] | [C# MongoDB - How to select nested properties only][36] |
-| [Solution_019][37] | - [Not equal to operator for MongoDB query in C#][38] - [C# MongoDb Driver Convert string to DateTime and for Filter Builder][39] |
+| [Solution_019][37] | <ul><li>[Not equal to operator for MongoDB query in C#][38]</li> <li>[C# MongoDb Driver Convert string to DateTime and for Filter Builder][39]</li></ul> |
 | [Solution_020][40] | [MongoDB - How to push an embedded array into an existing document][41] |
 | [Solution_021][42] | [c# and mongodb include or exclude element of array using projection][43] |
 | [Solution_022][44] | [MongoDB C# Driver: Nested Lookups - How do I "join" nested relations?][45] |
@@ -41,13 +41,13 @@ Written Solutions for StackOverflow questions.
 | [Solution_024][48] | [How can I flatten this array of subdocuments?][49] |
 | [Solution_025][50] | [How to "aggregate" with "project.priority" in MongoDB query in C#?][51] |
 | [Solution_026][52] | [How to perform like on MongoDB document for integer values][53] |
-| [Solution_027][54] | - [How to create an expression in C# from string?][55] - [How can I materialize a string to the actual type?][56] |
+| [Solution_027][54] | <ul><li>[How to create an expression in C# from string?][55]</li> <li>[How can I materialize a string to the actual type?][56]</li></ul> |
 | [Solution_028][57] | [Count unread messages in MongoDb][58] |
 | [Solution_029][59] | [Find lastly added collection with some condition in MongoDB and C#][60] |
-| [Solution_030][61] | [C# Searching MongoDB string that starts with "xyz"][63] |
-| [Solution_031][63] | [How get all keys in all level in a mongo collection c#? LinQ Functions][65] |
-| [Solution_033][65] | [MongoDB - Search a field of type BsonDocument by their values][67] |
-| [Solution_034][67] | [MongoDb return filtered array elements out of one document in C#][69] |
+| [Solution_030][61] | [C# Searching MongoDB string that starts with "xyz"][62] |
+| [Solution_031][63] | [How get all keys in all level in a mongo collection c#? LinQ Functions][64] |
+| [Solution_033][65] | [MongoDB - Search a field of type BsonDocument by their values][66] |
+| [Solution_034][67] | [MongoDb return filtered array elements out of one document in C#][68] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
