@@ -72,7 +72,7 @@ namespace MongoDBConsoleApp
     {
         public static string GetCollectionName(this Type type)
         {
-            return "_" + type.Name;
+            return type.Name;
         }
     }
 }

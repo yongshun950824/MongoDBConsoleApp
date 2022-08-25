@@ -41,13 +41,13 @@ Written Solutions for StackOverflow questions.
 | [Solution_024][48] | [How can I flatten this array of subdocuments?][49] |
 | [Solution_025][50] | [How to "aggregate" with "project.priority" in MongoDB query in C#?][51] |
 | [Solution_026][52] | [How to perform like on MongoDB document for integer values][53] |
-| [Solution_027][54] | [How can I materialize a string to the actual type?][55] |
-| [Solution_028][56] | [Count unread messages in MongoDb][57] |
-| [Solution_029][58] | [Find lastly added collection with some condition in MongoDB and C#][59] |
-| [Solution_030][60] | [C# Searching MongoDB string that starts with "xyz"][61] |
-| [Solution_031][62] | [How get all keys in all level in a mongo collection c#? LinQ Functions][63] |
-| [Solution_033][64] | [MongoDB - Search a field of type BsonDocument by their values][65] |
-| [Solution_034][66] | [MongoDb return filtered array elements out of one document in C#][67] |
+| [Solution_027][54] | - [How to create an expression in C# from string?][55] - [How can I materialize a string to the actual type?][56] |
+| [Solution_028][57] | [Count unread messages in MongoDb][58] |
+| [Solution_029][59] | [Find lastly added collection with some condition in MongoDB and C#][60] |
+| [Solution_030][61] | [C# Searching MongoDB string that starts with "xyz"][63] |
+| [Solution_031][63] | [How get all keys in all level in a mongo collection c#? LinQ Functions][65] |
+| [Solution_033][65] | [MongoDB - Search a field of type BsonDocument by their values][67] |
+| [Solution_034][67] | [MongoDb return filtered array elements out of one document in C#][69] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -130,22 +130,23 @@ Written Solutions for StackOverflow questions.
 [53]: https://stackoverflow.com/questions/72538606/how-to-perform-like-on-mongodb-document-for-integer-values/72540375#72540375
   
 [54]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_027.cs
-[55]: https://stackoverflow.com/questions/72794815/how-can-i-materialize-a-string-to-the-actual-type/72795479#72795479
+[55]: https://stackoverflow.com/questions/72809794/how-to-create-an-expression-in-c-sharp-from-string
+[56]: https://stackoverflow.com/questions/72794815/how-can-i-materialize-a-string-to-the-actual-type/72795479#72795479
   
-[56]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_028.cs
-[57]: https://stackoverflow.com/questions/72968801/count-unread-messages-in-mongodb/72974256#72974256
+[57]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_028.cs
+[58]: https://stackoverflow.com/questions/72968801/count-unread-messages-in-mongodb/72974256#72974256
 
-[58]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_029.cs
-[59]: https://stackoverflow.com/questions/73109463/find-lastly-added-collection-with-some-condition-in-mongodb-and-c-sharp/73109820#73109820
+[59]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_029.cs
+[60]: https://stackoverflow.com/questions/73109463/find-lastly-added-collection-with-some-condition-in-mongodb-and-c-sharp/73109820#73109820
 
-[60]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_030.cs
-[61]: https://stackoverflow.com/questions/73267736/c-sharp-searching-mongodb-string-that-starts-with-xyz/73267990#73267990
+[61]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_030.cs
+[62]: https://stackoverflow.com/questions/73267736/c-sharp-searching-mongodb-string-that-starts-with-xyz/73267990#73267990
 
-[62]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_031.cs
-[63]: https://stackoverflow.com/questions/73299041/how-get-all-keys-in-all-level-in-a-mongo-collection-c-linq-functions
+[63]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_031.cs
+[64]: https://stackoverflow.com/questions/73299041/how-get-all-keys-in-all-level-in-a-mongo-collection-c-linq-functions
 
-[64]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_033.cs
-[65]: https://stackoverflow.com/questions/73352502/mongodb-search-a-field-of-type-bsondocument-by-their-values/73356181#73356181
+[65]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_033.cs
+[66]: https://stackoverflow.com/questions/73352502/mongodb-search-a-field-of-type-bsondocument-by-their-values/73356181#73356181
 
-[66]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_034.cs
-[67]: https://stackoverflow.com/questions/73437201/mongodb-return-filtered-array-elements-out-of-one-document-in-c-sharp/73439241#73439241
+[67]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_034.cs
+[68]: https://stackoverflow.com/questions/73437201/mongodb-return-filtered-array-elements-out-of-one-document-in-c-sharp/73439241#73439241

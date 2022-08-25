@@ -20,7 +20,12 @@ namespace MongoDBConsoleApp.Solutions
             Console.WriteLine($"Count: {await UserUnreadMessagesCount(_client, userId)}");
         }
 
-        private static async Task<int> UserUnreadMessagesCount(IMongoClient _client, int userId)
+        public void Run(IMongoClient _client)
+        {
+            throw new NotImplementedException();
+        }
+
+        private async Task<int> UserUnreadMessagesCount(IMongoClient _client, int userId)
         {
             IMongoDatabase _database = _client.GetDatabase("demo");
             IMongoCollection<ChatGroup> _collection = _database.GetCollection<ChatGroup>("ChatGroup");
@@ -57,11 +62,6 @@ namespace MongoDBConsoleApp.Solutions
             return (await _collection.AggregateAsync<BsonDocument>(pipeline))
                 .ToList()
                 .Count;
-        }
-
-        public void Run(IMongoClient _client)
-        {
-            throw new NotImplementedException();
         }
 
         class ChatGroup

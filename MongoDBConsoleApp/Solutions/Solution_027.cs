@@ -10,8 +10,10 @@ using static MongoDBConsoleApp.Program;
 namespace MongoDBConsoleApp.Solutions
 {
     /// <summary>
-    /// <a href="https://stackoverflow.com/questions/72794815/how-can-i-materialize-a-string-to-the-actual-type/72795479#72795479">
+    /// <a href="https://stackoverflow.com/questions/72809794/how-to-create-an-expression-in-c-sharp-from-string">
     /// Question.
+    /// <a href="https://stackoverflow.com/questions/72794815/how-can-i-materialize-a-string-to-the-actual-type/72795479#72795479">
+    /// Related Question.
     /// </a>
     /// </summary>
     internal class Solution_027 : ISolution
