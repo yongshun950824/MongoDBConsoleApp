@@ -1,0 +1,20 @@
+[
+  {
+    "_id": {
+      "$oid": "62f31605b1789a65c177a0d8"
+    },
+    "totalViewsPerUser": {
+      "1": 2
+    },
+    "orderId": 1
+  },
+  {
+    "_id": {
+      "$oid": "62f31610b1789a65c177a0da"
+    },
+    "orderId": 2,
+    "totalViewsPerUser": {
+      "1": 1
+    }
+  }
+]

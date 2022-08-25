@@ -180,6 +180,7 @@
     <Compile Include="Solutions\Solution_029.cs" />
     <Compile Include="Solutions\Solution_030.cs" />
     <Compile Include="Solutions\Solution_031.cs" />
+    <Compile Include="Solutions\Solution_032.cs" />
     <Compile Include="Solutions\Solution_033.cs" />
     <Compile Include="Solutions\Solution_034.cs" />
   </ItemGroup>
@@ -215,6 +216,7 @@
     <None Include="Data\Solution_028_ChatGroup.json" />
     <None Include="Data\Solution_029_HotelResult.json" />
     <None Include="Data\Solution_031.json" />
+    <None Include="Data\Solution_032_OrderDetails.json" />
     <None Include="Data\Solution_033_UserInfo.json" />
     <None Include="Data\Solution_034_CustomEntity.json" />
     <None Include="libmongocrypt.dylib" />

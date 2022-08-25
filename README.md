@@ -46,8 +46,9 @@ Written Solutions for StackOverflow questions.
 | [Solution_029][59] | [Find lastly added collection with some condition in MongoDB and C#][60] |
 | [Solution_030][61] | [C# Searching MongoDB string that starts with "xyz"][62] |
 | [Solution_031][63] | [How get all keys in all level in a mongo collection c#? LinQ Functions][64] |
-| [Solution_033][65] | [MongoDB - Search a field of type BsonDocument by their values][66] |
-| [Solution_034][67] | [MongoDb return filtered array elements out of one document in C#][68] |
+| [Solution_032][65] | [Increment a value inside dictionary on MongoDb C#][66] |
+| [Solution_033][67] | [MongoDB - Search a field of type BsonDocument by their values][68] |
+| [Solution_034][69] | [MongoDb return filtered array elements out of one document in C#][70] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -145,8 +146,11 @@ Written Solutions for StackOverflow questions.
 [63]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_031.cs
 [64]: https://stackoverflow.com/questions/73299041/how-get-all-keys-in-all-level-in-a-mongo-collection-c-linq-functions
 
-[65]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_033.cs
-[66]: https://stackoverflow.com/questions/73352502/mongodb-search-a-field-of-type-bsondocument-by-their-values/73356181#73356181
+[65]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_032.cs
+[66]: https://stackoverflow.com/questions/73298130/increment-a-value-inside-dictionary-on-mongodb-c-sharp/73300031#73300031
 
-[67]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_034.cs
-[68]: https://stackoverflow.com/questions/73437201/mongodb-return-filtered-array-elements-out-of-one-document-in-c-sharp/73439241#73439241
+[67]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_033.cs
+[68]: https://stackoverflow.com/questions/73352502/mongodb-search-a-field-of-type-bsondocument-by-their-values/73356181#73356181
+
+[69]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_034.cs
+[70]: https://stackoverflow.com/questions/73437201/mongodb-return-filtered-array-elements-out-of-one-document-in-c-sharp/73439241#73439241
