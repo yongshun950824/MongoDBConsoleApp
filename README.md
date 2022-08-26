@@ -49,6 +49,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_032][65] | [Increment a value inside dictionary on MongoDb C#][66] |
 | [Solution_033][67] | [MongoDB - Search a field of type BsonDocument by their values][68] |
 | [Solution_034][69] | [MongoDb return filtered array elements out of one document in C#][70] |
+| [Solution_036][71] | [MongoDB .NET Driver - Aggregate group and count][72] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -154,3 +155,6 @@ Written Solutions for StackOverflow questions.
 
 [69]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_034.cs
 [70]: https://stackoverflow.com/questions/73437201/mongodb-return-filtered-array-elements-out-of-one-document-in-c-sharp/73439241#73439241
+
+[71]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_036.cs
+[72]: https://stackoverflow.com/questions/73488700/mongodb-net-driver-aggregate-group-and-count/73499788#73499788
