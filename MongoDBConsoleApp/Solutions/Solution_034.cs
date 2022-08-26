@@ -9,6 +9,11 @@ using static MongoDBConsoleApp.Program;
 
 namespace MongoDBConsoleApp.Solutions
 {
+    /// <summary>
+    /// <a href="https://stackoverflow.com/questions/73437201/mongodb-return-filtered-array-elements-out-of-one-document-in-c-sharp/73439241#73439241">
+    /// Question
+    /// </a>
+    /// </summary>
     internal class Solution_034 : ISolution
     {
         public void Run(IMongoClient _client)
