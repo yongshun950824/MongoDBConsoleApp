@@ -184,6 +184,7 @@
     <Compile Include="Solutions\Solution_033.cs" />
     <Compile Include="Solutions\Solution_034.cs" />
     <Compile Include="Solutions\Solution_036.cs" />
+    <Compile Include="Solutions\Solution_037.cs" />
     <Compile Include="Solutions\Solution_038.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -222,6 +223,7 @@
     <None Include="Data\Solution_033_UserInfo.json" />
     <None Include="Data\Solution_034_CustomEntity.json" />
     <None Include="Data\Solution_036_box.json" />
+    <None Include="Data\Solution_037_box.json" />
     <None Include="Data\Solution_038_Agencies.json" />
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />

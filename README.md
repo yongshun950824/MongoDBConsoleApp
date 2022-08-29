@@ -50,7 +50,8 @@ Written Solutions for StackOverflow questions.
 | [Solution_033][67] | [MongoDB - Search a field of type BsonDocument by their values][68] |
 | [Solution_034][69] | [MongoDb return filtered array elements out of one document in C#][70] |
 | [Solution_036][71] | [MongoDB .NET Driver - Aggregate group and count][72] |
-| [Solution_038][73] | [MongoDB - How to update a single object in the array of objects inside a document][74] |
+| [Solution_037][73] | [How to IndexKeysDefinitionBuilder change to IndexKeysDefinition (MongoDB in C#)][74] |
+| [Solution_038][75] | [MongoDB - How to update a single object in the array of objects inside a document][76] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -160,5 +161,8 @@ Written Solutions for StackOverflow questions.
 [71]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_036.cs
 [72]: https://stackoverflow.com/questions/73488700/mongodb-net-driver-aggregate-group-and-count/73499788#73499788
 
-[73]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_038.cs
-[74]: https://stackoverflow.com/questions/73517217/mongodb-how-to-update-a-single-object-in-the-array-of-objects-inside-a-documen
+[73]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_037.cs
+[74]: https://stackoverflow.com/questions/73488027/how-to-indexkeysdefinitionbuilder-change-to-indexkeysdefinition-mongodb-in-c/73508124#73508124
+
+[75]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_038.cs
+[76]: https://stackoverflow.com/questions/73517217/mongodb-how-to-update-a-single-object-in-the-array-of-objects-inside-a-documen

@@ -59,8 +59,10 @@ namespace MongoDBConsoleApp.Solutions
 
             [BsonElement("name")]
             public string Name { get; set; }
+
             [BsonElement("id")]
             public string Id { get; set; }
+
             public AgencyUser[] AgencyUsers { get; set; }
         }
 
