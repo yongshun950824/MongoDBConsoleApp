@@ -52,6 +52,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_036][71] | [MongoDB .NET Driver - Aggregate group and count][72] |
 | [Solution_037][73] | [How to IndexKeysDefinitionBuilder change to IndexKeysDefinition (MongoDB in C#)][74] |
 | [Solution_038][75] | [MongoDB - How to update a single object in the array of objects inside a document][76] |
+| [Solution_039][77] | [MongoDB - Query max date in collection][78] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -166,3 +167,6 @@ Written Solutions for StackOverflow questions.
 
 [75]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_038.cs
 [76]: https://stackoverflow.com/questions/73517217/mongodb-how-to-update-a-single-object-in-the-array-of-objects-inside-a-documen
+
+[77]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_039.cs
+[78]: https://stackoverflow.com/questions/73570202/mongodb-query-max-date-in-collection/73577781#73577781

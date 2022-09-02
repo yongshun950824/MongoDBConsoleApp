@@ -1,0 +1,22 @@
+[
+  {
+    "_id": {
+      "$oid": "63117b44b60092d1301bfbe0"
+    },
+    "registeredtime": {
+      "$date": {
+        "$numberLong": "1609549323000"
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "63117b5bb60092d1301bfbe2"
+    },
+    "registeredtime": {
+      "$date": {
+        "$numberLong": "1662076800000"
+      }
+    }
+  }
+]
