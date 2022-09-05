@@ -62,6 +62,7 @@
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.ConfigurationManager, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Configuration.ConfigurationManager.5.0.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
@@ -187,6 +188,7 @@
     <Compile Include="Solutions\Solution_037.cs" />
     <Compile Include="Solutions\Solution_038.cs" />
     <Compile Include="Solutions\Solution_039.cs" />
+    <Compile Include="Solutions\Solution_041.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -227,6 +229,8 @@
     <None Include="Data\Solution_037_box.json" />
     <None Include="Data\Solution_038_Agencies.json" />
     <None Include="Data\Solution_039_orders.json" />
+    <None Include="Data\Solution_041_Rate.json" />
+    <None Include="Data\Solution_041_ShopItem.json" />
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />
     <None Include="packages.config" />
