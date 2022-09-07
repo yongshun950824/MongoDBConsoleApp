@@ -1,10 +1,16 @@
 ﻿using MongoDB.Bson;
+using MongoDB.Bson.IO;
 using MongoDB.Driver;
 using System;
 using System.Threading.Tasks;
 
 namespace MongoDBConsoleApp.Solutions
 {
+    /// <summary>
+    /// <a href="https://stackoverflow.com/questions/73628953/mongodb-cannot-create-field-childproperty-in-element-with-parentproperty-is/73629356#73629356">
+    /// Question
+    /// </a>
+    /// </summary>
     class Solution_042 : ISolution
     {
         public void Run(IMongoClient _client)
@@ -17,12 +23,7 @@ namespace MongoDBConsoleApp.Solutions
             IMongoDatabase _db = _client.GetDatabase("demo");
             IMongoCollection<BsonDocument> collection = _db.GetCollection<BsonDocument>("User");
 
-            //Guid id = Guid.NewGuid();
             ObjectId id = ObjectId.Parse("6317f517ce0c4813ece18b66");
-
-            #region Init Data
-            //InitData(collection, id);
-            #endregion
 
             //var filter = Builders<BsonDocument>.Filter.Eq("Id", id);
             var filter = Builders<BsonDocument>.Filter.Eq("_id", id);
@@ -62,26 +63,21 @@ namespace MongoDBConsoleApp.Solutions
                     )
                 }
             ));
+
             var bsonDocument = await collection.FindOneAndUpdateAsync(filter, update, new FindOneAndUpdateOptions<BsonDocument>
             {
                 ReturnDocument = ReturnDocument.After
             });
 
-            Console.WriteLine(bsonDocument.ToJson(new MongoDB.Bson.IO.JsonWriterSettings
+            PrintOutput(bsonDocument);
+        }
+
+        private void PrintOutput(BsonDocument bsonDocument)
+        {
+            Console.WriteLine(bsonDocument.ToJson(new JsonWriterSettings
             {
                 Indent = true
             }));
-        }
-
-        private async void InitData(IMongoCollection<BsonDocument> collection, Guid id)
-        {
-            var user = new BsonDocument
-            {
-                { "Id", BsonValue.Create(id) },
-                { "Name", "Adrian" }
-            };
-
-            await collection.InsertOneAsync(user);
         }
     }
 

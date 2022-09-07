@@ -54,7 +54,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_038][75] | [MongoDB - How to update a single object in the array of objects inside a document][76] |
 | [Solution_039][77] | [MongoDB - Query max date in collection][78] |
 | [Solution_041][79] | [c mongodb driver count and average on lookup field][80] |
-| [Solution_042][81] | [MongoDB Cannot create field 'ChildProperty' in element {ParentProperty: null}][82] |
+| [Solution_042][81] | [MongoDB - Cannot create field 'ChildProperty' in element with ParentProperty is null][82] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -177,4 +177,4 @@ Written Solutions for StackOverflow questions.
 [80]: https://stackoverflow.com/questions/73591964/c-mongodb-driver-count-and-average-on-lookup-field/73592593#73592593
 
 [81]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_042.cs
-[82]: https://stackoverflow.com/questions/73628953/mongodb-cannot-create-field-childproperty-in-element-parentproperty-null/73629356#73629356
+[82]: https://stackoverflow.com/questions/73628953/mongodb-cannot-create-field-childproperty-in-element-with-parentproperty-is/73629356#73629356
