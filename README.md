@@ -55,6 +55,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_039][77] | [MongoDB - Query max date in collection][78] |
 | [Solution_041][79] | [c mongodb driver count and average on lookup field][80] |
 | [Solution_042][81] | [MongoDB - Cannot create field 'ChildProperty' in element with ParentProperty is null][82] |
+| [Solution_043][83] | [MongoDB .NET Driver - How to push an element into an array which is inside an array][84] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -178,3 +179,6 @@ Written Solutions for StackOverflow questions.
 
 [81]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_042.cs
 [82]: https://stackoverflow.com/questions/73628953/mongodb-cannot-create-field-childproperty-in-element-with-parentproperty-is/73629356#73629356
+
+[83]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_043.cs
+[84]: https://stackoverflow.com/questions/73704002/mongodb-net-driver-how-to-push-an-element-into-an-array-which-is-inside-an-ar/73710622#73710622
