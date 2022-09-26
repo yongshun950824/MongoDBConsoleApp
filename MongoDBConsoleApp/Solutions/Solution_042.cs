@@ -33,14 +33,17 @@ namespace MongoDBConsoleApp.Solutions
                 { "City", "New City Value 2" },
                 { "State", "New State Value 2" }
             };
+            string name = "";
 
             var update = Builders<BsonDocument>.Update.Pipeline(new PipelineStagePipelineDefinition<BsonDocument, BsonDocument>
             (
                 new PipelineStageDefinition<BsonDocument, BsonDocument>[]
                 {
                     new BsonDocument("$set",
-                        new BsonDocument("Address",
-                            new BsonDocument("$cond",
+                        new BsonDocument
+                        {
+                            { "Name", name },
+                            { "Address", new BsonDocument("$cond",
                                 new BsonDocument
                                 {
                                     {
@@ -58,8 +61,9 @@ namespace MongoDBConsoleApp.Solutions
                                             BsonArray.Create(new object[] { "$Address", addressDocument }))
                                     }
                                 }
-                            )
-                        )
+                            ) 
+                            },
+                        }
                     )
                 }
             ));
