@@ -1,0 +1,42 @@
+[
+  {
+    "_id": {
+      "$oid": "63206e8cc876d082460e33c3"
+    },
+    "MessageTrackingId": "08eab450-a2bd-408a-afab-be9ea665503e",
+    "RequestMessageLog": {
+      "ResponseMessageLog": {
+        "LogDateTime": "2022-09-13T11:50:36.426Z"
+      },
+      "LogDateTime": "2022-09-13T11:50:36.333Z",
+      "StatusCode": "Success",
+      "BiDirectionalMessageLogs": [
+        {
+          "MessageTrackingId": "bb7b5573-15ae-4db9-a67e-6862f31b9437",
+          "RequestMessageLog": {
+            "ResponseMessageLog": {
+              "ResponseMessageActionLogs": [
+                {
+                  "LogDateTime": "2022-09-13T11:53:42.478Z",
+                  "Contents": "something"
+                },
+                {
+                  "LogDateTime": {
+                    "$date": {
+                      "$numberLong": "1663119813016"
+                    }
+                  },
+                  "Contents": "New Response Message Action Log"
+                }
+              ],
+              "LogDateTime": "2022-09-13T11:53:42.477Z"
+            },
+            "LogDateTime": "2022-09-13T11:53:42.477Z",
+            "StatusCode": "Success",
+            "BiDirectionalMessageLogs": null
+          }
+        }
+      ]
+    }
+  }
+]

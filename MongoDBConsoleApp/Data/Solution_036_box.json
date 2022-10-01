@@ -1,37 +1,44 @@
-[{
-  "_id": {
-    "$oid": "63089db23350a92d1b1c0a8e"
+[
+  {
+    "_id": {
+      "$oid": "63089db23350a92d1b1c0a8e"
+    },
+    "content": "0",
+    "warehouseId": "w0"
   },
-  "content": "0",
-  "warehouseId": "w0"
-},{
-  "_id": {
-    "$oid": "63089dbd3350a92d1b1c0a90"
+  {
+    "_id": {
+      "$oid": "63089dbd3350a92d1b1c0a90"
+    },
+    "content": "0",
+    "warehouseId": "w0"
   },
-  "content": "0",
-  "warehouseId": "w0"
-},{
-  "_id": {
-    "$oid": "63089dc53350a92d1b1c0a92"
+  {
+    "_id": {
+      "$oid": "63089dc53350a92d1b1c0a92"
+    },
+    "content": "1",
+    "warehouseId": "w0"
   },
-  "content": "1",
-  "warehouseId": "w0"
-},{
-  "_id": {
-    "$oid": "63089dcd3350a92d1b1c0a94"
+  {
+    "_id": {
+      "$oid": "63089dcd3350a92d1b1c0a94"
+    },
+    "content": "1",
+    "warehouseId": "w0"
   },
-  "content": "1",
-  "warehouseId": "w0"
-},{
-  "_id": {
-    "$oid": "63089dd43350a92d1b1c0a96"
+  {
+    "_id": {
+      "$oid": "63089dd43350a92d1b1c0a96"
+    },
+    "content": "2",
+    "warehouseId": "w0"
   },
-  "content": "2",
-  "warehouseId": "w0"
-},{
-  "_id": {
-    "$oid": "63089ddb3350a92d1b1c0a98"
-  },
-  "content": "0",
-  "warehouseId": "w1"
-}]
+  {
+    "_id": {
+      "$oid": "63089ddb3350a92d1b1c0a98"
+    },
+    "content": "0",
+    "warehouseId": "w1"
+  }
+]

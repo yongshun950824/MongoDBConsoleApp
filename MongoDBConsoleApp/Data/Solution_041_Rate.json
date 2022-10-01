@@ -1,0 +1,17 @@
+[
+  {
+    "_id": "2fac5787-d1b4-49ac-a175-841b735f1df4",
+    "ShopItemId": "a2b4b319-56df-40fb-bc22-4371d627d199",
+    "Rate": 3
+  },
+  {
+    "_id": "758ded6f-b755-4b69-a7dd-c5c6bbb1c089",
+    "ShopItemId": "a2b4b319-56df-40fb-bc22-4371d627d199",
+    "Rate": 4
+  },
+  {
+    "_id": "bc6cf2ef-8470-4368-b160-2e61be1132df",
+    "ShopItemId": "89071264-6b7e-4027-aed7-27322979978d",
+    "Rate": 1
+  }
+]

@@ -52,6 +52,10 @@ Written Solutions for StackOverflow questions.
 | [Solution_036][71] | [MongoDB .NET Driver - Aggregate group and count][72] |
 | [Solution_037][73] | [How to IndexKeysDefinitionBuilder change to IndexKeysDefinition (MongoDB in C#)][74] |
 | [Solution_038][75] | [MongoDB - How to update a single object in the array of objects inside a document][76] |
+| [Solution_039][77] | [MongoDB - Query max date in collection][78] |
+| [Solution_041][79] | [c mongodb driver count and average on lookup field][80] |
+| [Solution_042][81] | [MongoDB - Cannot create field 'ChildProperty' in element with ParentProperty is null][82] |
+| [Solution_043][83] | [MongoDB .NET Driver - How to push an element into an array which is inside an array][84] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -166,3 +170,15 @@ Written Solutions for StackOverflow questions.
 
 [75]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_038.cs
 [76]: https://stackoverflow.com/questions/73517217/mongodb-how-to-update-a-single-object-in-the-array-of-objects-inside-a-documen
+
+[77]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_039.cs
+[78]: https://stackoverflow.com/questions/73570202/mongodb-query-max-date-in-collection/73577781#73577781
+
+[79]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_041.cs
+[80]: https://stackoverflow.com/questions/73591964/c-mongodb-driver-count-and-average-on-lookup-field/73592593#73592593
+
+[81]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_042.cs
+[82]: https://stackoverflow.com/questions/73628953/mongodb-cannot-create-field-childproperty-in-element-with-parentproperty-is/73629356#73629356
+
+[83]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_043.cs
+[84]: https://stackoverflow.com/questions/73704002/mongodb-net-driver-how-to-push-an-element-into-an-array-which-is-inside-an-ar/73710622#73710622
