@@ -56,6 +56,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_041][79] | [c mongodb driver count and average on lookup field][80] |
 | [Solution_042][81] | [MongoDB - Cannot create field 'ChildProperty' in element with ParentProperty is null][82] |
 | [Solution_043][83] | [MongoDB .NET Driver - How to push an element into an array which is inside an array][84] |
+| [Solution_045][85] | [.Net Core MongoDB.Driver ObjectId Null from POCO Mapping][86] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -182,3 +183,6 @@ Written Solutions for StackOverflow questions.
 
 [83]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_043.cs
 [84]: https://stackoverflow.com/questions/73704002/mongodb-net-driver-how-to-push-an-element-into-an-array-which-is-inside-an-ar/73710622#73710622
+
+[85]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_045.cs
+[86]: https://stackoverflow.com/questions/73738948/net-core-mongodb-driver-objectid-null-from-poco-mapping/73739244#73739244

@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "6323da02e87f819c1a611edd"
+  },
+  "lrec80": [
+    {
+      "RR4NFAD": {
+        "$ref": "RR4OCO",
+        "$id": {
+          "$oid": "00000000000000008c8a414b"
+        },
+        "$db": "tpfdf"
+      },
+      "RR4NRCC": 43,
+      "RR4NAKY": 0,
+      "RR4NTY1": -124,
+      "RR4NCTY": "IAH",
+      "RR4NLIA": null,
+      "RR4NNBR": 1
+    }
+  ]
+}]
