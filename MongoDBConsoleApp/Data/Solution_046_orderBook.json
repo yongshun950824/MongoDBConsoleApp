@@ -1,0 +1,24 @@
+[
+  {
+    "_id": {
+      "Class": 0,
+      "Symbol": "EURUSD"
+    },
+    "Orders": [
+      {
+        "_id": "a611ffb1-c3e7-43d6-8238-14e311122125",
+        "Price": "-10.000000101",
+        "Amount": "30.000000003",
+        "OrderAction": 1,
+        "EffectiveTime": "2022-10-14T06:33:02.872Z"
+      },
+      {
+        "_id": "a611ffb1-c3e7-43d6-8238-14e311122126",
+        "Price": "-10.000000101",
+        "Amount": "30.000000003",
+        "OrderAction": 1,
+        "EffectiveTime": "2022-10-14T06:33:08.264Z"
+      }
+    ]
+  }
+]

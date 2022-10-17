@@ -57,6 +57,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_042][81] | [MongoDB - Cannot create field 'ChildProperty' in element with ParentProperty is null][82] |
 | [Solution_043][83] | [MongoDB .NET Driver - How to push an element into an array which is inside an array][84] |
 | [Solution_045][85] | [.Net Core MongoDB.Driver ObjectId Null from POCO Mapping][86] |
+| [Solution_046][87] | [MongoDB .NET Driver - Update Item in Set][88] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -186,3 +187,6 @@ Written Solutions for StackOverflow questions.
 
 [85]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_045.cs
 [86]: https://stackoverflow.com/questions/73738948/net-core-mongodb-driver-objectid-null-from-poco-mapping/73739244#73739244
+
+[87]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_046.cs
+[88]: https://stackoverflow.com/questions/74065603/mongodb-net-driver-update-item-in-set/74065904#74065904
