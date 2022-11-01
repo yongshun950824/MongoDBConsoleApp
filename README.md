@@ -58,6 +58,8 @@ Written Solutions for StackOverflow questions.
 | [Solution_043][83] | [MongoDB .NET Driver - How to push an element into an array which is inside an array][84] |
 | [Solution_045][85] | [.Net Core MongoDB.Driver ObjectId Null from POCO Mapping][86] |
 | [Solution_046][87] | [MongoDB .NET Driver - Update Item in Set][88] |
+| [Solution_047][89] | [MongoDB .NET Driver - How to search the document(s) with fulfilling in the nested documents of an array][90] |
+| [Solution_048][91] | [C# MongoDB - Get all elements inside a BsonArray][92] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -190,3 +192,9 @@ Written Solutions for StackOverflow questions.
 
 [87]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_046.cs
 [88]: https://stackoverflow.com/questions/74065603/mongodb-net-driver-update-item-in-set/74065904#74065904
+
+[89]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_047.cs
+[90]: https://stackoverflow.com/questions/74131498/mongodb-net-driver-how-to-search-the-documents-with-fulfilling-in-the-neste/74133584#74133584
+
+[91]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_048.cs
+[92]: https://stackoverflow.com/questions/74214246/c-sharp-mongodb-get-all-elements-inside-a-bsonarray
