@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "6362255c2ff43342a413f0cf"
+  },
+  "ID": "123456789",
+  "field1": {
+    "item1": "string",
+    "item2": 123
+  },
+  "field2": [
+    {
+      "item11": 11.11,
+      "myDatetime": {
+        "ts": {
+          "$date": {
+            "$numberLong": "1666538095000"
+          }
+        }
+      }
+    },
+    {
+      "item11": 12.22,
+      "myDatetime": {
+        "ts": {
+          "$date": {
+            "$numberLong": "1661267695000"
+          }
+        }
+      }
+    }
+  ]
+}]
