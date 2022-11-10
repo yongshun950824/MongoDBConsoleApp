@@ -1,0 +1,22 @@
+[
+  {
+    "_id": {
+      "$oid": "63685837e5453d791ed775f4"
+    },
+    "name": "Tournament FIFA",
+    "matches": [
+      {
+        "winnerId": "1",
+        "loserId": "2"
+      },
+      {
+        "winnerId": "3",
+        "loserId": "4"
+      },
+      {
+        "winnerId": "1",
+        "loserId": "3"
+      }
+    ]
+  }
+]

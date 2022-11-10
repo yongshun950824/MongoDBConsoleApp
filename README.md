@@ -61,6 +61,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_047][89] | [MongoDB .NET Driver - How to search the document(s) with fulfilling in the nested documents of an array][90] |
 | [Solution_048][91] | [C# MongoDB - Get all elements inside a BsonArray][92] |
 | [Solution_049][93] | [Using ElemMatch with FilterDefiniton by MongoDB Drive][94] |
+| [Solution_050][95] | [In MongoDB C# how to get nested array to perform aggregation query on it][96] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -202,3 +203,6 @@ Written Solutions for StackOverflow questions.
 
 [93]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_049.cs
 [94]: https://stackoverflow.com/questions/74285939/using-elemmatch-with-filterdefiniton-by-mongodb-drive/74286414#74286414
+
+[93]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_050.cs
+[96]: https://stackoverflow.com/questions/74294539/in-mongodb-c-sharp-how-to-get-nested-array-to-perform-aggregation-query-on-it/74341177#74341177
