@@ -1,0 +1,14 @@
+[
+  {
+    "_id": {
+      "$oid": "6382de8309a177288bd3cf27"
+    },
+    "Name": "Test",
+    "Type": 1,
+    "Options": [
+      "Testing",
+      "Tested",
+      "Remove this one"
+    ]
+  }
+]

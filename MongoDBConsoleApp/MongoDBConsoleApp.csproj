@@ -198,6 +198,7 @@
     <Compile Include="Solutions\Solution_048.cs" />
     <Compile Include="Solutions\Solution_049.cs" />
     <Compile Include="Solutions\Solution_050.cs" />
+    <Compile Include="Solutions\Solution_051.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -248,6 +249,7 @@
     <None Include="Data\Solution_048_types.json" />
     <None Include="Data\Solution_049.json" />
     <None Include="Data\Solution_050_tournament.json" />
+    <None Include="Data\Solution_051_descriptor.json" />
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />
     <None Include="packages.config" />

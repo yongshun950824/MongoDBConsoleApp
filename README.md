@@ -62,6 +62,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_048][91] | [C# MongoDB - Get all elements inside a BsonArray][92] |
 | [Solution_049][93] | [Using ElemMatch with FilterDefiniton by MongoDB Drive][94] |
 | [Solution_050][95] | [In MongoDB C# how to get nested array to perform aggregation query on it][96] |
+| [Solution_051][97] | [C# MongoDB pullFilter to remove string from string array][98] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -206,3 +207,6 @@ Written Solutions for StackOverflow questions.
 
 [95]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_050.cs
 [96]: https://stackoverflow.com/questions/74294539/in-mongodb-c-sharp-how-to-get-nested-array-to-perform-aggregation-query-on-it/74341177#74341177
+
+[97]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_051.cs
+[98]: https://stackoverflow.com/questions/74570841/c-sharp-mongodb-pullfilter-to-remove-string-from-string-array/74587442#74587442
