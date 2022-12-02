@@ -196,6 +196,9 @@
     <Compile Include="Solutions\Solution_046.cs" />
     <Compile Include="Solutions\Solution_047.cs" />
     <Compile Include="Solutions\Solution_048.cs" />
+    <Compile Include="Solutions\Solution_049.cs" />
+    <Compile Include="Solutions\Solution_050.cs" />
+    <Compile Include="Solutions\Solution_051.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -244,6 +247,9 @@
     <None Include="Data\Solution_046_orderBook.json" />
     <None Include="Data\Solution_047_book.json" />
     <None Include="Data\Solution_048_types.json" />
+    <None Include="Data\Solution_049.json" />
+    <None Include="Data\Solution_050_tournament.json" />
+    <None Include="Data\Solution_051_descriptor.json" />
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />
     <None Include="packages.config" />
@@ -264,4 +270,5 @@
     <Error Condition="!Exists('..\packages\MongoDB.Driver.Core.2.14.0\build\MongoDB.Driver.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MongoDB.Driver.Core.2.14.0\build\MongoDB.Driver.Core.targets'))" />
   </Target>
   <Import Project="..\packages\MongoDB.Driver.Core.2.14.0\build\MongoDB.Driver.Core.targets" Condition="Exists('..\packages\MongoDB.Driver.Core.2.14.0\build\MongoDB.Driver.Core.targets')" />
+  <ProjectExtensions />
 </Project>
