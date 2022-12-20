@@ -63,6 +63,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_049][93] | [Using ElemMatch with FilterDefiniton by MongoDB Drive][94] |
 | [Solution_050][95] | [In MongoDB C# how to get nested array to perform aggregation query on it][96] |
 | [Solution_051][97] | [C# MongoDB pullFilter to remove string from string array][98] |
+| [Solution_052][99] | [MongoDB C# driver, aggregation query][100] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -210,3 +211,6 @@ Written Solutions for StackOverflow questions.
 
 [97]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_051.cs
 [98]: https://stackoverflow.com/questions/74570841/c-sharp-mongodb-pullfilter-to-remove-string-from-string-array/74587442#74587442
+
+[99]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_052.cs
+[100]: https://stackoverflow.com/questions/74509024/mongodb-c-sharp-driver-aggregation-query/74590498#74590498
