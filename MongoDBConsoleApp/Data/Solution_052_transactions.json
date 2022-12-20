@@ -1,0 +1,38 @@
+[
+  {
+    "_id": {
+      "$oid": "638365f82559aea0cb6d50d9"
+    },
+    "date": {
+      "$date": {
+        "$numberLong": "1667260800000"
+      }
+    },
+    "price": 10,
+    "category": "Income"
+  },
+  {
+    "_id": {
+      "$oid": "638366362559aea0cb6d50db"
+    },
+    "date": {
+      "$date": {
+        "$numberLong": "1667347200000"
+      }
+    },
+    "price": 5,
+    "category": "MonthlySpent"
+  },
+  {
+    "_id": {
+      "$oid": "638366632559aea0cb6d50dd"
+    },
+    "date": {
+      "$date": {
+        "$numberLong": "1667433600000"
+      }
+    },
+    "price": 200,
+    "category": "Income"
+  }
+]
