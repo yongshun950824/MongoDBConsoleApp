@@ -200,6 +200,7 @@
     <Compile Include="Solutions\Solution_050.cs" />
     <Compile Include="Solutions\Solution_051.cs" />
     <Compile Include="Solutions\Solution_052.cs" />
+    <Compile Include="Solutions\Solution_055.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -252,6 +253,7 @@
     <None Include="Data\Solution_050_tournament.json" />
     <None Include="Data\Solution_051_descriptor.json" />
     <None Include="Data\Solution_052_transactions.json" />
+    <None Include="Data\Solution_055_classStudents.json" />
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />
     <None Include="packages.config" />
