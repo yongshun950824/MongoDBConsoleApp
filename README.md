@@ -64,6 +64,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_050][95] | [In MongoDB C# how to get nested array to perform aggregation query on it][96] |
 | [Solution_051][97] | [C# MongoDB pullFilter to remove string from string array][98] |
 | [Solution_052][99] | [MongoDB C# driver, aggregation query][100] |
+| [Solution_055][101] | [newbie to CosmoDB how to query collection with multiple values?][102] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -214,3 +215,6 @@ Written Solutions for StackOverflow questions.
 
 [99]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_052.cs
 [100]: https://stackoverflow.com/questions/74509024/mongodb-c-sharp-driver-aggregation-query/74590498#74590498
+
+[101]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_055.cs
+[102]: https://stackoverflow.com/questions/74883970/newbie-to-cosmodb-how-to-query-collection-with-multiple-values/74884127#74884127
