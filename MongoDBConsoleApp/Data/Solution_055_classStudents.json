@@ -1,15 +1,17 @@
-[{
-  "_id": {
-    "$oid": "63a3d8d2f9a0760d5280f1e1"
-  },
-  "id": "ABCD",
-  "Class": "Math",
-  "Students": [
-    {
-      "FullName": "Dan Smith"
+[
+  {
+    "_id": {
+      "$oid": "63a3d8d2f9a0760d5280f1e1"
     },
-    {
-      "FullName": "Dave Jackson"
-    }
-  ]
-}]
+    "id": "ABCD",
+    "Class": "Math",
+    "Students": [
+      {
+        "FullName": "Dan Smith"
+      },
+      {
+        "FullName": "Dave Jackson"
+      }
+    ]
+  }
+]

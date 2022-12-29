@@ -1,0 +1,63 @@
+[
+  {
+    "_id": 2,
+    "ItemName": "Shirt",
+    "ItemDescripton": "Men Trouser",
+    "itemLists": [
+      {
+        "CategoryId": 1,
+        "CategpryName": "Men",
+        "ColorId": 1,
+        "ColorName": "Red",
+        "InitialQty": 30,
+        "AvailableQty": 28,
+        "ReserveQty": 2,
+        "Price": 4560,
+        "OfferPrice": 670,
+        "Images": [
+          "/assets/Images/Men/m4.jpg",
+          "/assets/Images/Men/m5.jpg"
+        ],
+        "Sizeid": 2,
+        "SizeName": "XL",
+        "DetailId": 0,
+        "DeliveryCharges": 20,
+        "Brand": "Allen Solly",
+        "CreatedOn": {
+          "$date": {
+            "$numberLong": "1670433019881"
+          }
+        },
+        "CreatedBy": "string",
+        "Active": true
+      },
+      {
+        "CategoryId": 1,
+        "CategpryName": "Men",
+        "ColorId": 2,
+        "ColorName": "Blue",
+        "InitialQty": 10,
+        "AvailableQty": 6,
+        "ReserveQty": 4,
+        "Price": 1400,
+        "OfferPrice": 1200,
+        "Images": [
+          "/assets/Images/Men/m3.jpg",
+          "/assets/Images/Men/m4.jpg"
+        ],
+        "Sizeid": 1,
+        "SizeName": "XL",
+        "DetailId": 0,
+        "DeliveryCharges": 120,
+        "Brand": "Allen Solly",
+        "CreatedOn": {
+          "$date": {
+            "$numberLong": "1670433019881"
+          }
+        },
+        "CreatedBy": "string",
+        "Active": true
+      }
+    ]
+  }
+]

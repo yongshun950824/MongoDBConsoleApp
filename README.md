@@ -65,6 +65,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_051][97] | [C# MongoDB pullFilter to remove string from string array][98] |
 | [Solution_052][99] | [MongoDB C# driver, aggregation query][100] |
 | [Solution_055][101] | [newbie to CosmoDB how to query collection with multiple values?][102] |
+| [Solution_056][103] | [Need help - Filter list of array based on specific item id using MongoDb C# driver][104] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -217,4 +218,7 @@ Written Solutions for StackOverflow questions.
 [100]: https://stackoverflow.com/questions/74509024/mongodb-c-sharp-driver-aggregation-query/74590498#74590498
 
 [101]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_055.cs
-[102]: https://stackoverflow.com/questions/74883970/newbie-to-cosmodb-how-to-query-collection-with-multiple-values/74884127#74884127
+[102]: https://stackoverflow.com/questions/74883970/newbie-to-cosmodb-how-to-query-collection-with-multiple-values/74884127#
+
+[103]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_056.cs
+[104]: https://stackoverflow.com/questions/74909307/need-help-filter-list-of-array-based-on-specific-item-id-using-mongodb-c-sharp/74917629#74917629
