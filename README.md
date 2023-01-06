@@ -66,6 +66,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_052][99] | [MongoDB C# driver, aggregation query][100] |
 | [Solution_055][101] | [newbie to CosmoDB how to query collection with multiple values?][102] |
 | [Solution_056][103] | [Need help - Filter list of array based on specific item id using MongoDb C# driver][104] |
+| [Solution_057][105] | [Cannot dynamically create an instance of type 'System.Text.Json.Nodes.JsonObject'. Reason: No parameterless constructor defined.)][106] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -222,3 +223,6 @@ Written Solutions for StackOverflow questions.
 
 [103]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_056.cs
 [104]: https://stackoverflow.com/questions/74909307/need-help-filter-list-of-array-based-on-specific-item-id-using-mongodb-c-sharp/74917629#74917629
+
+[105]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_056.cs
+[106]: https://stackoverflow.com/questions/75000121/cannot-dynamically-create-an-instance-of-type-system-text-json-nodes-jsonobject/75000361#75000361
