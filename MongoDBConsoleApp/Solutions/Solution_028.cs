@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace MongoDBConsoleApp.Solutions
 {
     /// <summary>
-    /// <a href="https://stackoverflow.com/questions/72968801/count-unread-messages-in-mongodb/72974256#72974256">
+    /// <a href="https://stackoverflow.com/questions/72968801/mongodb-count-unread-messages/72974256#72974256">
     /// Question.
     /// </a>
     /// </summary>
