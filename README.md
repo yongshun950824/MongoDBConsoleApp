@@ -42,7 +42,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_025][50] | [How to "aggregate" with "project.priority" in MongoDB query in C#?][51] |
 | [Solution_026][52] | [How to perform like on MongoDB document for integer values][53] |
 | [Solution_027][54] | <ul><li>[How to create an expression in C# from string?][55]</li> <li>[How can I materialize a string to the actual type?][56]</li></ul> |
-| [Solution_028][57] | [Count unread messages in MongoDb][58] |
+| [Solution_028][57] | [MongoDB - Count unread messages][58] |
 | [Solution_029][59] | [Find lastly added collection with some condition in MongoDB and C#][60] |
 | [Solution_030][61] | [C# Searching MongoDB string that starts with "xyz"][62] |
 | [Solution_031][63] | [How get all keys in all level in a mongo collection c#? LinQ Functions][64] |
@@ -152,7 +152,7 @@ Written Solutions for StackOverflow questions.
 [56]: https://stackoverflow.com/questions/72794815/how-can-i-materialize-a-string-to-the-actual-type/72795479#72795479
   
 [57]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_028.cs
-[58]: https://stackoverflow.com/questions/72968801/count-unread-messages-in-mongodb/72974256#72974256
+[58]: https://stackoverflow.com/questions/72968801/mongodb-count-unread-messages/72974256#72974256
 
 [59]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_029.cs
 [60]: https://stackoverflow.com/questions/73109463/find-lastly-added-collection-with-some-condition-in-mongodb-and-c-sharp/73109820#73109820
