@@ -68,6 +68,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_056][103] | [Need help - Filter list of array based on specific item id using MongoDb C# driver][104] |
 | [Solution_057][105] | [Cannot dynamically create an instance of type 'System.Text.Json.Nodes.JsonObject'. Reason: No parameterless constructor defined.)][106] |
 | [Solution_058][107] | [MongoDB C#/.NET Driver - How to deserialize UUID and ISODate][108] |
+| [Solution_059][109] | [How do I join to a second mongo collection to a child document using Linq][110] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -230,3 +231,6 @@ Written Solutions for StackOverflow questions.
 
 [107]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_058.cs
 [108]: https://stackoverflow.com/questions/75067318/mongodb-c-net-driver-how-to-deserialize-uuid-and-isodate/75071541#75071541
+
+[109]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_059.cs
+[110]: https://stackoverflow.com/questions/75074400/how-do-i-join-to-a-second-mongo-collection-to-a-child-document-using-linq/75078153#75078153

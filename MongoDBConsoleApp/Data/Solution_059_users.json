@@ -1,0 +1,14 @@
+[
+  {
+    "_id": {
+      "$oid": "63be0fd6a0d061fbb2140e91"
+    },
+    "userId": "3Nv6yHTC6Eiq0SaMyBcDlA",
+    "emailAddress": "foo@bar.com",
+    "userAccounts": [
+      {
+        "accountId": "tgvANZWSZkWl0bAOM00IBw"
+      }
+    ]
+  }
+]

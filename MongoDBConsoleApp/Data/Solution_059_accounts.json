@@ -1,0 +1,12 @@
+[
+  {
+    "_id": {
+      "$oid": "63be10dda0d061fbb2140e95"
+    },
+    "accountId": "tgvANZWSZkWl0bAOM00IBw",
+    "accountCode": "foo",
+    "userIds": [
+      "3Nv6yHTC6Eiq0SaMyBcDlA"
+    ]
+  }
+]
