@@ -69,6 +69,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_057][105] | [Cannot dynamically create an instance of type 'System.Text.Json.Nodes.JsonObject'. Reason: No parameterless constructor defined.)][106] |
 | [Solution_058][107] | [MongoDB C#/.NET Driver - How to deserialize UUID and ISODate][108] |
 | [Solution_059][109] | [How do I join to a second mongo collection to a child document using Linq][110] |
+| [Solution_060][111] | [Increment all fields of a MongoDB document from c#][112] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -234,3 +235,6 @@ Written Solutions for StackOverflow questions.
 
 [109]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_059.cs
 [110]: https://stackoverflow.com/questions/75074400/how-do-i-join-to-a-second-mongo-collection-to-a-child-document-using-linq/75078153#75078153
+
+[111]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_0.cs60
+[112]: https://stackoverflow.com/questions/75159919/increment-all-fields-of-a-mongodb-document-from-c-sharp/75167534#75167534
