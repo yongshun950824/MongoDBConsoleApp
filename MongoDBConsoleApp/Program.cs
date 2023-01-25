@@ -16,10 +16,11 @@ namespace MongoDBConsoleApp
             MongoClientSettings settings = MongoClientSettings.FromConnectionString(
                 mongoUri
             );
+            settings.LinqProvider = MongoDB.Driver.Linq.LinqProvider.V3;
 
             MongoClient _client = new MongoClient(settings);
 
-            ISolution solution = new Solution_033();
+            ISolution solution = new Solution_061();
             await solution.RunAsync(_client);
 
             Console.ReadLine();
