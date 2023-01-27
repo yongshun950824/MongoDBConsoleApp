@@ -222,6 +222,7 @@
     <Compile Include="Solutions\Solution_059.cs" />
     <Compile Include="Solutions\Solution_060.cs" />
     <Compile Include="Solutions\Solution_061.cs" />
+    <Compile Include="Solutions\Solution_062.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -281,6 +282,7 @@
     <None Include="Data\Solution_059_accounts.json" />
     <None Include="Data\Solution_059_users.json" />
     <None Include="Data\Solution_061_competition.json" />
+    <None Include="Data\Solution_062_content_entity.json" />
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />
     <None Include="packages.config" />

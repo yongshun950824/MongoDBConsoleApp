@@ -71,6 +71,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_059][109] | [How do I join to a second mongo collection to a child document using Linq][110] |
 | [Solution_060][111] | [Increment all fields of a MongoDB document from c#][112] |
 | [Solution_061][113] | [MongoDB .NET Driver - How to increment double nested field][114] |
+| [Solution_062][115] | [C# Mongodb select rows by their sequence number in one query][116] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -242,3 +243,6 @@ Written Solutions for StackOverflow questions.
 
 [113]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_061.cs
 [114]: https://stackoverflow.com/questions/75212463/mongodb-net-driver-how-to-increment-double-nested-field/75229701#75229701
+
+[113]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_062.cs
+[114]: https://stackoverflow.com/questions/75240005/c-sharp-mongodb-select-rows-by-their-sequence-number-in-one-query/75242146#75242146
