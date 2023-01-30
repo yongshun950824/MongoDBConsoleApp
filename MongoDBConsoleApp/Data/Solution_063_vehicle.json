@@ -1,0 +1,46 @@
+[
+  {
+    "_id": "4bb69277-f61d-46f2-91ed-1e9b65ddf66d",
+    "YearOfProduction": 2020,
+    "Engines": [
+      {
+        "HorsePower": 800
+      }
+    ],
+    "Title": "Suv 2",
+    "_t": "Suv"
+  },
+  {
+    "_id": "5b3838d6-c985-4014-9ce3-dcf440a6f257",
+    "YearOfProduction": 2022,
+    "Engines": [
+      {
+        "HorsePower": 1000
+      }
+    ],
+    "Title": "Suv 1",
+    "_t": "Suv"
+  },
+  {
+    "_id": "90a98516-d8b6-4e31-bd24-4f8c7354ea44",
+    "YearOfProduction": 2022,
+    "Parts": [
+      {
+        "Engines": [
+          {
+            "HorsePower": 1000
+          }
+        ]
+      },
+      {
+        "Engines": [
+          {
+            "HorsePower": 600
+          }
+        ]
+      }
+    ],
+    "Title": "Truck 1",
+    "_t": "Truck"
+  }
+]

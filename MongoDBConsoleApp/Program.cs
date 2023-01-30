@@ -20,20 +20,10 @@ namespace MongoDBConsoleApp
 
             MongoClient _client = new MongoClient(settings);
 
-            ISolution solution = new Solution_061();
+            ISolution solution = new Solution_063();
             await solution.RunAsync(_client);
 
             Console.ReadLine();
-        }
-
-        public static class Helpers
-        {
-            public static void RegisterCamelCasePack()
-            {
-                var pack = new ConventionPack();
-                pack.Add(new CamelCaseElementNameConvention());
-                ConventionRegistry.Register("camel case", pack, t => true);
-            }
         }
     }
 }

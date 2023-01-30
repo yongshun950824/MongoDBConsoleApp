@@ -163,6 +163,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\Helpers.cs" />
+    <Compile Include="Helpers\IMongoCollectionExtensions.cs" />
     <Compile Include="ISolution.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -223,6 +225,7 @@
     <Compile Include="Solutions\Solution_060.cs" />
     <Compile Include="Solutions\Solution_061.cs" />
     <Compile Include="Solutions\Solution_062.cs" />
+    <Compile Include="Solutions\Solution_063.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -283,6 +286,7 @@
     <None Include="Data\Solution_059_users.json" />
     <None Include="Data\Solution_061_competition.json" />
     <None Include="Data\Solution_062_content_entity.json" />
+    <None Include="Data\Solution_063_vehicle.json" />
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />
     <None Include="packages.config" />
