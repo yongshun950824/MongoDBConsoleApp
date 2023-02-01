@@ -16,23 +16,14 @@ namespace MongoDBConsoleApp
             MongoClientSettings settings = MongoClientSettings.FromConnectionString(
                 mongoUri
             );
+            settings.LinqProvider = MongoDB.Driver.Linq.LinqProvider.V3;
 
             MongoClient _client = new MongoClient(settings);
 
-            ISolution solution = new Solution_033();
+            ISolution solution = new Solution_063();
             await solution.RunAsync(_client);
 
             Console.ReadLine();
-        }
-
-        public static class Helpers
-        {
-            public static void RegisterCamelCasePack()
-            {
-                var pack = new ConventionPack();
-                pack.Add(new CamelCaseElementNameConvention());
-                ConventionRegistry.Register("camel case", pack, t => true);
-            }
         }
     }
 }

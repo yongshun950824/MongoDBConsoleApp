@@ -66,6 +66,13 @@ Written Solutions for StackOverflow questions.
 | [Solution_052][99] | [MongoDB C# driver, aggregation query][100] |
 | [Solution_055][101] | [newbie to CosmoDB how to query collection with multiple values?][102] |
 | [Solution_056][103] | [Need help - Filter list of array based on specific item id using MongoDb C# driver][104] |
+| [Solution_057][105] | [Cannot dynamically create an instance of type 'System.Text.Json.Nodes.JsonObject'. Reason: No parameterless constructor defined.)][106] |
+| [Solution_058][107] | [MongoDB C#/.NET Driver - How to deserialize UUID and ISODate][108] |
+| [Solution_059][109] | [How do I join to a second mongo collection to a child document using Linq][110] |
+| [Solution_060][111] | [Increment all fields of a MongoDB document from c#][112] |
+| [Solution_061][113] | [MongoDB .NET Driver - How to increment double nested field][114] |
+| [Solution_062][115] | [C# Mongodb select rows by their sequence number in one query][116] |
+| [Solution_063][117] | [How to filter a collection for nested objects with different types][118] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -222,3 +229,24 @@ Written Solutions for StackOverflow questions.
 
 [103]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_056.cs
 [104]: https://stackoverflow.com/questions/74909307/need-help-filter-list-of-array-based-on-specific-item-id-using-mongodb-c-sharp/74917629#74917629
+
+[105]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_057.cs
+[106]: https://stackoverflow.com/questions/75000121/cannot-dynamically-create-an-instance-of-type-system-text-json-nodes-jsonobject/75000361#75000361
+
+[107]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_058.cs
+[108]: https://stackoverflow.com/questions/75067318/mongodb-c-net-driver-how-to-deserialize-uuid-and-isodate/75071541#75071541
+
+[109]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_059.cs
+[110]: https://stackoverflow.com/questions/75074400/how-do-i-join-to-a-second-mongo-collection-to-a-child-document-using-linq/75078153#75078153
+
+[111]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_060.cs
+[112]: https://stackoverflow.com/questions/75159919/increment-all-fields-of-a-mongodb-document-from-c-sharp/75167534#75167534
+
+[113]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_061.cs
+[114]: https://stackoverflow.com/questions/75212463/mongodb-net-driver-how-to-increment-double-nested-field/75229701#75229701
+
+[115]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_062.cs
+[116]: https://stackoverflow.com/questions/75240005/c-sharp-mongodb-select-rows-by-their-sequence-number-in-one-query/75242146#75242146
+
+[117]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_063.cs
+[118]: https://stackoverflow.com/questions/75259584/how-to-filter-a-collection-for-nested-objects-with-different-types/75280593#75280593

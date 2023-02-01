@@ -1,0 +1,11 @@
+[
+  {
+    "_id": "31daac77-bcbc-4cd5-bb93-382440f46f16",
+    "CompanyId": "XYZ",
+    "RequestDate": {
+      "$date": {
+        "$numberLong": "1673337152840"
+      }
+    }
+  }
+]

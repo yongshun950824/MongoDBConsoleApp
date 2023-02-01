@@ -1,0 +1,18 @@
+[
+  {
+    "_id": {
+      "$oid": "63b77246c47caf6b9da8b07c"
+    },
+    "AppId": "(an already existing app id)",
+    "Fields": {
+      "NombreCliente": "Pepillo",
+      "Email": "pepiko@email.com",
+      "Telefono": "pp56656784",
+      "Localidad": "Pepeland",
+      "Facturas": [
+        "848435498",
+        "0564864984"
+      ]
+    }
+  }
+]
