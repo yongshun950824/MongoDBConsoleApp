@@ -45,8 +45,8 @@ Written Solutions for StackOverflow questions.
 | [Solution_028][57] | [MongoDB - Count unread messages][58] |
 | [Solution_029][59] | [Find lastly added collection with some condition in MongoDB and C#][60] |
 | [Solution_030][61] | [C# Searching MongoDB string that starts with "xyz"][62] |
-| [Solution_031][63] | [How get all keys in all level in a mongo collection c#? LinQ Functions][64] |
-| [Solution_032][65] | [Increment a value inside dictionary on MongoDb C#][66] |
+| [Solution_031][63] | [MongoDB LINQ - How get all keys in all level in a collection][64] |
+| [Solution_032][65] | [MongoDB .NET Driver - Increment a value inside dictionary][66] |
 | [Solution_033][67] | [MongoDB - Search a field of type BsonDocument by their values][68] |
 | [Solution_034][69] | [MongoDb return filtered array elements out of one document in C#][70] |
 | [Solution_036][71] | [MongoDB .NET Driver - Aggregate group and count][72] |
@@ -168,10 +168,10 @@ Written Solutions for StackOverflow questions.
 [62]: https://stackoverflow.com/questions/73267736/c-sharp-searching-mongodb-string-that-starts-with-xyz/73267990#73267990
 
 [63]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_031.cs
-[64]: https://stackoverflow.com/questions/73299041/how-get-all-keys-in-all-level-in-a-mongo-collection-c-linq-functions
+[64]: https://stackoverflow.com/questions/73299041/mongodb-linq-how-get-all-keys-in-all-level-in-a-collection/73299815#73299815
 
 [65]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_032.cs
-[66]: https://stackoverflow.com/questions/73298130/increment-a-value-inside-dictionary-on-mongodb-c-sharp/73300031#73300031
+[66]: https://stackoverflow.com/questions/73298130/mongodb-net-driver-increment-a-value-inside-dictionary/73300031#73300031
 
 [67]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_033.cs
 [68]: https://stackoverflow.com/questions/73352502/mongodb-search-a-field-of-type-bsondocument-by-their-values/73356181#73356181

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace MongoDBConsoleApp.Solutions
 {
     /// <summary>
-    /// <a href="https://stackoverflow.com/questions/73299041/how-get-all-keys-in-all-level-in-a-mongo-collection-c-linq-functions">
+    /// <a href="https://stackoverflow.com/questions/73299041/mongodb-linq-how-get-all-keys-in-all-level-in-a-collection/73299815#73299815">
     /// Question.
     /// </a>
     /// </summary>

@@ -5,12 +5,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using static MongoDBConsoleApp.Program;
 
 namespace MongoDBConsoleApp.Solutions
 {
     /// <summary>
-    /// <a href="https://stackoverflow.com/questions/73298130/increment-a-value-inside-dictionary-on-mongodb-c-sharp/73300031#73300031">
+    /// <a href="https://stackoverflow.com/questions/73298130/mongodb-net-driver-increment-a-value-inside-dictionary/73300031#73300031">
     /// Question
     /// </a>
     /// </summary>
