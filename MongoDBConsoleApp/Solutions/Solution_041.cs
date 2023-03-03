@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace MongoDBConsoleApp.Solutions
 {
     /// <summary>
-    /// <a hre"https://stackoverflow.com/questions/73591964/c-mongodb-driver-count-and-average-on-lookup-field/73592593#73592593">
+    /// <a href="https://stackoverflow.com/questions/73591964/mongodb-net-driver-count-and-average-on-lookup-field/73592593#73592593">
     /// Question
     /// </a>
     /// </summary>
