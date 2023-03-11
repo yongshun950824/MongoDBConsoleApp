@@ -1,0 +1,20 @@
+[
+  {
+    "_id": "d5043755-ff4d-47da-bbff-df838a79df3b",
+    "StockId": {
+      "$numberLong": "5454125454796"
+    },
+    "Name": "AB Industries Ltd.",
+    "LastPrice": "5.70",
+    "LastPriceChange": "0.27"
+  },
+  {
+    "_id": "49224732-f380-4e6f-a933-6fdb5b42107f",
+    "StockId": {
+      "$numberLong": "5745454554541"
+    },
+    "Name": "AB Industries 2 Ltd.",
+    "LastPrice": "5.70",
+    "LastPriceChange": "0.27"
+  }
+]

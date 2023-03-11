@@ -1,0 +1,11 @@
+[
+  {
+    "_id": "3d8a4baa-34e6-4e5b-b782-ec4eda213fc9",
+    "MfId": {
+      "$numberLong": "472546545646564"
+    },
+    "Name": "AB Industries Bond",
+    "LastNAV": "1036.747",
+    "LastNAVChange": "0.3298"
+  }
+]
