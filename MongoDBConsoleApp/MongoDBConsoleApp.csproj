@@ -228,6 +228,7 @@
     <Compile Include="Solutions\Solution_063.cs" />
     <Compile Include="Solutions\Solution_064.cs" />
     <Compile Include="Solutions\Solution_065.cs" />
+    <Compile Include="Solutions\Solution_068.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -293,6 +294,7 @@
     <None Include="Data\Solution_065_MutualFunds.json" />
     <None Include="Data\Solution_065_Portfolio.json" />
     <None Include="Data\Solution_065_Securities.json" />
+    <None Include="Data\Solution_068_FHIR.json" />
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />
     <None Include="packages.config" />

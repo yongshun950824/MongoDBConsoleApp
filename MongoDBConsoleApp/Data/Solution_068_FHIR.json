@@ -1,0 +1,30 @@
+[
+  {
+    "_id": {
+      "$oid": "6422d93326df52c0ccbebb94"
+    },
+    "SerializedResource": {
+      "resourceType": "ServiceRequest",
+      "identifier": [
+        {
+          "use": "official",
+          "system": "mySystem",
+          "value": "value1"
+        },
+        {
+          "use": "usual",
+          "type": {
+            "coding": [
+              {
+                "system": "myCodeSystem",
+                "code": "myCode"
+              }
+            ]
+          },
+          "system": "mySystem",
+          "value": "value2"
+        }
+      ]
+    }
+  }
+]

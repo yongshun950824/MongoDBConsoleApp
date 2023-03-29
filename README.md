@@ -75,6 +75,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_063][117] | [How to filter a collection for nested objects with different types][118] |
 | [Solution_064][119] | [Using `$toLong` in MongoDB C# Queries][120] |
 | [Solution_065][121] | [MongoDB .NET Driver - $lookup result to one merged & grouped array][122] |
+| [Solution_068][123] | [How to filter using FHIR Identifiers from C# to mongoDB][124] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -258,3 +259,6 @@ Written Solutions for StackOverflow questions.
 
 [121]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_065.cs
 [122]: https://stackoverflow.com/questions/75696037/mongodb-net-driver-lookup-result-to-one-merged-grouped-array/75697095#75697095
+
+[123]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_068.cs
+[124]: https://stackoverflow.com/questions/75859023/how-to-filter-using-fhir-identifiers-from-c-sharp-to-mongodb/75866267#75866267
