@@ -1,0 +1,46 @@
+[
+  {
+    "_id": {
+      "$oid": "6406ee6f3ea635fa92d80f97"
+    },
+    "value": 100,
+    "date": {
+      "$date": {
+        "$numberLong": "1648269508044"
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6406ee7a3ea635fa92d80f99"
+    },
+    "value": 50,
+    "date": {
+      "$date": {
+        "$numberLong": "1648269508044"
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6406ee863ea635fa92d80f9b"
+    },
+    "value": 23,
+    "date": {
+      "$date": {
+        "$numberLong": "1648269508044"
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6406ee923ea635fa92d80f9d"
+    },
+    "value": 199,
+    "date": {
+      "$date": {
+        "$numberLong": "1648269508044"
+      }
+    }
+  }
+]

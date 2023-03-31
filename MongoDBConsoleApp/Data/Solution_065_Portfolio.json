@@ -1,0 +1,31 @@
+[
+  {
+    "_id": "fjkhjkdshjkhkdsgfsadhfghgdsa",
+    "Name": "Alex's Portfolio",
+    "Stocks": [
+      {
+        "StockId": {
+          "$numberLong": "5454125454796"
+        },
+        "Quantity": 30,
+        "InvestedValue": "4124"
+      },
+      {
+        "StockId": {
+          "$numberLong": "5745454554541"
+        },
+        "Quantity": 6,
+        "InvestedValue": "3048"
+      }
+    ],
+    "MutualFunds": [
+      {
+        "MutualFundId": {
+          "$numberLong": "472546545646564"
+        },
+        "Quantity": "12",
+        "InvestedValue": "5233"
+      }
+    ]
+  }
+]
