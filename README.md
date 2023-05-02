@@ -60,7 +60,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_046][87] | [MongoDB .NET Driver - Update Item in Set][88] |
 | [Solution_047][89] | [MongoDB .NET Driver - How to search the document(s) with fulfilling in the nested documents of an array][90] |
 | [Solution_048][91] | [C# MongoDB - Get all elements inside a BsonArray][92] |
-| [Solution_049][93] | [Using ElemMatch with FilterDefiniton by MongoDB Drive][94] |
+| [Solution_049][93] | [MongoDB .NET Driver - Using ElemMatch with FilterDefiniton][94] |
 | [Solution_050][95] | [In MongoDB C# how to get nested array to perform aggregation query on it][96] |
 | [Solution_051][97] | [C# MongoDB pullFilter to remove string from string array][98] |
 | [Solution_052][99] | [MongoDB C# driver, aggregation query][100] |
@@ -216,7 +216,7 @@ Written Solutions for StackOverflow questions.
 [92]: https://stackoverflow.com/questions/74214246/c-sharp-mongodb-get-all-elements-inside-a-bsonarray
 
 [93]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_049.cs
-[94]: https://stackoverflow.com/questions/74285939/using-elemmatch-with-filterdefiniton-by-mongodb-drive/74286414#74286414
+[94]: https://stackoverflow.com/questions/74285939/mongodb-net-driver-using-elemmatch-with-filterdefiniton/74286414#74286414
 
 [95]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_050.cs
 [96]: https://stackoverflow.com/questions/74294539/in-mongodb-c-sharp-how-to-get-nested-array-to-perform-aggregation-query-on-it/74341177#74341177
