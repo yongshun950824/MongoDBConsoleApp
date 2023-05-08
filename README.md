@@ -19,7 +19,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_002][3] | [MongoDB .Net Driver - Pull multiple elements from arrays that exist in multiple documents][4] |
 | [Solution_003][5] | [Query with filter builder on nested array using MongoDB C# driver with a given array of string][6] |
 | [Solution_004][7] | [MongoDB .NET Driver - StartsWith & Contains with loosely typed data][8] |
-| [Solution_005][9] | [MongoDB Driver Builders<dynamic> dont work on equal to date][10] |
+| [Solution_005][9] | [MongoDB Driver Builders&lt;dynamic&gt; dont work on equal to date][10] |
 | [Solution_006][11] | [MongoDB .NET Driver - Pagination on array stored in a document field][12] |
 | [Solution_007][13] | [How to Filter and get last entry based on date using C# and Mongo][14] |
 | [Solution_008][15] | [Retrieving list of documents from collection by id in nested list][16] |
@@ -59,7 +59,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_045][85] | [.Net Core MongoDB.Driver ObjectId Null from POCO Mapping][86] |
 | [Solution_046][87] | [MongoDB .NET Driver - Update Item in Set][88] |
 | [Solution_047][89] | [MongoDB .NET Driver - How to search the document(s) with fulfilling in the nested documents of an array][90] |
-| [Solution_048][91] | [MongoDB - Get all elements inside a BsonArray and convert into List<string>][92] |
+| [Solution_048][91] | [MongoDB - Get all elements inside a BsonArray and convert into List&lt;string&gt;][92] |
 | [Solution_049][93] | [MongoDB .NET Driver - Using ElemMatch with FilterDefiniton][94] |
 | [Solution_050][95] | [In MongoDB C# how to get nested array to perform aggregation query on it][96] |
 | [Solution_051][97] | [C# MongoDB pullFilter to remove string from string array][98] |
