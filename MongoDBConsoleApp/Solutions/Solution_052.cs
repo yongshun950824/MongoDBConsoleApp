@@ -4,10 +4,14 @@ using Newtonsoft.Json;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using static MongoDBConsoleApp.Program;
 
 namespace MongoDBConsoleApp.Solutions
 {
+    /// <summary>
+    /// <a href="https://stackoverflow.com/questions/74509024/mongodb-net-driver-aggregation-query-with-calculation-based-on-category/74590498#74590498">
+    /// Question.
+    /// </a>
+    /// </summary>
     internal class Solution_052 : ISolution
     {
         public void Run(IMongoClient _client)

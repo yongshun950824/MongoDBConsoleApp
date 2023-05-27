@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace MongoDBConsoleApp.Solutions
 {
     /// <summary>
-    /// <a href="https://stackoverflow.com/questions/74570841/c-sharp-mongodb-pullfilter-to-remove-string-from-string-array/74587442#74587442">
+    /// <a href="https://stackoverflow.com/questions/74570841/mongodb-net-driver-using-pullfilter-to-remove-string-from-string-array/74587442#74587442">
     /// Question.
     /// </a>
     /// </summary>

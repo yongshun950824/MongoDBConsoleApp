@@ -62,8 +62,8 @@ Written Solutions for StackOverflow questions.
 | [Solution_048][91] | [C# MongoDB - Get all elements inside a BsonArray][92] |
 | [Solution_049][93] | [Using ElemMatch with FilterDefiniton by MongoDB Drive][94] |
 | [Solution_050][95] | [In MongoDB C# how to get nested array to perform aggregation query on it][96] |
-| [Solution_051][97] | [C# MongoDB pullFilter to remove string from string array][98] |
-| [Solution_052][99] | [MongoDB C# driver, aggregation query][100] |
+| [Solution_051][97] | [MongoDB .NET Driver - Using pullFilter to remove string from string array][98] |
+| [Solution_052][99] | [MongoDB .NET Driver - Aggregation query with calculation based on category][100] |
 | [Solution_055][101] | [newbie to CosmoDB how to query collection with multiple values?][102] |
 | [Solution_056][103] | [Need help - Filter list of array based on specific item id using MongoDb C# driver][104] |
 | [Solution_057][105] | [Cannot dynamically create an instance of type 'System.Text.Json.Nodes.JsonObject'. Reason: No parameterless constructor defined.)][106] |
@@ -222,10 +222,10 @@ Written Solutions for StackOverflow questions.
 [96]: https://stackoverflow.com/questions/74294539/in-mongodb-c-sharp-how-to-get-nested-array-to-perform-aggregation-query-on-it/74341177#74341177
 
 [97]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_051.cs
-[98]: https://stackoverflow.com/questions/74570841/c-sharp-mongodb-pullfilter-to-remove-string-from-string-array/74587442#74587442
+[98]: https://stackoverflow.com/questions/74570841/mongodb-net-driver-using-pullfilter-to-remove-string-from-string-array/74587442#74587442
 
 [99]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_052.cs
-[100]: https://stackoverflow.com/questions/74509024/mongodb-c-sharp-driver-aggregation-query/74590498#74590498
+[100]: https://stackoverflow.com/questions/74509024/mongodb-net-driver-aggregation-query-with-calculation-based-on-category/74590498#74590498
 
 [101]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_055.cs
 [102]: https://stackoverflow.com/questions/74883970/newbie-to-cosmodb-how-to-query-collection-with-multiple-values/74884127#
