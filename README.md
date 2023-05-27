@@ -19,7 +19,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_002][3] | [MongoDB .Net Driver - Pull multiple elements from arrays that exist in multiple documents][4] |
 | [Solution_003][5] | [Query with filter builder on nested array using MongoDB C# driver with a given array of string][6] |
 | [Solution_004][7] | [MongoDB .NET Driver - StartsWith & Contains with loosely typed data][8] |
-| [Solution_005][9] | [MongoDB Driver Builders<dynamic> dont work on equal to date][10] |
+| [Solution_005][9] | [MongoDB Driver Builders&lt;dynamic&gt; dont work on equal to date][10] |
 | [Solution_006][11] | [MongoDB .NET Driver - Pagination on array stored in a document field][12] |
 | [Solution_007][13] | [How to Filter and get last entry based on date using C# and Mongo][14] |
 | [Solution_008][15] | [Retrieving list of documents from collection by id in nested list][16] |
@@ -59,8 +59,8 @@ Written Solutions for StackOverflow questions.
 | [Solution_045][85] | [.Net Core MongoDB.Driver ObjectId Null from POCO Mapping][86] |
 | [Solution_046][87] | [MongoDB .NET Driver - Update Item in Set][88] |
 | [Solution_047][89] | [MongoDB .NET Driver - How to search the document(s) with fulfilling in the nested documents of an array][90] |
-| [Solution_048][91] | [C# MongoDB - Get all elements inside a BsonArray][92] |
-| [Solution_049][93] | [Using ElemMatch with FilterDefiniton by MongoDB Drive][94] |
+| [Solution_048][91] | [MongoDB - Get all elements inside a BsonArray and convert into List&lt;string&gt;][92] |
+| [Solution_049][93] | [MongoDB .NET Driver - Using ElemMatch with FilterDefiniton][94] |
 | [Solution_050][95] | [In MongoDB C# how to get nested array to perform aggregation query on it][96] |
 | [Solution_051][97] | [MongoDB .NET Driver - Using pullFilter to remove string from string array][98] |
 | [Solution_052][99] | [MongoDB .NET Driver - Aggregation query with calculation based on category][100] |
@@ -213,10 +213,10 @@ Written Solutions for StackOverflow questions.
 [90]: https://stackoverflow.com/questions/74131498/mongodb-net-driver-how-to-search-the-documents-with-fulfilling-in-the-neste/74133584#74133584
 
 [91]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_048.cs
-[92]: https://stackoverflow.com/questions/74214246/c-sharp-mongodb-get-all-elements-inside-a-bsonarray
+[92]: https://stackoverflow.com/questions/74214246/mongodb-get-all-elements-inside-a-bsonarray-and-convert-into-liststring/74215348#74215348
 
 [93]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_049.cs
-[94]: https://stackoverflow.com/questions/74285939/using-elemmatch-with-filterdefiniton-by-mongodb-drive/74286414#74286414
+[94]: https://stackoverflow.com/questions/74285939/mongodb-net-driver-using-elemmatch-with-filterdefiniton/74286414#74286414
 
 [95]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_050.cs
 [96]: https://stackoverflow.com/questions/74294539/in-mongodb-c-sharp-how-to-get-nested-array-to-perform-aggregation-query-on-it/74341177#74341177

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace MongoDBConsoleApp.Solutions
 {
     /// <summary>
-    /// <a href="https://stackoverflow.com/questions/74214246/c-sharp-mongodb-get-all-elements-inside-a-bsonarray">
+    /// <a href="https://stackoverflow.com/questions/74214246/mongodb-get-all-elements-inside-a-bsonarray-and-convert-into-liststring/74215348#74215348">
     /// Question.
     /// </a>
     /// </summary>
@@ -37,7 +37,8 @@ namespace MongoDBConsoleApp.Solutions
 
         public Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            Run(_client);
+            return Task.CompletedTask;
         }
     }
 }
