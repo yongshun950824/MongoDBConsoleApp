@@ -217,4 +217,4 @@ Written Solutions for StackOverflow questions.
 [100]: https://stackoverflow.com/questions/74509024/mongodb-c-sharp-driver-aggregation-query/74590498#74590498
 
 [101]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_053.cs
-[102]: https://stackoverflow.com/questions/7450https://stackoverflow.com/questions/73203113/mongodb-net-driver-how-to-access-nested-element/74600693#74600693
+[102]: https://stackoverflow.com/questions/73203113/mongodb-net-driver-how-to-access-nested-element/74600693#74600693
