@@ -1,0 +1,39 @@
+[
+  {
+    "_id": {
+      "$oid": "6234410f0f4dd20dd96fb9dd"
+    },
+    "account_id": "96f35500-584e-4db9-94cd-ebd93cce13b7",
+    "created_at": {
+      "$date": "2022-03-18T08:21:35.695Z"
+    },
+    "document_themes": [
+      {
+        "id": "6ad3eac9-e44c-4fdd-b54a-f0ff9165ba3e",
+        "name": "Theme 1"
+      },
+      {
+        "id": "2dd625f2-de57-41f7-9d89-a0e28c62dc65",
+        "name": "Theme 2"
+      },
+      {
+        "id": "af3347c7-12cc-421a-8945-65ce80bf8a0f",
+        "name": "Theme 3"
+      }
+    ],
+    "document_types": [
+      {
+        "id": "c0934926-9e1d-468c-9a47-97a62d83228d",
+        "name": "Type 1"
+      },
+      {
+        "id": "331ad071-7d91-4b84-bdf1-733f9868b979",
+        "name": "Type 2"
+      },
+      {
+        "id": "630bbcad-34ec-4b4d-84e4-89724bd8ae17",
+        "name": "Type 3"
+      }
+    ]
+  }
+]
