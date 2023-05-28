@@ -265,4 +265,4 @@ Written Solutions for StackOverflow questions.
 [124]: https://stackoverflow.com/questions/75859023/how-to-filter-using-fhir-identifiers-from-c-sharp-to-mongodb/75866267#75866267
 
 [125]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_053.cs
-[126]: https://stackoverflow.com/questions/7450https://stackoverflow.com/questions/73203113/mongodb-net-driver-how-to-access-nested-element/74600693#74600693
+[126]: https://stackoverflow.com/questions/73203113/mongodb-net-driver-how-to-access-nested-element/74600693#74600693

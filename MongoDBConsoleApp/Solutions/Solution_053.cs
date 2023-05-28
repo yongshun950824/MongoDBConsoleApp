@@ -6,11 +6,15 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace MongoDBConsoleApp.Solutions
 {
+    /// <summary>
+    /// <a href="https://stackoverflow.com/questions/73203113/mongodb-net-driver-how-to-access-nested-element/74600693#74600693">
+    /// Question.
+    /// </a>
+    /// </summary>
     internal class Solution_053 : ISolution
     {
         public void Run(IMongoClient _client)
