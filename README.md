@@ -64,6 +64,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_050][95] | [In MongoDB C# how to get nested array to perform aggregation query on it][96] |
 | [Solution_051][97] | [MongoDB .NET Driver - Using pullFilter to remove string from string array][98] |
 | [Solution_052][99] | [MongoDB .NET Driver - Aggregation query with calculation based on category][100] |
+| [Solution_053][125] | [MongoDB .NET Driver - How to access nested element][126] |
 | [Solution_055][101] | [newbie to CosmoDB how to query collection with multiple values?][102] |
 | [Solution_056][103] | [Need help - Filter list of array based on specific item id using MongoDb C# driver][104] |
 | [Solution_057][105] | [Cannot dynamically create an instance of type 'System.Text.Json.Nodes.JsonObject'. Reason: No parameterless constructor defined.)][106] |
@@ -262,3 +263,6 @@ Written Solutions for StackOverflow questions.
 
 [123]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_068.cs
 [124]: https://stackoverflow.com/questions/75859023/how-to-filter-using-fhir-identifiers-from-c-sharp-to-mongodb/75866267#75866267
+
+[125]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_053.cs
+[126]: https://stackoverflow.com/questions/7450https://stackoverflow.com/questions/73203113/mongodb-net-driver-how-to-access-nested-element/74600693#74600693
