@@ -67,7 +67,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_053][125] | [MongoDB .NET Driver - How to access nested element][126] |
 | [Solution_055][101] | [newbie to CosmoDB how to query collection with multiple values?][102] |
 | [Solution_056][103] | [Need help - Filter list of array based on specific item id using MongoDb C# driver][104] |
-| [Solution_057][105] | [Cannot dynamically create an instance of type 'System.Text.Json.Nodes.JsonObject'. Reason: No parameterless constructor defined.)][106] |
+| [Solution_057][105] | [Cannot dynamically create an instance of type 'System.Text.Json.Nodes.JsonObject'. Reason: No parameterless constructor defined][106] |
 | [Solution_058][107] | [MongoDB C#/.NET Driver - How to deserialize UUID and ISODate][108] |
 | [Solution_059][109] | [How do I join to a second mongo collection to a child document using Linq][110] |
 | [Solution_060][111] | [Increment all fields of a MongoDB document from c#][112] |
