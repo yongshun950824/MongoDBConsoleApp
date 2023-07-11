@@ -6,13 +6,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using static MongoDBConsoleApp.Program;
 
 namespace MongoDBConsoleApp.Solutions
 {
 
     /// <summary>
-    /// <a href="https://stackoverflow.com/questions/75074400/how-do-i-join-to-a-second-mongo-collection-to-a-child-document-using-linq/75078153#75078153">
+    /// <a href="https://stackoverflow.com/questions/75074400/mongodb-how-do-i-join-the-second-collection-to-a-child-document-using-linq/75078153#75078153">
     /// Question.
     /// </a>
     /// </summary>

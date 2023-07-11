@@ -69,7 +69,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_056][103] | [Need help - Filter list of array based on specific item id using MongoDb C# driver][104] |
 | [Solution_057][105] | [Cannot dynamically create an instance of type 'System.Text.Json.Nodes.JsonObject'. Reason: No parameterless constructor defined][106] |
 | [Solution_058][107] | [MongoDB C#/.NET Driver - How to deserialize UUID and ISODate][108] |
-| [Solution_059][109] | [How do I join to a second mongo collection to a child document using Linq][110] |
+| [Solution_059][109] | [MongoDB - How do I join the second collection to a child document using LINQ][110] |
 | [Solution_060][111] | [Increment all fields of a MongoDB document from c#][112] |
 | [Solution_061][113] | [MongoDB .NET Driver - How to increment double nested field][114] |
 | [Solution_062][115] | [C# Mongodb select rows by their sequence number in one query][116] |
@@ -241,7 +241,7 @@ Written Solutions for StackOverflow questions.
 [108]: https://stackoverflow.com/questions/75067318/mongodb-c-net-driver-how-to-deserialize-uuid-and-isodate/75071541#75071541
 
 [109]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_059.cs
-[110]: https://stackoverflow.com/questions/75074400/how-do-i-join-to-a-second-mongo-collection-to-a-child-document-using-linq/75078153#75078153
+[110]: https://stackoverflow.com/questions/75074400/mongodb-how-do-i-join-the-second-collection-to-a-child-document-using-linq/75078153#75078153
 
 [111]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_060.cs
 [112]: https://stackoverflow.com/questions/75159919/increment-all-fields-of-a-mongodb-document-from-c-sharp/75167534#75167534
