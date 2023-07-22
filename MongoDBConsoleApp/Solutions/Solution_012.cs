@@ -17,18 +17,24 @@ namespace MongoDBConsoleApp.Solutions
         public void Run(IMongoClient _client)
         {
             IMongoDatabase _database = _client.GetDatabase("demo");
-            var Collection = _database.GetCollection<VisitTask>("visitTask");
+            var collection = _database.GetCollection<VisitTask>("visitTask");
 
             var orderFilter = Builders<VisitTask>.Filter.Empty;
 
+            #region Solution 1
             UpdateDefinition<VisitTask> update = GetUpdateDefinitionWithPipeline();
+            #endregion
 
-            Collection.UpdateMany(orderFilter, update, new UpdateOptions { IsUpsert = true });
+            #region Solution 2
+            //UpdateDefinition<VisitTask> update = GetUpdateDefinitionWithBsonDocument();
+            #endregion
+
+            collection.UpdateMany(orderFilter, update, new UpdateOptions { IsUpsert = true });
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Run(_client));
         }
 
         /// <summary>

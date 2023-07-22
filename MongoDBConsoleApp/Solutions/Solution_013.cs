@@ -1,6 +1,8 @@
 ﻿using MongoDB.Bson;
+using MongoDB.Bson.IO;
 using MongoDB.Driver;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -29,12 +31,20 @@ namespace MongoDBConsoleApp.Solutions
                 .Aggregate<BsonDocument>(pipeline)
                 .ToList();
 
-            Console.WriteLine(result.ToJson());
+            PrintOutput(result);
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Run(_client));
+        }
+
+        private void PrintOutput(List<BsonDocument> result)
+        {
+            Console.WriteLine(result.ToJson(new JsonWriterSettings
+            {
+                Indent = true
+            }));
         }
     }
 }

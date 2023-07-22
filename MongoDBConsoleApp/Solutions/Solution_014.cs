@@ -54,9 +54,9 @@ namespace MongoDBConsoleApp.Solutions
             Console.WriteLine(rootFilterDefinition.ToBsonDocument().ToJson());
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Run(_client));
         }
     }
 }

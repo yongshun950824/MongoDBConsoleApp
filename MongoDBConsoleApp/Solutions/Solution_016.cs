@@ -1,4 +1,5 @@
 ﻿using MongoDB.Bson;
+using MongoDB.Bson.IO;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -18,14 +19,24 @@ namespace MongoDBConsoleApp.Solutions
         {
             IMongoDatabase _db = _client.GetDatabase("demo");
 
+            #region Solution 1
+            //var result = GetResultWithFullAggregateFluent(_db);
+            #endregion
+
+            #region Solution 2
+            //var result = GetResultWithMixAggregateFluent(_db);
+            #endregion
+
+            #region Solution 3
             var result = GetResultWithBsonDocument(_db);
+            #endregion
 
             PrintOutput(result);
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Run(_client));
         }
 
         /// <summary>
@@ -91,7 +102,10 @@ namespace MongoDBConsoleApp.Solutions
 
         private void PrintOutput(dynamic result)
         {
-            Console.WriteLine(result.ToJson());
+            Console.WriteLine(result.ToJson(new JsonWriterSettings
+            {
+                Indent = true
+            }));
         }
 
         class Employee

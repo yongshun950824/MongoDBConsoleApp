@@ -1,7 +1,6 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using System;
 using System.Threading.Tasks;
 
 namespace MongoDBConsoleApp.Solutions
@@ -16,17 +15,23 @@ namespace MongoDBConsoleApp.Solutions
         public void Run(IMongoClient _client)
         {
             IMongoDatabase _database = _client.GetDatabase("demo");
-            var Collection = _database.GetCollection<Visit>("visit");
+            var collection = _database.GetCollection<Visit>("visit");
 
             var filter = Builders<Visit>.Filter;
 
+            #region Solution 1
+            //UpdateDefinition<Visit> update = GetUpdateDefinition1();
+            #endregion
+
+            #region Solution 2
             UpdateDefinition<Visit> update = GetUpdateDefinition2();
-            Collection.UpdateMany(filter.Empty, update);
+            #endregion
+            collection.UpdateMany(filter.Empty, update);
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Run(_client));
         }
 
         /// <summary>
@@ -47,7 +52,6 @@ namespace MongoDBConsoleApp.Solutions
             return Builders<Visit>.Update.Rename("CustomFields.Сheckpoint Comment", "CustomFields.Сheckpoint Comment-test");
         }
 
-
         class Visit
         {
             public ObjectId Id { get; set; }
@@ -62,7 +66,7 @@ namespace MongoDBConsoleApp.Solutions
             public BsonProp Time { get; set; }
         }
 
-        internal class BsonProp
+        class BsonProp
         {
             public ObjectId FieldId { get; set; }
             public string Type { get; set; }

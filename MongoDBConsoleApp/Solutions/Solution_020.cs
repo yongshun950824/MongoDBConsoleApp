@@ -1,6 +1,7 @@
-﻿using MongoDB.Bson.Serialization.Attributes;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.IO;
+using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -66,7 +67,10 @@ namespace MongoDBConsoleApp.Solutions
 
         private void PrintOutput(UpdateResult result)
         {
-            Console.WriteLine(JsonConvert.SerializeObject(result));
+            Console.WriteLine(result.ToJson(new JsonWriterSettings
+            {
+                Indent = true
+            }));
         }
 
         [BsonIgnoreExtraElements]
@@ -85,6 +89,5 @@ namespace MongoDBConsoleApp.Solutions
             [BsonElement("symbols")]
             public List<string> Symbols { get; set; }
         }
-
     }
 }

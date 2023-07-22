@@ -1,4 +1,5 @@
 ﻿using MongoDB.Bson;
+using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
 using System;
@@ -17,7 +18,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -25,7 +26,13 @@ namespace MongoDBConsoleApp.Solutions
             IMongoDatabase _db = _client.GetDatabase("demo");
             var _collection = _db.GetCollection<TestA>("testA");
 
+            #region Solution 1
+            //var result = await GetCustomerCommentsWithAggregateFluent(_collection);
+            #endregion
+
+            #region Solution 2
             var result = await GetCustomerCommentsWithBsonDocument(_collection);
+            #endregion
 
             PrintOutput(result);
         }
@@ -78,12 +85,10 @@ namespace MongoDBConsoleApp.Solutions
 
         private void PrintOutput(List<CustomerComment> result)
         {
-            Console.WriteLine(result.ToJson(
-                new MongoDB.Bson.IO.JsonWriterSettings
-                {
-                    Indent = true
-                }
-            ));
+            Console.WriteLine(result.ToJson(new JsonWriterSettings
+            {
+                Indent = true
+            }));
         }
 
         class TestA
@@ -148,6 +153,5 @@ namespace MongoDBConsoleApp.Solutions
             [BsonElement("notes")]
             public string notes { get; set; }
         }
-
     }
 }
