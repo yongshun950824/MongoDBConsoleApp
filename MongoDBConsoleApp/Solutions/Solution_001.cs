@@ -1,4 +1,5 @@
 ﻿using MongoDB.Bson;
+using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
 using System;
@@ -48,9 +49,9 @@ namespace MongoDBConsoleApp.Solutions
             PrintOutput(filteredRecords);
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Run(_client));
         }
 
         private void InitData(IMongoCollection<Record> _collection)
@@ -71,10 +72,10 @@ namespace MongoDBConsoleApp.Solutions
 
         private void PrintOutput(List<Record> filteredRecords)
         {
-            foreach (var record in filteredRecords)
+            Console.WriteLine(filteredRecords.ToJson(new JsonWriterSettings
             {
-                Console.WriteLine("{0} | {1} | {2}", record.Id, record.FirstName, record.LastName);
-            }
+                Indent = true
+            }));
         }
 
         class Record

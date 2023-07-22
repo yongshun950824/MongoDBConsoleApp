@@ -1,4 +1,5 @@
 ﻿using MongoDB.Bson;
+using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
 using System;
@@ -20,7 +21,6 @@ namespace MongoDBConsoleApp.Solutions
             IMongoDatabase _database = _client.GetDatabase("demo");
             IMongoCollection<Produit> _collection = _database.GetCollection<Produit>("produit");
 
-
             List<string> uids = new List<string> { "STK-00113", "STK-00117", "STK-00113", "STK-00114" };
             FilterDefinition<Produit> filter = new BsonDocument(
                 "foobar.uid",
@@ -34,17 +34,17 @@ namespace MongoDBConsoleApp.Solutions
             PrintOutput(results);
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Run(_client));
         }
 
-        void PrintOutput(List<Produit> results)
+        private void PrintOutput(List<Produit> results)
         {
-            foreach (var item in results)
+            Console.WriteLine(results.ToJson(new JsonWriterSettings
             {
-                Console.WriteLine(item.Id);
-            }
+                Indent = true
+            }));
         }
 
         class Produit

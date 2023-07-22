@@ -1,4 +1,5 @@
 ﻿using MongoDB.Bson;
+using MongoDB.Bson.IO;
 using MongoDB.Driver;
 using System;
 using System.Linq;
@@ -20,7 +21,8 @@ namespace MongoDBConsoleApp.Solutions
 
             var id = 1;
 
-            var bsonSearchParams = new BsonDocument {
+            var bsonSearchParams = new BsonDocument
+            {
                  new BsonElement( "_id" , id)
             };
 
@@ -34,14 +36,17 @@ namespace MongoDBConsoleApp.Solutions
             PrintOutput(result);
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Run(_client));
         }
 
         private void PrintOutput(dynamic result)
         {
-            Console.WriteLine(result);
+            Console.WriteLine(result.ToJson(new JsonWriterSettings
+            {
+                Indent = true
+            }));
         }
     }
 }

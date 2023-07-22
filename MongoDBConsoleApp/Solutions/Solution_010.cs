@@ -1,4 +1,5 @@
 ﻿using MongoDB.Bson;
+using MongoDB.Bson.IO;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -34,17 +35,17 @@ namespace MongoDBConsoleApp.Solutions
             PrintOutput(result);
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Run(_client));
         }
 
         private void PrintOutput(List<Product> result)
         {
-            foreach (var item in result)
+            Console.WriteLine(result.ToJson(new JsonWriterSettings
             {
-                Console.WriteLine(item.ToJson());
-            }
+                Indent = true
+            }));
         }
 
         class Product

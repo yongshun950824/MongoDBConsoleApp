@@ -1,4 +1,5 @@
 ﻿using MongoDB.Bson;
+using MongoDB.Bson.IO;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -25,14 +26,15 @@ namespace MongoDBConsoleApp.Solutions
             var pipeline = new BsonDocument[]
             {
                 new BsonDocument("$match",
-                new BsonDocument
-                {
-                    { "studentid",
-                        new BsonDocument("$in",
-                            BsonArray.Create(students))
-                    },
-                    { "dept", dept }
-                }),
+                    new BsonDocument
+                    {
+                        { "studentid",
+                            new BsonDocument("$in",
+                                BsonArray.Create(students))
+                        },
+                        { "dept", dept }
+                    }
+                ),
                 new BsonDocument("$sort",
                 new BsonDocument("Carddetails.LastSwipeTimestamp", -1)),
                 new BsonDocument("$group",
@@ -43,10 +45,11 @@ namespace MongoDBConsoleApp.Solutions
                             {
                                 { "studentid", "$studentid" },
                                 { "dept", "$dept" }
-                            } 
+                            }
                         },
                         { "Carddetails",
-                            new BsonDocument("$first", "$Carddetails") }
+                            new BsonDocument("$first", "$Carddetails") 
+                        }
                     }
                 ),
                 new BsonDocument("$project",
@@ -56,7 +59,8 @@ namespace MongoDBConsoleApp.Solutions
                         { "studentid", "$_id.studentid" },
                         { "dept", "$_id.dept" },
                         { "Carddetails", "$Carddetails" }
-                    })
+                    }
+                )
             };
 
             var result = collection.Aggregate<BsonDocument>(pipeline)
@@ -65,14 +69,17 @@ namespace MongoDBConsoleApp.Solutions
             PrintOutput(result);
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Run(_client));
         }
 
         private void PrintOutput(List<BsonDocument> result)
         {
-            Console.WriteLine(result.ToJson());
+            Console.WriteLine(result.ToJson(new JsonWriterSettings
+            {
+                Indent = true
+            }));
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using MongoDB.Bson;
+using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
 using System;
@@ -17,7 +18,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -27,14 +28,20 @@ namespace MongoDBConsoleApp.Solutions
 
             int porduitId = 17;
 
+            #region Solution 1
+            //var cursor = await _certificats.FindAsync(GetFilterWithFilterDefinition(porduitId));
+            #endregion
+
+            #region Solution 2
             var cursor = await _certificats.FindAsync(GetFilterWithBsonDocument(porduitId));
+            #endregion
             var docs = cursor.ToList();
 
             PrintOutput(docs);
         }
 
         /// <summary>
-        /// Solution 1
+        /// Solution 1: Get filter with Fluent Filter Definition
         /// </summary>
         private FilterDefinition<Example> GetFilterWithFilterDefinition(int porduitId)
         {
@@ -44,7 +51,7 @@ namespace MongoDBConsoleApp.Solutions
         }
 
         /// <summary>
-        /// Solution 2
+        /// Solution 2: Get filter with BsonDocument
         /// </summary>
         /// <param name="porduitId"></param>
         /// <returns></returns>
@@ -55,8 +62,10 @@ namespace MongoDBConsoleApp.Solutions
 
         private void PrintOutput(List<Example> docs)
         {
-            foreach (var doc in docs)
-                Console.WriteLine(doc.ToJson());
+            Console.WriteLine(docs.ToJson(new JsonWriterSettings
+            {
+                Indent = true
+            }));
         }
 
         class Example
