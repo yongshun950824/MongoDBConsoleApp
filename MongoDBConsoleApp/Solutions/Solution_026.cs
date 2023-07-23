@@ -5,7 +5,6 @@ using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using static MongoDBConsoleApp.Program;
 
 namespace MongoDBConsoleApp.Solutions
 {
@@ -18,7 +17,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)

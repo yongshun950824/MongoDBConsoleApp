@@ -37,7 +37,6 @@ Written Solutions for StackOverflow questions.
 | [Solution_020][40] | [MongoDB - How to push an embedded array into an existing document][41] |
 | [Solution_021][42] | [c# and mongodb include or exclude element of array using projection][43] |
 | [Solution_022][44] | [MongoDB C# Driver: Nested Lookups - How do I "join" nested relations?][45] |
-| [Solution_023][46] |  |
 | [Solution_024][48] | [How can I flatten this array of subdocuments?][49] |
 | [Solution_025][50] | [How to "aggregate" with "project.priority" in MongoDB query in C#?][51] |
 | [Solution_026][52] | [How to perform like on MongoDB document for integer values][53] |
@@ -145,9 +144,6 @@ Written Solutions for StackOverflow questions.
 
 [44]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_022.cs
 [45]: https://stackoverflow.com/questions/71579890/mongodb-c-sharp-driver-nested-lookups-how-do-i-join-nested-relations/71582556#71582556
-
-[46]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_023.cs
-
 
 [48]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_024.cs
 [49]: https://stackoverflow.com/questions/71693040/how-can-i-flatten-this-array-of-subdocuments/71693509#71693509

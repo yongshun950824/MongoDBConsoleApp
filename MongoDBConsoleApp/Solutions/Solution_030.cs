@@ -1,4 +1,5 @@
 ﻿using MongoDB.Bson;
+using MongoDB.Bson.IO;
 using MongoDB.Driver;
 using System;
 using System.Linq;
@@ -20,15 +21,15 @@ namespace MongoDBConsoleApp.Solutions
             var _collection = _database.GetCollection<BsonDocument>("movies");
 
             string searchTerm = "The";
-            var results = _collection.Find(Filter1(searchTerm))
+            var result = _collection.Find(Filter1(searchTerm))
                 .ToList();
 
-            PrintOutput(results);
+            PrintOutput(result);
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Run(_client));
         }
 
         /// <summary>
@@ -43,7 +44,7 @@ namespace MongoDBConsoleApp.Solutions
         }
 
         /// <summary>
-        /// Solution 1
+        /// Solution 2
         /// </summary>
         /// <param name="searchTerm"></param>
         /// <returns></returns>
@@ -53,12 +54,12 @@ namespace MongoDBConsoleApp.Solutions
                 , new BsonRegularExpression("^" + searchTerm));
         }
 
-        private void PrintOutput(dynamic results)
+        private void PrintOutput(dynamic result)
         {
-            foreach (var movie in results)
+            Console.WriteLine(result.ToJson(new JsonWriterSettings
             {
-                Console.WriteLine("{0}", movie["title"].ToString());
-            }
+                Indent = true
+            }));
         }
     }
 }

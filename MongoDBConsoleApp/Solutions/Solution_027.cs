@@ -5,7 +5,6 @@ using System;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using static MongoDBConsoleApp.Program;
 
 namespace MongoDBConsoleApp.Solutions
 {
@@ -23,12 +22,12 @@ namespace MongoDBConsoleApp.Solutions
             Helpers.RegisterCamelCasePack();
 
             IMongoDatabase _db = _client.GetDatabase("demo");
-            var _collection = _db.GetCollection<masterDocument>("masterDocument");
+            var _collection = _db.GetCollection<MasterDocument>("masterDocument");
 
             string fieldName = "item";
 
             var result = _collection.Find(x => true)
-                .SortByDescending(ToSortByExpression<masterDocument>(fieldName))
+                .SortByDescending(ToSortByExpression<MasterDocument>(fieldName))
                 .ToList();
 
             Console.WriteLine(result.ToJson(new JsonWriterSettings
@@ -37,9 +36,9 @@ namespace MongoDBConsoleApp.Solutions
             }));
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Run(_client));
         }
 
         private static Expression<Func<T, Object>> ToSortByExpression<T>(string propertyName) where T : class
@@ -60,7 +59,7 @@ namespace MongoDBConsoleApp.Solutions
             return Expression.Lambda<Func<T, Object>>(member, new[] { param });
         }
 
-        class masterDocument
+        class MasterDocument
         {
             public double _id { get; set; }
             public string item { get; set; }
@@ -68,7 +67,7 @@ namespace MongoDBConsoleApp.Solutions
             public double quantity { get; set; }
         }
 
-        class childDocument
+        class ChildDocument
         {
             public double _id { get; set; }
             public string sku { get; set; }

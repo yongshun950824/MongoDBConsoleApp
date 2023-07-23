@@ -18,7 +18,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -66,7 +66,7 @@ namespace MongoDBConsoleApp.Solutions
             }));
         }
 
-        public class GroupedHotelResult
+        class GroupedHotelResult
         {
             [BsonId]
             public string Id { get; set; }
@@ -75,7 +75,7 @@ namespace MongoDBConsoleApp.Solutions
             public HotelResultDocument Hotel { get; set; }
         }
 
-        public class HotelResultDocument
+        class HotelResultDocument
         {
             [BsonId]
             public ObjectId Id { get; set; }
