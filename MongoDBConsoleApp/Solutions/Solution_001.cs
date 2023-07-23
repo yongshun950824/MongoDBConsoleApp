@@ -1,8 +1,6 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -46,7 +44,7 @@ namespace MongoDBConsoleApp.Solutions
             var filteredRecords = _collection.Find(filter)
                 .ToList();
 
-            PrintOutput(filteredRecords);
+            Helpers.PrintFormattedJson(filteredRecords);
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -68,14 +66,6 @@ namespace MongoDBConsoleApp.Solutions
             _collection.InsertMany(recordsInserted);
 
             Thread.Sleep(2000);
-        }
-
-        private void PrintOutput(List<Record> filteredRecords)
-        {
-            Console.WriteLine(filteredRecords.ToJson(new JsonWriterSettings
-            {
-                Indent = true
-            }));
         }
 
         class Record

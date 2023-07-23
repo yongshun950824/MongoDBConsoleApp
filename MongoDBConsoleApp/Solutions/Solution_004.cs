@@ -1,5 +1,4 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
 using System;
@@ -25,7 +24,7 @@ namespace MongoDBConsoleApp.Solutions
             var result = query.Where(Filter3())
                 .Take(10);
 
-            PrintOutput(result);
+            Helpers.PrintFormattedJson(result);
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -60,17 +59,9 @@ namespace MongoDBConsoleApp.Solutions
             var filter = Builders<BsonDocument>
                 .Filter
                 .Regex("title", "^" + "The" + ".*");
-                //.Regex("title", "the");
+            //.Regex("title", "the");
 
             return x => filter.Inject();
-        }
-
-        private void PrintOutput(dynamic result)
-        {
-            Console.WriteLine(result.ToJson(new JsonWriterSettings
-            {
-                Indent = true
-            }));
         }
     }
 }

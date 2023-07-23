@@ -1,8 +1,6 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -44,7 +42,7 @@ namespace MongoDBConsoleApp.Solutions
 
             var result = await UpdateWithPushSingleElement(_userPortfoliosCollection, userPflist);
 
-            PrintOutput(result);
+            Helpers.PrintFormattedJson(result);
         }
 
         private Task<UpdateResult> UpdateWithPushSingleElement(
@@ -63,14 +61,6 @@ namespace MongoDBConsoleApp.Solutions
             return _userPortfoliosCollection.UpdateOneAsync(
                 Builders<UserPortfolioList>.Filter.Eq("Username", userPflist.Username),
                 Builders<UserPortfolioList>.Update.PushEach(x => x.Pflist, userPflist.Pflist));
-        }
-
-        private void PrintOutput(UpdateResult result)
-        {
-            Console.WriteLine(result.ToJson(new JsonWriterSettings
-            {
-                Indent = true
-            }));
         }
 
         [BsonIgnoreExtraElements]

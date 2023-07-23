@@ -1,5 +1,4 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
 using System;
@@ -55,15 +54,7 @@ namespace MongoDBConsoleApp.Solutions
                 .ReplaceWith<GroupedHotelResult, HotelResultDocument>(x => x.Hotel)
                 .ToListAsync();
 
-            PrintOutput(result);
-        }
-
-        private void PrintOutput(List<HotelResultDocument> result)
-        {
-            Console.WriteLine(result.ToJson(new JsonWriterSettings
-            {
-                Indent = true
-            }));
+            Helpers.PrintFormattedJson(result);
         }
 
         class GroupedHotelResult

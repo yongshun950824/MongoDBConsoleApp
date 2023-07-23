@@ -1,7 +1,5 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Driver;
-using System;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -24,7 +22,7 @@ namespace MongoDBConsoleApp.Solutions
             var result = _collection.Find(Filter1(searchTerm))
                 .ToList();
 
-            PrintOutput(result);
+            Helpers.PrintFormattedJson(result);
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -52,14 +50,6 @@ namespace MongoDBConsoleApp.Solutions
         {
             return Builders<BsonDocument>.Filter.Regex("title"
                 , new BsonRegularExpression("^" + searchTerm));
-        }
-
-        private void PrintOutput(dynamic result)
-        {
-            Console.WriteLine(result.ToJson(new JsonWriterSettings
-            {
-                Indent = true
-            }));
         }
     }
 }

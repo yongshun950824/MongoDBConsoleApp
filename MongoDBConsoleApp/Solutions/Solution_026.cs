@@ -1,9 +1,6 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace MongoDBConsoleApp.Solutions
@@ -46,15 +43,7 @@ namespace MongoDBConsoleApp.Solutions
             var result = await collection.Find(filterDefinition)
                 .ToListAsync();
 
-            PrintOutput(result);
-        }
-
-        private void PrintOutput(List<Book> result)
-        {
-            Console.WriteLine(result.ToJson(new JsonWriterSettings
-            {
-                Indent = true
-            }));
+            Helpers.PrintFormattedJson(result);
         }
 
         class Book

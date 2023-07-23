@@ -1,8 +1,6 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -34,7 +32,7 @@ namespace MongoDBConsoleApp.Solutions
             var items = _collection.Find(filter)
                 .ToList<Store>();
 
-            PrintOutput(items);
+            Helpers.PrintFormattedJson(items);
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -93,14 +91,6 @@ namespace MongoDBConsoleApp.Solutions
                 update,
                 new UpdateOptions { ArrayFilters = arrayFilters }
             );
-        }
-
-        private void PrintOutput(List<Store> items)
-        {
-            Console.WriteLine(items.ToJson(new JsonWriterSettings
-            {
-                Indent = true
-            }));
         }
 
         class Store

@@ -1,5 +1,4 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Driver;
 using System;
 using System.Threading.Tasks;
@@ -52,10 +51,7 @@ namespace MongoDBConsoleApp.Solutions
 
         private void PrintOutput(UpdateResult result)
         {
-            Console.WriteLine(result.ToJson(new JsonWriterSettings
-            {
-                Indent = true
-            }));
+            Helpers.PrintFormattedJson(result);
             Console.WriteLine("Match: " + result.MatchedCount);
             Console.WriteLine("Modified: " + result.ModifiedCount);
         }

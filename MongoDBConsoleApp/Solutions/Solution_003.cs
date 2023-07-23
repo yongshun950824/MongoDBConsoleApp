@@ -1,8 +1,6 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -29,22 +27,14 @@ namespace MongoDBConsoleApp.Solutions
                     BsonArray.Create(uids)
                 )
             );
-            var results = _collection.Find(filter).ToList();
+            var result = _collection.Find(filter).ToList();
 
-            PrintOutput(results);
+            Helpers.PrintFormattedJson(result);
         }
 
         public async Task RunAsync(IMongoClient _client)
         {
             await Task.Run(() => Run(_client));
-        }
-
-        private void PrintOutput(List<Produit> results)
-        {
-            Console.WriteLine(results.ToJson(new JsonWriterSettings
-            {
-                Indent = true
-            }));
         }
 
         class Produit

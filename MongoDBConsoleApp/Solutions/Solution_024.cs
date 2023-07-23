@@ -1,8 +1,6 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -36,15 +34,7 @@ namespace MongoDBConsoleApp.Solutions
                 .ReplaceRoot<Topic>(newRoot: "$topics")
                 .ToListAsync();
 
-            PrintOutput(topics);
-        }
-
-        private void PrintOutput(List<Topic> result)
-        {
-            Console.WriteLine(result.ToJson(new JsonWriterSettings
-            {
-                Indent = true
-            }));
+            Helpers.PrintFormattedJson(topics);
         }
 
         class Course

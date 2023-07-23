@@ -1,8 +1,6 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -37,7 +35,7 @@ namespace MongoDBConsoleApp.Solutions
             #endregion
             var docs = cursor.ToList();
 
-            PrintOutput(docs);
+            Helpers.PrintFormattedJson(docs);
         }
 
         /// <summary>
@@ -58,14 +56,6 @@ namespace MongoDBConsoleApp.Solutions
         private BsonDocument GetFilterWithBsonDocument(int porduitId)
         {
             return new BsonDocument("Family.Countries.uid", porduitId);
-        }
-
-        private void PrintOutput(List<Example> docs)
-        {
-            Console.WriteLine(docs.ToJson(new JsonWriterSettings
-            {
-                Indent = true
-            }));
         }
 
         class Example

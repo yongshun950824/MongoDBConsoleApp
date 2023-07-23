@@ -1,5 +1,4 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -31,7 +30,7 @@ namespace MongoDBConsoleApp.Solutions
             var result = GetResultWithBsonDocument(_db);
             #endregion
 
-            PrintOutput(result);
+            Helpers.PrintFormattedJson(result);
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -98,14 +97,6 @@ namespace MongoDBConsoleApp.Solutions
             return _db.GetCollection<Employee>("Employee")
                 .Aggregate(pipeline)
                 .ToList();
-        }
-
-        private void PrintOutput(dynamic result)
-        {
-            Console.WriteLine(result.ToJson(new JsonWriterSettings
-            {
-                Indent = true
-            }));
         }
 
         class Employee

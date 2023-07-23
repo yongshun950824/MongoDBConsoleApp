@@ -1,6 +1,4 @@
-﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
-using MongoDB.Driver;
+﻿using MongoDB.Driver;
 using System;
 using System.Linq;
 using System.Linq.Expressions;
@@ -30,10 +28,7 @@ namespace MongoDBConsoleApp.Solutions
                 .SortByDescending(ToSortByExpression<MasterDocument>(fieldName))
                 .ToList();
 
-            Console.WriteLine(result.ToJson(new JsonWriterSettings
-            {
-                Indent = true
-            }));
+            Helpers.PrintFormattedJson(result);
         }
 
         public async Task RunAsync(IMongoClient _client)

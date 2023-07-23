@@ -1,7 +1,5 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Driver;
-using System;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -33,20 +31,12 @@ namespace MongoDBConsoleApp.Solutions
                 .Project(bsonProjection)
                 .FirstOrDefault();
 
-            PrintOutput(result);
+            Helpers.PrintFormattedJson(result);
         }
 
         public async Task RunAsync(IMongoClient _client)
         {
             await Task.Run(() => Run(_client));
-        }
-
-        private void PrintOutput(dynamic result)
-        {
-            Console.WriteLine(result.ToJson(new JsonWriterSettings
-            {
-                Indent = true
-            }));
         }
     }
 }
