@@ -26,6 +26,11 @@ namespace MongoDBConsoleApp.Solutions
             Console.WriteLine(String.Join(",", collectionKeys.Distinct()));
         }
 
+        public async Task RunAsync(IMongoClient _client)
+        {
+            await Task.Run(() => Run(_client));
+        }
+
         private List<string> GetArrayKeys(BsonValue value)
         {
             List<string> keys = new List<string>();
@@ -73,11 +78,6 @@ namespace MongoDBConsoleApp.Solutions
             }
 
             return keys;
-        }
-
-        public Task RunAsync(IMongoClient _client)
-        {
-            throw new NotImplementedException();
         }
     }
 }

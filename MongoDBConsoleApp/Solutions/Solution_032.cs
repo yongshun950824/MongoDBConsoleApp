@@ -40,9 +40,9 @@ namespace MongoDBConsoleApp.Solutions
                 .ToList());
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Run(_client));
         }
 
         private void PrintBeforeOutput(List<OrderDetails> result)
@@ -54,7 +54,7 @@ namespace MongoDBConsoleApp.Solutions
 
         private void PrintUpdateResultOutput(UpdateResult result)
         {
-            Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(result));
+            PrintOutput(result);
             Console.WriteLine("---");
         }
 
@@ -64,11 +64,9 @@ namespace MongoDBConsoleApp.Solutions
             PrintOutput(result);
         }
 
-
-        private void PrintOutput(List<OrderDetails> result)
+        private void PrintOutput(dynamic result)
         {
-            Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(result,
-                Newtonsoft.Json.Formatting.Indented));
+            Helpers.PrintFormattedJson(result);
         }
 
         class OrderDetails

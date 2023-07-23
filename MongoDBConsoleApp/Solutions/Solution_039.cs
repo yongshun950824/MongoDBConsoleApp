@@ -1,13 +1,9 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using static MongoDBConsoleApp.Program;
 
 namespace MongoDBConsoleApp.Solutions
 {
@@ -20,7 +16,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -30,21 +26,17 @@ namespace MongoDBConsoleApp.Solutions
             IMongoDatabase _db = _client.GetDatabase("demo");
             IMongoCollection<Order> _collection = _db.GetCollection<Order>("orders");
 
+            #region Solution 1
             var result = await GetAggregateGroupWithBsonDocument(_collection)
                 .ToListAsync();
+            #endregion
 
-            PrintOutput(result);
-        }
+            #region Solution 2
+            //var result = await GetAggregateGroupWithExpression(_collection)
+            //    .ToListAsync();
+            #endregion
 
-        private void PrintOutput(dynamic result)
-        {
-            if (result is List<BsonDocument>)
-                Console.WriteLine(((List<BsonDocument>)result).ToJson(new JsonWriterSettings
-                {
-                    Indent = true
-                }));
-            else
-                Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(result, Formatting.Indented));
+            Helpers.PrintFormattedJson(result);
         }
 
         /// <summary>

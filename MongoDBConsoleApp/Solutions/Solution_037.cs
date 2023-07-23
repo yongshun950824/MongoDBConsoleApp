@@ -3,7 +3,6 @@ using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
 using System;
 using System.Threading.Tasks;
-using static MongoDBConsoleApp.Program;
 
 namespace MongoDBConsoleApp.Solutions
 {
@@ -31,9 +30,9 @@ namespace MongoDBConsoleApp.Solutions
             Console.WriteLine(CreateIndex(_collection, setting));
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Run(_client));
         }
 
         private string CreateIndex<T>(IMongoCollection<T> _collection, dynamic setting)
