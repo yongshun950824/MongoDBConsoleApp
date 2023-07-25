@@ -1,9 +1,5 @@
 ﻿using MongoDB.Driver;
-using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace MongoDBConsoleApp.Solutions
@@ -17,7 +13,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -38,17 +34,13 @@ namespace MongoDBConsoleApp.Solutions
                 .Push("RequestMessageLog.BiDirectionalMessageLogs.$.RequestMessageLog.ResponseMessageLog.ResponseMessageActionLogs", responseMessageActionLog);
 
             UpdateResult result = await _col.UpdateOneAsync(filter, update);
-            PrintOutput(result);
+            
+            Helpers.PrintFormattedJson(result);
         }
 
-        private void PrintOutput(UpdateResult result)
+        class MessageLog
         {
-            Console.WriteLine(JsonConvert.SerializeObject(result, Formatting.Indented));
+            public string MessageTrackingId { get; set; }
         }
-    }
-
-    class MessageLog
-    {
-        public string MessageTrackingId { get; set; }
     }
 }

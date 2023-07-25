@@ -1,6 +1,5 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -32,13 +31,12 @@ namespace MongoDBConsoleApp.Solutions
                 .Select(x => x.AsString)
                 .ToList();
 
-            Console.WriteLine(String.Join(",", types));
+            Helpers.PrintFormattedJson(types);
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            Run(_client);
-            return Task.CompletedTask;
+            await Task.Run(() => Run(_client));
         }
     }
 }

@@ -1,7 +1,6 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -17,7 +16,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -32,41 +31,37 @@ namespace MongoDBConsoleApp.Solutions
             var update = Builders<OrderBookEntity>.Update.Set("Orders.$.Amount", "100");
 
             UpdateResult result = await _collection.UpdateOneAsync(filter, update);
-            PrintOutput(result);
+
+            Helpers.PrintFormattedJson(result);
         }
 
-        private void PrintOutput(UpdateResult result)
+        class OrderBookEntity
         {
-            Console.WriteLine(JsonConvert.SerializeObject(result, Formatting.Indented));
+            [BsonId]
+            public AssetDefinition UnderlyingAsset { get; set; }
+
+            public List<OrderEntity> Orders { get; set; }
         }
-    }
 
-    internal class OrderBookEntity
-    {
-        [BsonId]
-        public AssetDefinition UnderlyingAsset { get; set; }
+        class AssetDefinition
+        {
+            public int Class { get; set; }
+            public string Symbol { get; set; }
+        }
 
-        public List<OrderEntity> Orders { get; set; }
-    }
+        [BsonNoId]
+        class OrderEntity
+        {
+            [BsonElement("_id")]
+            public Guid Id { get; set; }
 
-    internal class AssetDefinition
-    {
-        public int Class { get; set; }
-        public string Symbol { get; set; }
-    }
+            public string Price { get; set; }
 
-    [BsonNoId]
-    internal class OrderEntity
-    {
-        [BsonElement("_id")]
-        public Guid Id { get; set; }
+            public string Amount { get; set; }
 
-        public string Price { get; set; }
+            public int OrderAction { get; set; }
 
-        public string Amount { get; set; }
-
-        public int OrderAction { get; set; }
-
-        public DateTime EffectiveTime { get; set; }
+            public DateTime EffectiveTime { get; set; }
+        }
     }
 }

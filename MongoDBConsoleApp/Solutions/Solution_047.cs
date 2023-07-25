@@ -1,12 +1,9 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using static MongoDBConsoleApp.Program;
 
 namespace MongoDBConsoleApp.Solutions
 {
@@ -19,7 +16,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            this.RunAsync(_client).GetAwaiter().GetResult();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -48,54 +45,42 @@ namespace MongoDBConsoleApp.Solutions
             List<Book> books = (await _mongoCollection.FindAsync(filter))
                 .ToList();
 
-            PrintOutput(books);
+            Helpers.PrintFormattedJson(books);
         }
 
-        private void PrintOutput(List<Book> books)
-        {
-            Console.WriteLine(JsonConvert.SerializeObject(books, Formatting.Indented));
-        }
-
-        internal class Book
+        class Book
         {
             [BsonId]
             public ObjectId Id { get; set; }
 
-            //[BsonElement("isbn")]
             public string Isbn { get; set; }
 
-            //[BsonElement("author")]
             public Author Author { get; set; }
 
-            //[BsonElement("editor")]
             public Editor[] Editor { get; set; }
 
-            //[BsonElement("title")]
             public string Title { get; set; }
 
-            //[BsonElement("category")]
             public string[] Category { get; set; }
         }
 
-        internal class Author : People
+        class Author : People
         {
 
         }
 
-        internal class Editor : People
+        class Editor : People
         {
 
         }
 
-        internal abstract class People
+        abstract class People
         {
             [BsonElement("_id")]
             public int Id { get; set; }
 
-            [BsonElement("lastname")]
             public string LastName { get; set; }
 
-            [BsonElement("firstname")]
             public string FirstName { get; set; }
         }
     }
