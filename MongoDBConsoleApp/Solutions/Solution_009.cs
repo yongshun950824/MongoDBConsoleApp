@@ -14,7 +14,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -44,14 +44,14 @@ namespace MongoDBConsoleApp.Solutions
             var update = Builders<BsonDocument>.Update.Set("Friends.$[friend]", obj.ToBsonDocument());
 
             var result = await collection.UpdateOneAsync(filter1 & filter2, update,
-                options: new UpdateOptions { ArrayFilters = arrayFilters });
+                new UpdateOptions { ArrayFilters = arrayFilters });
 
             PrintOutput(result);
         }
 
         private void PrintOutput(UpdateResult result)
         {
-            Console.WriteLine(result);
+            Helpers.PrintFormattedJson(result);
             Console.WriteLine("Match: " + result.MatchedCount);
             Console.WriteLine("Modified: " + result.ModifiedCount);
         }

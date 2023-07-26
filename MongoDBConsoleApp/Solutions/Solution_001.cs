@@ -1,7 +1,6 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -45,12 +44,12 @@ namespace MongoDBConsoleApp.Solutions
             var filteredRecords = _collection.Find(filter)
                 .ToList();
 
-            PrintOutput(filteredRecords);
+            Helpers.PrintFormattedJson(filteredRecords);
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Run(_client));
         }
 
         private void InitData(IMongoCollection<Record> _collection)
@@ -67,14 +66,6 @@ namespace MongoDBConsoleApp.Solutions
             _collection.InsertMany(recordsInserted);
 
             Thread.Sleep(2000);
-        }
-
-        private void PrintOutput(List<Record> filteredRecords)
-        {
-            foreach (var record in filteredRecords)
-            {
-                Console.WriteLine("{0} | {1} | {2}", record.Id, record.FirstName, record.LastName);
-            }
         }
 
         class Record

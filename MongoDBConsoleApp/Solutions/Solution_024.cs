@@ -1,12 +1,9 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using static MongoDBConsoleApp.Program;
 
 namespace MongoDBConsoleApp.Solutions
 {
@@ -19,7 +16,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -37,12 +34,7 @@ namespace MongoDBConsoleApp.Solutions
                 .ReplaceRoot<Topic>(newRoot: "$topics")
                 .ToListAsync();
 
-            PrintOutput(topics);
-        }
-
-        private void PrintOutput(List<Topic> result)
-        {
-            Console.WriteLine(JsonConvert.SerializeObject(result));
+            Helpers.PrintFormattedJson(topics);
         }
 
         class Course

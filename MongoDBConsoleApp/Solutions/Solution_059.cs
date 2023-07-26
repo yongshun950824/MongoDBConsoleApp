@@ -1,8 +1,6 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -44,7 +42,7 @@ namespace MongoDBConsoleApp.Solutions
                 )
                 .FirstOrDefault();
 
-            Console.WriteLine(JsonConvert.SerializeObject(extendedUser, Formatting.Indented));
+            Helpers.PrintFormattedJson(extendedUser);
         }
 
         public Task RunAsync(IMongoClient _client)
@@ -64,7 +62,7 @@ namespace MongoDBConsoleApp.Solutions
 
         [BsonNoId]
         [BsonIgnoreExtraElements]
-        public class User
+        class User
         {
             [BsonConstructor]
             public User(string UserId, string EmailAddress, IEnumerable<UserAccount> UserAccounts)
@@ -79,7 +77,7 @@ namespace MongoDBConsoleApp.Solutions
             public IEnumerable<UserAccount> UserAccounts { get; set; }
         }
 
-        public class UserAccount
+        class UserAccount
         {
             [BsonConstructor]
             public UserAccount(string AccountId)
@@ -92,7 +90,7 @@ namespace MongoDBConsoleApp.Solutions
 
         [BsonNoId]
         [BsonIgnoreExtraElements]
-        public class Account
+        class Account
         {
             [BsonConstructor]
             public Account(string AccountId, string AccountCode, IEnumerable<string> UserIds)
@@ -108,7 +106,7 @@ namespace MongoDBConsoleApp.Solutions
         }
 
         [BsonIgnoreExtraElements]
-        public class ExtendedUser
+        class ExtendedUser
         {
             [BsonConstructor]
             public ExtendedUser(string UserId, string EmailAddress, IEnumerable<ExtendedUserAccount> UserAccounts)
@@ -124,7 +122,7 @@ namespace MongoDBConsoleApp.Solutions
         }
 
         [BsonIgnoreExtraElements]
-        public class ExtendedUserAccount
+        class ExtendedUserAccount
         {
             [BsonConstructor]
             public ExtendedUserAccount(string AccountId, string AccountCode)

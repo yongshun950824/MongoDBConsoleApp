@@ -18,14 +18,24 @@ namespace MongoDBConsoleApp.Solutions
         {
             IMongoDatabase _db = _client.GetDatabase("demo");
 
-            var result = GetResultWithBsonDocument(_db);
+            #region Solution 1
+            //var result = GetResultWithFullAggregateFluent(_db);
+            #endregion
 
-            PrintOutput(result);
+            #region Solution 2
+            //var result = GetResultWithMixAggregateFluent(_db);
+            #endregion
+
+            #region Solution 3
+            var result = GetResultWithBsonDocument(_db);
+            #endregion
+
+            Helpers.PrintFormattedJson(result);
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Run(_client));
         }
 
         /// <summary>
@@ -87,11 +97,6 @@ namespace MongoDBConsoleApp.Solutions
             return _db.GetCollection<Employee>("Employee")
                 .Aggregate(pipeline)
                 .ToList();
-        }
-
-        private void PrintOutput(dynamic result)
-        {
-            Console.WriteLine(result.ToJson());
         }
 
         class Employee

@@ -1,7 +1,6 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +17,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            this.RunAsync(_client).GetAwaiter().GetResult();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -36,23 +35,20 @@ namespace MongoDBConsoleApp.Solutions
             );
 
             var result = (await _col.FindAsync(filter)).ToList();
-            PrintOutput(result);
+
+            Helpers.PrintFormattedJson(result);
         }
 
-        private void PrintOutput(List<MongoCollection> result)
+        class MongoCollection
         {
-            Console.WriteLine(JsonConvert.SerializeObject(result, Formatting.Indented));
+            [BsonId]
+            public ObjectId Id { get; set; }
+
+            public string ID { get; set; }
+
+            public object field1 { get; set; }
+
+            public List<object> field2 { get; set; }
         }
-    }
-
-    public class MongoCollection
-    {
-        [BsonId]
-        public ObjectId Id { get; set; }
-
-        public string ID { get; set; }
-        public object field1 { get; set; }
-
-        public List<object> field2 { get; set; }
     }
 }

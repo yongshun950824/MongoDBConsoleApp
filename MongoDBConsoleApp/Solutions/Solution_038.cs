@@ -1,8 +1,6 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using Newtonsoft.Json;
-using System;
 using System.Threading.Tasks;
 
 namespace MongoDBConsoleApp.Solutions
@@ -16,7 +14,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -41,12 +39,7 @@ namespace MongoDBConsoleApp.Solutions
             };
             UpdateResult result = await col.UpdateOneAsync(filter, update, updateOptions);
 
-            PrintOutput(result);
-        }
-
-        private void PrintOutput(dynamic result)
-        {
-            Console.WriteLine(JsonConvert.SerializeObject(result, Formatting.Indented));
+            Helpers.PrintFormattedJson(result);
         }
 
         class Agencies

@@ -14,15 +14,15 @@ namespace MongoDBConsoleApp.Solutions
     /// </summary>
     class Solution_028 : ISolution
     {
+        public void Run(IMongoClient _client)
+        {
+            RunAsync(_client).GetAwaiter().GetResult();
+        }
+
         public async Task RunAsync(IMongoClient _client)
         {
             int userId = 1;
             Console.WriteLine($"Count: {await UserUnreadMessagesCount(_client, userId)}");
-        }
-
-        public void Run(IMongoClient _client)
-        {
-            throw new NotImplementedException();
         }
 
         private async Task<int> UserUnreadMessagesCount(IMongoClient _client, int userId)

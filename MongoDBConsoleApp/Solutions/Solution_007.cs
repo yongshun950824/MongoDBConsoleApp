@@ -1,7 +1,5 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -25,14 +23,15 @@ namespace MongoDBConsoleApp.Solutions
             var pipeline = new BsonDocument[]
             {
                 new BsonDocument("$match",
-                new BsonDocument
-                {
-                    { "studentid",
-                        new BsonDocument("$in",
-                            BsonArray.Create(students))
-                    },
-                    { "dept", dept }
-                }),
+                    new BsonDocument
+                    {
+                        { "studentid",
+                            new BsonDocument("$in",
+                                BsonArray.Create(students))
+                        },
+                        { "dept", dept }
+                    }
+                ),
                 new BsonDocument("$sort",
                 new BsonDocument("Carddetails.LastSwipeTimestamp", -1)),
                 new BsonDocument("$group",
@@ -43,10 +42,11 @@ namespace MongoDBConsoleApp.Solutions
                             {
                                 { "studentid", "$studentid" },
                                 { "dept", "$dept" }
-                            } 
+                            }
                         },
                         { "Carddetails",
-                            new BsonDocument("$first", "$Carddetails") }
+                            new BsonDocument("$first", "$Carddetails")
+                        }
                     }
                 ),
                 new BsonDocument("$project",
@@ -56,23 +56,19 @@ namespace MongoDBConsoleApp.Solutions
                         { "studentid", "$_id.studentid" },
                         { "dept", "$_id.dept" },
                         { "Carddetails", "$Carddetails" }
-                    })
+                    }
+                )
             };
 
             var result = collection.Aggregate<BsonDocument>(pipeline)
                 .ToList();
 
-            PrintOutput(result);
+            Helpers.PrintFormattedJson(result);
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
-        }
-
-        private void PrintOutput(List<BsonDocument> result)
-        {
-            Console.WriteLine(result.ToJson());
+            await Task.Run(() => Run(_client));
         }
     }
 }

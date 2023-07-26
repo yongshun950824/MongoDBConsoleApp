@@ -1,5 +1,4 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -36,19 +35,14 @@ namespace MongoDBConsoleApp.Solutions
             PrintOutput(result, count);
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Run(_client));
         }
 
         private void PrintOutput(List<BsonDocument> result, long count)
         {
-            Console.WriteLine(result.ToJson(
-                new JsonWriterSettings
-                {
-                    Indent = true
-                }
-            ));
+            Helpers.PrintFormattedJson(result);
 
             Console.WriteLine(count);
         }

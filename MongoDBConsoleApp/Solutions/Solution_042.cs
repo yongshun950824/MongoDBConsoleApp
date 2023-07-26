@@ -1,5 +1,4 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Driver;
 using System;
 using System.Threading.Tasks;
@@ -15,7 +14,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -61,7 +60,7 @@ namespace MongoDBConsoleApp.Solutions
                                             BsonArray.Create(new object[] { "$Address", addressDocument }))
                                     }
                                 }
-                            ) 
+                            )
                             },
                         }
                     )
@@ -73,29 +72,21 @@ namespace MongoDBConsoleApp.Solutions
                 ReturnDocument = ReturnDocument.After
             });
 
-            PrintOutput(bsonDocument);
+            Helpers.PrintFormattedJson(bsonDocument);
         }
 
-        private void PrintOutput(BsonDocument bsonDocument)
+        class User
         {
-            Console.WriteLine(bsonDocument.ToJson(new JsonWriterSettings
-            {
-                Indent = true
-            }));
+            public Guid? Id { get; set; }
+            public String? Name { get; set; }
+            public Address? Address { get; set; }
         }
-    }
 
-    public class User
-    {
-        public Guid? Id { get; set; }
-        public String? Name { get; set; }
-        public Address? Address { get; set; }
-    }
-
-    public class Address
-    {
-        public String? Street { get; set; }
-        public String? City { get; set; }
-        public String? State { get; set; }
+        class Address
+        {
+            public String? Street { get; set; }
+            public String? City { get; set; }
+            public String? State { get; set; }
+        }
     }
 }

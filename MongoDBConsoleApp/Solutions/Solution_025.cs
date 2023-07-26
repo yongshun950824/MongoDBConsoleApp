@@ -1,8 +1,6 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using System;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -17,7 +15,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -36,7 +34,7 @@ namespace MongoDBConsoleApp.Solutions
                 .Sort(sort)
                 .ToListAsync();
 
-            PrintOutput(result);
+            Helpers.PrintFormattedJson(result);
         }
 
         private ProjectionDefinition<BsonDocument> GetProjectionDefinitionWithBsonDocument()
@@ -77,14 +75,6 @@ namespace MongoDBConsoleApp.Solutions
             };
 
             return projection;
-        }
-
-        private void PrintOutput(dynamic result)
-        {
-            Console.WriteLine(result.ToJson(new JsonWriterSettings
-            {
-                Indent = true
-            }));
         }
 
         class Item

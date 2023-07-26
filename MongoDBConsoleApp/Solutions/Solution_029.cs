@@ -1,5 +1,4 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
 using System;
@@ -18,7 +17,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -55,18 +54,10 @@ namespace MongoDBConsoleApp.Solutions
                 .ReplaceWith<GroupedHotelResult, HotelResultDocument>(x => x.Hotel)
                 .ToListAsync();
 
-            PrintOutput(result);
+            Helpers.PrintFormattedJson(result);
         }
 
-        private void PrintOutput(List<HotelResultDocument> result)
-        {
-            Console.WriteLine(result.ToJson(new JsonWriterSettings
-            {
-                Indent = true
-            }));
-        }
-
-        public class GroupedHotelResult
+        class GroupedHotelResult
         {
             [BsonId]
             public string Id { get; set; }
@@ -75,7 +66,7 @@ namespace MongoDBConsoleApp.Solutions
             public HotelResultDocument Hotel { get; set; }
         }
 
-        public class HotelResultDocument
+        class HotelResultDocument
         {
             [BsonId]
             public ObjectId Id { get; set; }

@@ -1,12 +1,10 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using static MongoDBConsoleApp.Program;
 
 namespace MongoDBConsoleApp.Solutions
 {
@@ -34,12 +32,12 @@ namespace MongoDBConsoleApp.Solutions
             var items = _collection.Find(filter)
                 .ToList<Store>();
 
-            PrintOutput(items);
+            Helpers.PrintFormattedJson(items);
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Run(_client));
         }
 
         private void InitData(IMongoCollection<Store> _collection)
@@ -91,23 +89,8 @@ namespace MongoDBConsoleApp.Solutions
             _collection.UpdateMany(
                 filter,
                 update,
-                options: new UpdateOptions { ArrayFilters = arrayFilters }
+                new UpdateOptions { ArrayFilters = arrayFilters }
             );
-        }
-
-        private void PrintOutput(List<Store> items)
-        {
-            foreach (var item in items)
-            {
-                Console.WriteLine(item.Name);
-
-                foreach (var fruit in item.Fruits)
-                {
-                    Console.WriteLine(fruit);
-                }
-
-                Console.WriteLine("---");
-            }
         }
 
         class Store

@@ -1,7 +1,5 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Driver;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,7 +15,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            this.RunAsync(_client).GetAwaiter().GetResult();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -30,15 +28,12 @@ namespace MongoDBConsoleApp.Solutions
                 builder.Eq("use", "official")
                 & builder.Regex("value", $"/^value2$/i"));
 
-            Console.WriteLine(_col.QueryToBson(filter));
+            Helpers.PrintFormattedJson(_col.QueryToBson(filter));
 
             List<BsonDocument> result = (await _col.FindAsync(filter))
                 .ToList();
 
-            Console.WriteLine(result.ToJson(new JsonWriterSettings
-            {
-                Indent = true
-            }));
+            Helpers.PrintFormattedJson(result);
         }
     }
 }

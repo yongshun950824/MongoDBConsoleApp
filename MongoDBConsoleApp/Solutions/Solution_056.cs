@@ -1,6 +1,5 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -16,7 +15,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            this.RunAsync(_client).GetAwaiter().GetResult();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -41,11 +40,11 @@ namespace MongoDBConsoleApp.Solutions
                 .Project<Item>(projection)
                 .FirstOrDefaultAsync();
 
-            Console.WriteLine(JsonConvert.SerializeObject(data, Formatting.Indented));
+            Helpers.PrintFormattedJson(data);
         }
 
 
-        public class ItemList
+        class ItemList
         {
             public int CategoryId { get; set; }
             public string CategpryName { get; set; }
@@ -67,7 +66,7 @@ namespace MongoDBConsoleApp.Solutions
             public bool Active { get; set; }
         }
 
-        public class Item
+        class Item
         {
             [BsonId]
             [BsonElement("_id")]

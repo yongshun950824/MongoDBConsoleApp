@@ -19,20 +19,47 @@ namespace MongoDBConsoleApp.Solutions
         {
             IMongoDatabase _database = _client.GetDatabase("sample_mflix");
             var _collection = _database.GetCollection<dynamic>("movies");
-            var query = _collection.AsQueryable();
 
             FilterDefinition<dynamic> searchFilter = FilterDefinition<dynamic>.Empty;
             string x = "lastupdated";
             string y = "2015-07-27";
             string z = "2015-07-28";
-            //var SearchDAte = DateTime.Parse(y, CultureInfo.InvariantCulture, DateTimeStyles.AssumeUniversal);
-            //searchFilter &= Builders<BsonDocument>.Filter.Eq(x, SearchDAte);
+
+            #region Solution 1
+            //searchFilter = GetFilterDefinitionWithFluent(x, y, z);
+            #endregion
+
+            #region Solution 2
+            searchFilter = GetFilterDefinitionWithBsonDocument(y);
+            #endregion
+
+            var result = _collection.Find(searchFilter)
+                .ToList();
+
+            PrintOutput(result);
+        }
+
+        public async Task RunAsync(IMongoClient _client)
+        {
+            await Task.Run(() => Run(_client));
+        }
+
+        private FilterDefinition<dynamic> GetFilterDefinitionWithFluent(string x, string y, string z)
+        {
+            FilterDefinition<dynamic> searchFilter = FilterDefinition<dynamic>.Empty;
 
             var startDate = DateTime.Parse(y, CultureInfo.InvariantCulture, DateTimeStyles.AssumeUniversal);
             var endDate = DateTime.Parse(z, CultureInfo.InvariantCulture, DateTimeStyles.AssumeUniversal);
 
-            //searchFilter &= Builders<dynamic>.Filter.Gte(x, startDate);
-            //searchFilter &= Builders<dynamic>.Filter.Lt(x, endDate);
+            searchFilter &= Builders<dynamic>.Filter.Gte(x, startDate);
+            searchFilter &= Builders<dynamic>.Filter.Lt(x, endDate);
+
+            return searchFilter;
+        }
+
+        private FilterDefinition<dynamic> GetFilterDefinitionWithBsonDocument(string y)
+        {
+            FilterDefinition<dynamic> searchFilter = FilterDefinition<dynamic>.Empty;
 
             BsonDocument filterDoc = new BsonDocument("$expr",
                 new BsonDocument("$eq",
@@ -44,34 +71,26 @@ namespace MongoDBConsoleApp.Solutions
                                 { "format", "%Y-%m-%d" },
                                 { "date", "$lastupdated" }
                             }),
-                        "2015-07-27"
+                        y
                     }
                 )
             );
 
             searchFilter &= filterDoc;
 
-            var results = _collection.Find(searchFilter)
-                .ToList();
-
-            PrintOutput(results);
+            return searchFilter;
         }
 
-        public Task RunAsync(IMongoClient _client)
+        private void PrintOutput(List<dynamic> result)
         {
-            throw new NotImplementedException();
-        }
-
-        private void PrintOutput(List<dynamic> results)
-        {
-            foreach (var movie in results)
+            foreach (var movie in result)
             {
                 Console.WriteLine("Title: {0}, Last Updated: {1}"
                     , movie["title"].ToString()
                     , Convert.ToDateTime(movie["lastupdated"]).ToString("yyyy-MM-dd HH:mm:ss"));
             }
 
-            Console.WriteLine("Count: {0}", results.Count);
+            Console.WriteLine("Count: {0}", result.Count);
         }
     }
 }

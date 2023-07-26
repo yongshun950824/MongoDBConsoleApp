@@ -2,8 +2,6 @@
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.Json.Nodes;
@@ -21,7 +19,7 @@ namespace MongoDBConsoleApp.Solutions
         /// </summary>
         public void Run(IMongoClient _client)
         {
-            this.RunAsync(_client).GetAwaiter().GetResult();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -43,7 +41,7 @@ namespace MongoDBConsoleApp.Solutions
 
             List<Item> result = await GetAllAppItems(_client, "");
 
-            Console.WriteLine(JsonConvert.SerializeObject(result, Formatting.Indented));
+            Helpers.PrintFormattedJson(result);
         }
 
         private async Task InsertItem(IMongoClient _client, JsonObject item)
@@ -52,7 +50,7 @@ namespace MongoDBConsoleApp.Solutions
             {
                 ReferenceHandler = ReferenceHandler.Preserve
             };
-            var jsonString = System.Text.Json.JsonSerializer.Serialize(item, options);
+            var jsonString = JsonSerializer.Serialize(item, options);
 
             var document = BsonSerializer.Deserialize<BsonDocument>(jsonString);
 
@@ -69,7 +67,7 @@ namespace MongoDBConsoleApp.Solutions
             return await _collection.FindAsync(new BsonDocument()).Result.ToListAsync();
         }
 
-        public class Item
+        class Item
         {
             [BsonId]
             public ObjectId Id { get; set; }

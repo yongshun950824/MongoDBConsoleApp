@@ -21,15 +21,15 @@ namespace MongoDBConsoleApp.Solutions
             var _collection = _database.GetCollection<BsonDocument>("movies");
             var query = _collection.AsQueryable();
 
-            var results = query.Where(Filter3())
+            var result = query.Where(Filter3())
                 .Take(10);
 
-            PrintOutput(results);
+            Helpers.PrintFormattedJson(result);
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Run(_client));
         }
 
         /// <summary>
@@ -59,17 +59,9 @@ namespace MongoDBConsoleApp.Solutions
             var filter = Builders<BsonDocument>
                 .Filter
                 .Regex("title", "^" + "The" + ".*");
-                //.Regex("title", "the");
+            //.Regex("title", "the");
 
             return x => filter.Inject();
-        }
-
-        private void PrintOutput(dynamic results)
-        {
-            foreach (var movie in results)
-            {
-                Console.WriteLine("{0}", movie["title"].ToString());
-            }
         }
     }
 }

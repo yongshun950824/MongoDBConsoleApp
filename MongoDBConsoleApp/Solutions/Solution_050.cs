@@ -1,11 +1,8 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
-using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using static MongoDBConsoleApp.Program;
 
 namespace MongoDBConsoleApp.Solutions
 {
@@ -32,51 +29,46 @@ namespace MongoDBConsoleApp.Solutions
                 })
                 .ToList();
 
-            PrintOutput(players);
+            Helpers.PrintFormattedJson(players);
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Run(_client));
         }
 
-        private void PrintOutput(dynamic result)
+        class Tournament
         {
-            Console.WriteLine(JsonConvert.SerializeObject(result, Formatting.Indented));
+            public ObjectId Id { get; set; }
+            public string? Name { get; set; }
+            public string? Surface { get; set; }
+            public int? DrawSize { get; set; }
+            public string? Level { get; set; }
+            public string? Date { get; set; }
+            public List<Match> Matches { get; set; } = new List<Match>();
         }
-    }
 
-    public class Tournament
-    {
-        public ObjectId Id { get; set; }
-        public string? Name { get; set; }
-        public string? Surface { get; set; }
-        public int? DrawSize { get; set; }
-        public string? Level { get; set; }
-        public string? Date { get; set; }
-        public List<Match> Matches { get; set; } = new List<Match>();
-    }
+        class UnwindTournament
+        {
+            public ObjectId? Id { get; set; }
+            public string? Name { get; set; }
+            public string? Surface { get; set; }
+            public int? DrawSize { get; set; }
+            public string? Level { get; set; }
+            public string? Date { get; set; }
+            public Match Matches { get; set; } = new Match();
+        }
 
-    public class UnwindTournament
-    {
-        public ObjectId? Id { get; set; }
-        public string? Name { get; set; }
-        public string? Surface { get; set; }
-        public int? DrawSize { get; set; }
-        public string? Level { get; set; }
-        public string? Date { get; set; }
-        public Match Matches { get; set; } = new Match();
-    }
-
-    public class Match
-    {
-        public string Id { get; set; }
-        public string? MatchNum { get; set; }
-        public string? WinnerId { get; set; }
-        public string? LoserId { get; set; }
-        public string? Score { get; set; }
-        public string? BestOf { get; set; }
-        public string? Round { get; set; }
-        public string? TourneyId { get; set; }
+        class Match
+        {
+            public string Id { get; set; }
+            public string? MatchNum { get; set; }
+            public string? WinnerId { get; set; }
+            public string? LoserId { get; set; }
+            public string? Score { get; set; }
+            public string? BestOf { get; set; }
+            public string? Round { get; set; }
+            public string? TourneyId { get; set; }
+        }
     }
 }

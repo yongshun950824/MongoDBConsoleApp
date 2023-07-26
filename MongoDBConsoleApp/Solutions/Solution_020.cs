@@ -1,7 +1,6 @@
-﻿using MongoDB.Bson.Serialization.Attributes;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -16,7 +15,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -43,7 +42,7 @@ namespace MongoDBConsoleApp.Solutions
 
             var result = await UpdateWithPushSingleElement(_userPortfoliosCollection, userPflist);
 
-            PrintOutput(result);
+            Helpers.PrintFormattedJson(result);
         }
 
         private Task<UpdateResult> UpdateWithPushSingleElement(
@@ -64,11 +63,6 @@ namespace MongoDBConsoleApp.Solutions
                 Builders<UserPortfolioList>.Update.PushEach(x => x.Pflist, userPflist.Pflist));
         }
 
-        private void PrintOutput(UpdateResult result)
-        {
-            Console.WriteLine(JsonConvert.SerializeObject(result));
-        }
-
         [BsonIgnoreExtraElements]
         class UserPortfolioList
         {
@@ -85,6 +79,5 @@ namespace MongoDBConsoleApp.Solutions
             [BsonElement("symbols")]
             public List<string> Symbols { get; set; }
         }
-
     }
 }

@@ -1,8 +1,6 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using System;
 using System.Threading.Tasks;
 
 namespace MongoDBConsoleApp.Solutions
@@ -15,11 +13,6 @@ namespace MongoDBConsoleApp.Solutions
     internal class Solution_060 : ISolution
     {
         public void Run(IMongoClient _client)
-        {
-            this.RunAsync(_client).GetAwaiter().GetResult();
-        }
-
-        public async Task RunAsync(IMongoClient _client)
         {
             int playerId = 10000;
             Stats stats = new Stats
@@ -34,13 +27,15 @@ namespace MongoDBConsoleApp.Solutions
             var filter = Builders<BsonDocument>.Filter.Eq("PlayerId", playerId);
             var update = new BsonDocument("$inc", updateFields);
 
-            Console.WriteLine(update.ToJson(new JsonWriterSettings
-            {
-                Indent = true
-            }));
+            Helpers.PrintFormattedJson(update);
         }
 
-        public class Stats
+        public async Task RunAsync(IMongoClient _client)
+        {
+            await Task.Run(() => Run(_client));
+        }
+
+        class Stats
         {
             [BsonElement("Miss")]
             public uint Miss { get; set; }

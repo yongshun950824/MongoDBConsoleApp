@@ -1,7 +1,6 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using System;
 using System.Threading.Tasks;
 
 namespace MongoDBConsoleApp.Solutions
@@ -15,7 +14,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -23,7 +22,7 @@ namespace MongoDBConsoleApp.Solutions
             IMongoDatabase _db = _client.GetDatabase("demo");
             IMongoCollection<UserInfo> _collection = _db.GetCollection<UserInfo>("UserInfo");
 
-            BsonDocument greaterThanCriteria = 
+            BsonDocument greaterThanCriteria =
                 new BsonDocument() {
                     { "$gt", new BsonArray() {
                         new BsonDocument() {
@@ -66,25 +65,16 @@ namespace MongoDBConsoleApp.Solutions
               .As<UserInfo>()
               .ToListAsync();
 
-            PrintOutput(docs);
+            Helpers.PrintFormattedJson(docs);
         }
 
-        private void PrintOutput(dynamic result)
+        class UserInfo
         {
-            Console.WriteLine(
-                Newtonsoft.Json.JsonConvert.SerializeObject(
-                    result, 
-                    Newtonsoft.Json.Formatting.Indented)
-                );
+            [BsonId]
+            public ObjectId Id { get; set; }
+            public string UserId { get; set; }
+            public string UserName { get; set; }
+            public BsonDocument UserThemes { get; set; } = new BsonDocument();
         }
-    }
-
-    public class UserInfo
-    {
-        [BsonId]
-        public ObjectId Id { get; set; }
-        public string UserId { get; set; }
-        public string UserName { get; set; }
-        public BsonDocument UserThemes { get; set; } = new BsonDocument();
     }
 }

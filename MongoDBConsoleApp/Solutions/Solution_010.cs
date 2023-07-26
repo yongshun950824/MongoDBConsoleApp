@@ -1,7 +1,5 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -31,20 +29,12 @@ namespace MongoDBConsoleApp.Solutions
             var result = collection.Find(filterDefinition)
                 .ToList();
 
-            PrintOutput(result);
+            Helpers.PrintFormattedJson(result);
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
-        }
-
-        private void PrintOutput(List<Product> result)
-        {
-            foreach (var item in result)
-            {
-                Console.WriteLine(item.ToJson());
-            }
+            await Task.Run(() => Run(_client));
         }
 
         class Product

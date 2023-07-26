@@ -1,8 +1,6 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
@@ -18,7 +16,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            this.RunAsync(_client).GetAwaiter().GetResult();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -65,19 +63,16 @@ namespace MongoDBConsoleApp.Solutions
                 .Project<ContentEntity>(projection)
                 .FirstOrDefaultAsync(cancellationToken);
 
-            Console.WriteLine(entity.ToJson(new JsonWriterSettings
-            {
-                Indent = true
-            }));
+            Helpers.PrintFormattedJson(entity);
         }
-    }
 
-    public class ContentEntity
-    {
-        [BsonId]
-        public ObjectId Id { get; set; }
+        class ContentEntity
+        {
+            [BsonId]
+            public ObjectId Id { get; set; }
 
-        [BsonElement("Lines")]
-        public List<string> Lines2 { get; set; }
+            [BsonElement("Lines")]
+            public List<string> Lines2 { get; set; }
+        }
     }
 }

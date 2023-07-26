@@ -1,7 +1,6 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,21 +17,62 @@ namespace MongoDBConsoleApp.Solutions
         public void Run(IMongoClient _client)
         {
             IMongoDatabase _db = _client.GetDatabase("demo");
-            var _childDocument = _db.GetCollection<childDocument>("childDocument");
-            var _masterDocument = _db.GetCollection<masterDocument>("masterDocument");
+            var _childDocument = _db.GetCollection<ChildDocument>("childDocument");
+            var _masterDocument = _db.GetCollection<MasterDocument>("masterDocument");
 
-            var result = Solution2(_masterDocument);
-            PrintOutput(result);
+            #region Solution 1
+            //var result = GetResultWithLinq(_masterDocument, _childDocument);
+            #endregion
+
+            #region Solution 2
+            //var result = GetResultWithBsonDocument(_masterDocument);
+            #endregion
+
+            #region Solution 3
+            var result = GetResultWithAggregateFluent(_masterDocument);
+            #endregion
+
+            Helpers.PrintFormattedJson(result);
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Run(_client));
         }
 
-        private List<masterDocument> Solution1(IMongoCollection<masterDocument> _masterDocument)
+        /// <summary>
+        /// Solution 1: Get result with LINQ
+        /// </summary>
+        /// <param name="_masterDocument"></param>
+        /// <param name="_childDocument"></param>
+        /// <returns></returns>
+        private List<MasterDocument> GetResultWithLinq(IMongoCollection<MasterDocument> _masterDocument,
+            IMongoCollection<ChildDocument> _childDocument)
         {
-            PipelineDefinition<masterDocument, masterDocument> pipeline = new BsonDocument[]
+            return
+                (from a in _masterDocument.AsQueryable<MasterDocument>()
+                 join u in _childDocument.AsQueryable<ChildDocument>() on a.item equals u.sku
+                 select new { master = a, child = u } into au
+                 group au by au.master._id into masterGroup
+                 select new MasterDocument()
+                 {
+                     _id = masterGroup.Key,
+                     item = masterGroup.First().master.item,
+                     price = masterGroup.First().master.price,
+                     quantity = masterGroup.First().master.quantity,
+                     childDocuments = masterGroup.Select(x => x.child).ToList()
+                 })
+                .ToList();
+        }
+
+        /// <summary>
+        /// Solution 2: Get result with BsonDocument
+        /// </summary>
+        /// <param name="_masterDocument"></param>
+        /// <returns></returns>
+        private List<MasterDocument> GetResultWithBsonDocument(IMongoCollection<MasterDocument> _masterDocument)
+        {
+            PipelineDefinition<MasterDocument, MasterDocument> pipeline = new BsonDocument[]
             {
                 new BsonDocument("$lookup",
                     new BsonDocument
@@ -49,49 +89,27 @@ namespace MongoDBConsoleApp.Solutions
                 .ToList();
         }
 
-        private List<masterDocument> Solution2(IMongoCollection<masterDocument> _masterDocument)
+        /// <summary>
+        /// Solution 3: Get result with AggregateFluent
+        /// </summary>
+        /// <param name="_masterDocument"></param>
+        /// <returns></returns>
+        private List<MasterDocument> GetResultWithAggregateFluent(IMongoCollection<MasterDocument> _masterDocument)
         {
             return _masterDocument
                 .Aggregate()
-                .Lookup<childDocument, BsonDocument>(
+                .Lookup<ChildDocument, BsonDocument>(
                     "childDocument",
                     "item",
                     "sku",
                     "data")
                 .Match(Builders<BsonDocument>.Filter.ElemMatch<BsonValue>("data", new BsonDocument("sku", "almonds")))
-                .Project<masterDocument>(Builders<BsonDocument>.Projection
+                .Project<MasterDocument>(Builders<BsonDocument>.Projection
                     .Exclude("data"))
                 .ToList();
         }
 
-        private List<masterDocument> Solution3(IMongoCollection<masterDocument> _masterDocument,
-            IMongoCollection<childDocument> _childDocument)
-        {
-            return
-                (from a in _masterDocument.AsQueryable<masterDocument>()
-                 join u in _childDocument.AsQueryable<childDocument>() on a.item equals u.sku
-                 select new { master = a, child = u } into au
-                 group au by au.master._id into masterGroup
-                 select new masterDocument()
-                 {
-                     _id = masterGroup.Key,
-                     item = masterGroup.First().master.item,
-                     price = masterGroup.First().master.price,
-                     quantity = masterGroup.First().master.quantity,
-                     childDocuments = masterGroup.Select(x => x.child).ToList()
-                 })
-                .ToList();
-        }
-
-        private void PrintOutput(List<masterDocument> result)
-        {
-            Console.WriteLine(result.ToJson(new MongoDB.Bson.IO.JsonWriterSettings
-            {
-                Indent = true
-            }));
-        }
-
-        class masterDocument
+        class MasterDocument
         {
             public double _id { get; set; }
             public string item { get; set; }
@@ -99,10 +117,10 @@ namespace MongoDBConsoleApp.Solutions
             public double quantity { get; set; }
             // For Solution 3
             [BsonElement("data")]
-            public List<childDocument> childDocuments { get; set; }
+            public List<ChildDocument> childDocuments { get; set; }
         }
 
-        class childDocument
+        class ChildDocument
         {
             public double _id { get; set; }
             public string sku { get; set; }

@@ -1,7 +1,6 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using Newtonsoft.Json;
 using System;
 using System.Threading.Tasks;
 
@@ -16,7 +15,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            this.RunAsync(_client).GetAwaiter().GetResult();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -35,10 +34,10 @@ namespace MongoDBConsoleApp.Solutions
                     .Pull(d => d.Options, "Remove this one")
             );
 
-            Console.WriteLine(JsonConvert.SerializeObject(result, Formatting.Indented));
+            Helpers.PrintFormattedJson(result);
         }
 
-        internal class Descriptor
+        class Descriptor
         {
             [BsonId]
             public ObjectId Id { get; set; }

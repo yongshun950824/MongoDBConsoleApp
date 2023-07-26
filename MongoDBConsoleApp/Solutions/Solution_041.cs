@@ -19,7 +19,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -76,13 +76,10 @@ namespace MongoDBConsoleApp.Solutions
                 .Project(projection)
                 .ToListAsync();
 
-            Console.WriteLine(items.ToJson(new MongoDB.Bson.IO.JsonWriterSettings
-            {
-                Indent = true
-            }));
+            Helpers.PrintFormattedJson(items);
         }
 
-        public class ShopItem
+        class ShopItem
         { //item structure
             [BsonId]
             public Guid Id { get; set; }
@@ -98,7 +95,7 @@ namespace MongoDBConsoleApp.Solutions
             public DateTimeOffset CreatedDate { get; set; }
         }
 
-        public class RatingModel
+        class RatingModel
         {
             [BsonId]
             public Guid Id { get; set; }

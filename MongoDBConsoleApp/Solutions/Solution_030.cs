@@ -1,6 +1,5 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
-using System;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -20,15 +19,15 @@ namespace MongoDBConsoleApp.Solutions
             var _collection = _database.GetCollection<BsonDocument>("movies");
 
             string searchTerm = "The";
-            var results = _collection.Find(Filter1(searchTerm))
+            var result = _collection.Find(Filter1(searchTerm))
                 .ToList();
 
-            PrintOutput(results);
+            Helpers.PrintFormattedJson(result);
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Run(_client));
         }
 
         /// <summary>
@@ -43,7 +42,7 @@ namespace MongoDBConsoleApp.Solutions
         }
 
         /// <summary>
-        /// Solution 1
+        /// Solution 2
         /// </summary>
         /// <param name="searchTerm"></param>
         /// <returns></returns>
@@ -51,14 +50,6 @@ namespace MongoDBConsoleApp.Solutions
         {
             return Builders<BsonDocument>.Filter.Regex("title"
                 , new BsonRegularExpression("^" + searchTerm));
-        }
-
-        private void PrintOutput(dynamic results)
-        {
-            foreach (var movie in results)
-            {
-                Console.WriteLine("{0}", movie["title"].ToString());
-            }
         }
     }
 }

@@ -1,11 +1,8 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using Newtonsoft.Json;
-using System;
 using System.Linq;
 using System.Threading.Tasks;
-using static MongoDBConsoleApp.Program;
 
 namespace MongoDBConsoleApp.Solutions
 {
@@ -34,9 +31,9 @@ namespace MongoDBConsoleApp.Solutions
                             {
                                 { "input", "$logs" },
                                 { "cond", new BsonDocument(
-                                    "$eq", 
+                                    "$eq",
                                     BsonArray.Create(new string[] { "$$this.dataType", "System.string" })
-                                    ) 
+                                    )
                                 }
                             }
                         )
@@ -47,30 +44,25 @@ namespace MongoDBConsoleApp.Solutions
                 .Project<CustomEntity>(projection)
                 .ToList();
 
-            PrintOutput(result);
+            Helpers.PrintFormattedJson(result);
         }
 
-        public Task RunAsync(IMongoClient _client)
+        public async Task RunAsync(IMongoClient _client)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Run(_client));
         }
 
-        private void PrintOutput(dynamic result)
+        class CustomEntity
         {
-            Console.WriteLine(JsonConvert.SerializeObject(result, Formatting.Indented));
+            [BsonId]
+            public string Id { get; set; }
+            public LogEntity[] Logs { get; set; }
         }
-    }
 
-    public class CustomEntity
-    {
-        [BsonId]
-        public string Id { get; set; }
-        public LogEntity[] Logs { get; set; }
-    }
-
-    public class LogEntity
-    {
-        public string Data { get; set; }
-        public string DataType { get; set; }
+        class LogEntity
+        {
+            public string Data { get; set; }
+            public string DataType { get; set; }
+        }
     }
 }

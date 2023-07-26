@@ -1,5 +1,4 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
 using System;
@@ -17,7 +16,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            this.RunAsync(_client).GetAwaiter().GetResult();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -25,16 +24,17 @@ namespace MongoDBConsoleApp.Solutions
             IMongoDatabase _db = _client.GetDatabase("demo");
             IMongoCollection<BaseVehicle> _collection = _db.GetCollection<BaseVehicle>("vehicle");
 
+            #region Solution 1
             var result = await _collection.Find(GetQueryWithFluent(_db))
                 .ToListAsync();
+            #endregion
 
+            #region Solution 2
             //var result = await _collection.Find(GetQueryWithBsonDocument())
             //    .ToListAsync();
+            #endregion
 
-            Console.WriteLine(result.ToJson(new JsonWriterSettings
-            {
-                Indent = true
-            }));
+            Helpers.PrintFormattedJson(result);
         }
 
         /// <summary>
@@ -89,34 +89,34 @@ namespace MongoDBConsoleApp.Solutions
 
             return filter;
         }
-    }
 
-    [BsonDiscriminator(RootClass = true)]
-    [BsonKnownTypes(typeof(Suv), typeof(Truck))]
-    public abstract class BaseVehicle
-    {
-        public Guid Id { get; set; }
-        public string Title { get; set; }
-        public int YearOfProduction { get; set; }
-    }
+        [BsonDiscriminator(RootClass = true)]
+        [BsonKnownTypes(typeof(Suv), typeof(Truck))]
+        abstract class BaseVehicle
+        {
+            public Guid Id { get; set; }
+            public string Title { get; set; }
+            public int YearOfProduction { get; set; }
+        }
 
-    public class Suv : BaseVehicle
-    {
-        public List<Engine> Engines { get; set; }
-    }
+        class Suv : BaseVehicle
+        {
+            public List<Engine> Engines { get; set; }
+        }
 
-    public class Truck : BaseVehicle
-    {
-        public List<TruckPart> Parts { get; set; }
-    }
+        class Truck : BaseVehicle
+        {
+            public List<TruckPart> Parts { get; set; }
+        }
 
-    public class TruckPart
-    {
-        public List<Engine> Engines { get; set; }
-    }
+        class TruckPart
+        {
+            public List<Engine> Engines { get; set; }
+        }
 
-    public class Engine
-    {
-        public int HorsePower { get; set; }
+        class Engine
+        {
+            public int HorsePower { get; set; }
+        }
     }
 }

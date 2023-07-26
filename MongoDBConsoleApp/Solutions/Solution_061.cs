@@ -1,5 +1,4 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
@@ -19,7 +18,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            this.RunAsync(_client).GetAwaiter().GetResult();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -74,13 +73,10 @@ namespace MongoDBConsoleApp.Solutions
                 _defaultCompetitionDota2EntityFindOption,
                 token);
 
-            Console.WriteLine(existingCoefficientGroup.ToJson(new JsonWriterSettings
-            {
-                Indent = true
-            }));
+            Helpers.PrintFormattedJson(existingCoefficientGroup);
         }
 
-        public class CompetitionDota2Entity
+        class CompetitionDota2Entity
         {
             [BsonElement("id")]
             public string Id { get; set; }
@@ -113,7 +109,7 @@ namespace MongoDBConsoleApp.Solutions
             public TotalTime TotalTime { get; set; }
         }
 
-        public class Coefficient
+        class Coefficient
         {
             [BsonElement("id")]
             public string Id { get; set; }
@@ -134,7 +130,7 @@ namespace MongoDBConsoleApp.Solutions
             public int Probability { get; set; }
         }
 
-        public class CoefficientGroup
+        class CoefficientGroup
         {
             [BsonElement("id")]
             public string Id { get; set; }
@@ -149,9 +145,7 @@ namespace MongoDBConsoleApp.Solutions
             public List<Coefficient> Coefficients { get; set; }
         }
 
-
-
-        public class StartTime
+        class StartTime
         {
             [BsonElement("seconds")]
             public string Seconds { get; set; }
@@ -160,7 +154,7 @@ namespace MongoDBConsoleApp.Solutions
             public int Nanos { get; set; }
         }
 
-        public class TotalTime
+        class TotalTime
         {
             [BsonElement("seconds")]
             public string Seconds { get; set; }
