@@ -1,5 +1,4 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
 using System;
@@ -18,20 +17,24 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            this.RunAsync(_client).GetAwaiter().GetResult();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
         {
             Helpers.RegisterCamelCasePack();
 
+            #region Solution 1
             List<Model> result = (await GetDataWithAggregationPipeline(_client))
                 .ToList();
+            #endregion
 
-            Console.WriteLine(result.ToJson(new JsonWriterSettings
-            {
-                Indent = true
-            }));
+            #region Solution 2
+            //List<Model> result = (await GetDataWithBsonSerializer(_client))
+            //    .ToList();
+            #endregion
+
+            Helpers.PrintFormattedJson(result);
         }
 
         /// <summary>
@@ -89,41 +92,41 @@ namespace MongoDBConsoleApp.Solutions
 
             return _collection;
         }
-    }
 
-    public class Model
-    {
-        public ObjectId Id { get; set; }
-        public DateTime Date { get; set; }
-        public int Value { get; set; }
-    }
-
-    public class DateToLongConverter : IBsonSerializer<long>
-    {
-        public Type ValueType => typeof(long);
-
-        public long Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+        class Model
         {
-            var bsonReader = context.Reader;
-            return bsonReader.ReadDateTime();
+            public ObjectId Id { get; set; }
+            public DateTime Date { get; set; }
+            public int Value { get; set; }
         }
 
-        object IBsonSerializer.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+        class DateToLongConverter : IBsonSerializer<long>
         {
-            var bsonReader = context.Reader;
-            return bsonReader.ReadDateTime();
-        }
+            public Type ValueType => typeof(long);
 
-        public void Serialize(BsonSerializationContext context, BsonSerializationArgs args, long value)
-        {
-            var bsonWriter = context.Writer;
-            bsonWriter.WriteInt64(value);
-        }
+            public long Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+            {
+                var bsonReader = context.Reader;
+                return bsonReader.ReadDateTime();
+            }
 
-        public void Serialize(BsonSerializationContext context, BsonSerializationArgs args, object value)
-        {
-            var bsonWriter = context.Writer;
-            bsonWriter.WriteInt64((long)value);
+            object IBsonSerializer.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+            {
+                var bsonReader = context.Reader;
+                return bsonReader.ReadDateTime();
+            }
+
+            public void Serialize(BsonSerializationContext context, BsonSerializationArgs args, long value)
+            {
+                var bsonWriter = context.Writer;
+                bsonWriter.WriteInt64(value);
+            }
+
+            public void Serialize(BsonSerializationContext context, BsonSerializationArgs args, object value)
+            {
+                var bsonWriter = context.Writer;
+                bsonWriter.WriteInt64((long)value);
+            }
         }
     }
 }
