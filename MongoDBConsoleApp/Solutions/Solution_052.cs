@@ -1,6 +1,5 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
-using Newtonsoft.Json;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +15,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            this.RunAsync(_client).GetAwaiter().GetResult();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -45,10 +44,10 @@ namespace MongoDBConsoleApp.Solutions
                     })
                 .ToListAsync();
 
-            Console.WriteLine(JsonConvert.SerializeObject(monthlyTransactions, Formatting.Indented));
+            Helpers.PrintFormattedJson(monthlyNonIncomefilter);
         }
 
-        public class TransactionModel
+        class TransactionModel
         {
             public ObjectId Id { get; set; }
             public double Price { get; set; }

@@ -2,7 +2,6 @@
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +18,7 @@ namespace MongoDBConsoleApp.Solutions
     {
         public void Run(IMongoClient _client)
         {
-            this.RunAsync(_client).GetAwaiter().GetResult();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -52,10 +51,10 @@ namespace MongoDBConsoleApp.Solutions
             List<DocumentFields> documentFields = (await _collection.FindAsync(filter))
                 .ToList();
 
-            Console.WriteLine(JsonConvert.SerializeObject(documentFields, Formatting.Indented));
+            Helpers.PrintFormattedJson(documentFields);
         }
 
-        public class DocumentFields
+        class DocumentFields
         {
             [BsonId]
             [BsonRepresentation(BsonType.ObjectId)]
@@ -75,7 +74,7 @@ namespace MongoDBConsoleApp.Solutions
         }
 
         [BsonNoId]
-        public class DocumentType
+        class DocumentType
         {
             [BsonElement("id")]
             public string id { get; set; }
@@ -85,7 +84,7 @@ namespace MongoDBConsoleApp.Solutions
         }
 
         [BsonNoId]
-        public class DocumentTheme
+        class DocumentTheme
         {
             [BsonElement("id")]
             public string id { get; set; }

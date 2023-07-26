@@ -15,7 +15,7 @@ namespace MongoDBConsoleApp.Solutions
         /// </summary>
         public void Run(IMongoClient _client)
         {
-            this.RunAsync(_client).GetAwaiter().GetResult();
+            RunAsync(_client).GetAwaiter().GetResult();
         }
 
         public async Task RunAsync(IMongoClient _client)
@@ -34,7 +34,7 @@ namespace MongoDBConsoleApp.Solutions
         }
 
         #region Solution 1
-        //public class ReportRequest
+        //class ReportRequest
         //{
         //    public ReportRequest(string companyId)
         //    {
@@ -55,7 +55,7 @@ namespace MongoDBConsoleApp.Solutions
         #endregion
 
         #region Solution 2
-        public class ReportRequest
+        class ReportRequest
         {
             public ReportRequest(string companyId)
             {
