@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace MongoDBConsoleApp.Solutions
 {
     /// <summary>
-    /// <a href="https://stackoverflow.com/questions/75240005/c-sharp-mongodb-select-rows-by-their-sequence-number-in-one-query/75242146#75242146">
+    /// <a href="https://stackoverflow.com/questions/75240005/mongodb-select-rows-by-their-sequence-number-in-one-query/75242146#75242146">
     /// Question.
     /// </a>
     /// </summary>
