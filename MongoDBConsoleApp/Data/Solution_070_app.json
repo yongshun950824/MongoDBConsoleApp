@@ -1,0 +1,27 @@
+[
+  {
+    "_id": {
+      "$oid": "64c0cb56e065709fc271f3ad"
+    },
+    "isDeleted": false,
+    "versions": [
+      {
+        "group": "12345"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "64c0cb65e065709fc271f3af"
+    },
+    "isDeleted": false,
+    "versions": [
+      {
+        "group": "12345"
+      },
+      {
+        "group": "12346"
+      }
+    ]
+  }
+]

@@ -229,6 +229,7 @@
     <Compile Include="Solutions\Solution_064.cs" />
     <Compile Include="Solutions\Solution_065.cs" />
     <Compile Include="Solutions\Solution_068.cs" />
+    <Compile Include="Solutions\Solution_070.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -246,7 +247,6 @@
     <None Include="Data\Solution_012_visitTask.json" />
     <None Include="Data\Solution_016_Employee.json" />
     <None Include="Data\Solution_017_childDocument.json" />
-    <None Include="Data\Solution_023_User.json" />
     <None Include="Data\Solution_027_masterDocument.json" />
     <None Include="Data\Solution_017_masterDocument.json" />
     <None Include="Data\Solution_018_testA.json" />
@@ -296,6 +296,7 @@
     <None Include="Data\Solution_065_Portfolio.json" />
     <None Include="Data\Solution_065_Securities.json" />
     <None Include="Data\Solution_068_FHIR.json" />
+    <None Include="Data\Solution_070_app.json" />
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />
     <None Include="packages.config" />
