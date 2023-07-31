@@ -108,6 +108,7 @@
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Security.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Security.AccessControl.5.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
@@ -163,6 +164,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\EnumExtensions.cs" />
     <Compile Include="Helpers\Helpers.cs" />
     <Compile Include="Helpers\IMongoCollectionExtensions.cs" />
     <Compile Include="ISolution.cs" />
@@ -230,6 +232,7 @@
     <Compile Include="Solutions\Solution_065.cs" />
     <Compile Include="Solutions\Solution_068.cs" />
     <Compile Include="Solutions\Solution_070.cs" />
+    <Compile Include="Solutions\Solution_071.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -297,6 +300,7 @@
     <None Include="Data\Solution_065_Securities.json" />
     <None Include="Data\Solution_068_FHIR.json" />
     <None Include="Data\Solution_070_app.json" />
+    <None Include="Data\Solution_071_CloudFile.json" />
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />
     <None Include="packages.config" />

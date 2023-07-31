@@ -76,6 +76,8 @@ Written Solutions for StackOverflow questions.
 | [Solution_064][119] | [Using `$toLong` in MongoDB C# Queries][120] |
 | [Solution_065][121] | [MongoDB .NET Driver - $lookup result to one merged & grouped array][122] |
 | [Solution_068][123] | [How to filter using FHIR Identifiers from C# to mongoDB][124] |
+| [Solution_070][127] | [How to check last element's property of an array using MongoDB C# driver][128] |
+| [Solution_071][129] | [Serialization inside Mongodb driver filter][130] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -262,3 +264,9 @@ Written Solutions for StackOverflow questions.
 
 [125]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_053.cs
 [126]: https://stackoverflow.com/questions/73203113/mongodb-net-driver-how-to-access-nested-element/74600693#74600693
+
+[127]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_070.cs
+[128]: https://stackoverflow.com/questions/76768682/how-to-check-last-elements-property-of-an-array-using-mongodb-c-sharp-driver/76769126#76769126
+
+[129]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_071.cs
+[130]: https://stackoverflow.com/questions/76782517/serialization-inside-mongodb-driver-filter/76784612#76784612

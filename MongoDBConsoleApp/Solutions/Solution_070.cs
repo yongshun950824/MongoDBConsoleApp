@@ -8,6 +8,11 @@ using System.Threading.Tasks;
 
 namespace MongoDBConsoleApp.Solutions
 {
+    /// <summary>
+    /// <a href="https://stackoverflow.com/questions/76768682/how-to-check-last-elements-property-of-an-array-using-mongodb-c-sharp-driver/76769126#76769126">
+    /// Question.
+    /// </a>
+    /// </summary>
     internal class Solution_070 : ISolution
     {
         public void Run(IMongoClient _client)
