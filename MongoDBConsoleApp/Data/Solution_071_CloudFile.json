@@ -1,18 +1,20 @@
-[{
-  "_id": {
-    "$oid": "64be51e098cd0038f61b4bea"
-  },
-  "name": "root",
-  "type": "root",
-  "user": {
-    "$oid": "64bd9539a534d7d72e356484"
-  },
-  "childs": [
-    {
-      "$oid": "64a9d2429d1ef838631c50eb"
+[
+  {
+    "_id": {
+      "$oid": "64be51e098cd0038f61b4bea"
     },
-    {
-      "$oid": "64a9d4939d1ef838631c50ef"
-    }
-  ]
-}]
+    "name": "root",
+    "type": "root",
+    "user": {
+      "$oid": "64bd9539a534d7d72e356484"
+    },
+    "childs": [
+      {
+        "$oid": "64a9d2429d1ef838631c50eb"
+      },
+      {
+        "$oid": "64a9d4939d1ef838631c50ef"
+      }
+    ]
+  }
+]

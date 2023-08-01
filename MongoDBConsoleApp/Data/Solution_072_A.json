@@ -1,0 +1,22 @@
+[
+  {
+    "_id": {
+      "$oid": "64c7a3b8fd404a75d214081a"
+    },
+    "Status": {
+      "Code": 1,
+      "Timestamp": "2023-07-30T00:00:00.000Z",
+      "UserId": 1
+    }
+  },
+  {
+    "_id": {
+      "$oid": "64c7a409fd404a75d214081b"
+    },
+    "Status": {
+      "Code": "One",
+      "Timestamp": "2023-07-31T00:00:00.000Z",
+      "UserId": 2
+    }
+  }
+]
