@@ -78,6 +78,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_068][123] | [How to filter using FHIR Identifiers from C# to mongoDB][124] |
 | [Solution_070][127] | [How to check last element's property of an array using MongoDB C# driver][128] |
 | [Solution_071][129] | [Serialization inside Mongodb driver filter][130] |
+| [Solution_072][131] | [MongoDB C# Property serializing string and int for query][132] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -270,3 +271,6 @@ Written Solutions for StackOverflow questions.
 
 [129]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_071.cs
 [130]: https://stackoverflow.com/questions/76782517/serialization-inside-mongodb-driver-filter/76784612#76784612
+
+[131]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_072.cs
+[132]: https://stackoverflow.com/questions/76803275/mongodb-c-sharp-property-serializing-string-and-int-for-query/76804531#76804531
