@@ -8,6 +8,11 @@ using System.Threading.Tasks;
 
 namespace MongoDBConsoleApp.Solutions
 {
+    /// <summary>
+    /// <a href="https://stackoverflow.com/questions/76964075/mongodb-c-sharp-driver-convert-time-buckets-to-a-dictionary-with-key-as-bucket/76966121#76966121">
+    /// Question.
+    /// </a>
+    /// </summary>
     internal class Solution_073 : ISolution
     {
         public void Run(IMongoClient _client)

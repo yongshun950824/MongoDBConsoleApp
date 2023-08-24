@@ -79,6 +79,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_070][127] | [How to check last element's property of an array using MongoDB C# driver][128] |
 | [Solution_071][129] | [Serialization inside Mongodb driver filter][130] |
 | [Solution_072][131] | [MongoDB C# Property serializing string and int for query][132] |
+| [Solution_073][133] | [MongoDB C# Driver: Convert time buckets to a dictionary with key as bucket's time][134] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -274,3 +275,6 @@ Written Solutions for StackOverflow questions.
 
 [131]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_072.cs
 [132]: https://stackoverflow.com/questions/76803275/mongodb-c-sharp-property-serializing-string-and-int-for-query/76804531#76804531
+
+[133]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_073.cs
+[134]: https://stackoverflow.com/questions/76964075/mongodb-c-sharp-driver-convert-time-buckets-to-a-dictionary-with-key-as-bucket/76966121#76966121
