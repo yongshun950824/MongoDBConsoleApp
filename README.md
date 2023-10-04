@@ -65,7 +65,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_052][99] | [MongoDB .NET Driver - Aggregation query with calculation based on category][100] |
 | [Solution_053][125] | [MongoDB .NET Driver - How to access nested element][126] |
 | [Solution_055][101] | [newbie to CosmoDB how to query collection with multiple values?][102] |
-| [Solution_056][103] | [Need help - Filter list of array based on specific item id using MongoDb C# driver][104] |
+| [Solution_056][103] | [MongoDB C# driver - Filter list of array based on specific item id][104] |
 | [Solution_057][105] | [Cannot dynamically create an instance of type 'System.Text.Json.Nodes.JsonObject'. Reason: No parameterless constructor defined][106] |
 | [Solution_058][107] | [MongoDB C#/.NET Driver - How to deserialize UUID and ISODate][108] |
 | [Solution_059][109] | [MongoDB - How do I join the second collection to a child document using LINQ][110] |
@@ -232,7 +232,7 @@ Written Solutions for StackOverflow questions.
 [102]: https://stackoverflow.com/questions/74883970/newbie-to-cosmodb-how-to-query-collection-with-multiple-values/74884127#
 
 [103]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_056.cs
-[104]: https://stackoverflow.com/questions/74909307/need-help-filter-list-of-array-based-on-specific-item-id-using-mongodb-c-sharp/74917629#74917629
+[104]: https://stackoverflow.com/questions/74909307/mongodb-c-sharp-driver-filter-list-of-array-based-on-specific-item-id/74917629#74917629
 
 [105]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_057.cs
 [106]: https://stackoverflow.com/questions/75000121/cannot-dynamically-create-an-instance-of-type-system-text-json-nodes-jsonobject/75000361#75000361
