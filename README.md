@@ -80,6 +80,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_071][129] | [Serialization inside Mongodb driver filter][130] |
 | [Solution_072][131] | [MongoDB C# Property serializing string and int for query][132] |
 | [Solution_073][133] | [MongoDB C# Driver: Convert time buckets to a dictionary with key as bucket's time][134] |
+| [Solution_074][135] | [How to update different fields based on conditions in single call][136] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -278,3 +279,6 @@ Written Solutions for StackOverflow questions.
 
 [133]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_073.cs
 [134]: https://stackoverflow.com/questions/76964075/mongodb-c-sharp-driver-convert-time-buckets-to-a-dictionary-with-key-as-bucket/76966121#76966121
+
+[135]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_074.cs
+[136]: https://stackoverflow.com/questions/75315776/how-to-update-different-fields-based-on-conditions-in-single-call/75317967#75317967
