@@ -1,0 +1,40 @@
+[
+  {
+    "_id": {
+      "$oid": "6555a7d7c2d9de74abb09de8"
+    },
+    "tagName": "tag1",
+    "tagValue": "value1",
+    "categories": [
+      "Category-1"
+    ],
+    "otherField1": [],
+    "otherField2": "something-else-1"
+  },
+  {
+    "_id": {
+      "$oid": "6555a865c2d9de74abb09de9"
+    },
+    "tagName": "tag2",
+    "tagValue": "value2",
+    "categories": [
+      "Category-1",
+      "Category-2"
+    ],
+    "otherField1": [],
+    "otherField2": "something-else-2"
+  },
+  {
+    "_id": {
+      "$oid": "6555c652c2d9de74abb09df2"
+    },
+    "tagName": "tag3",
+    "tagValue": "value3",
+    "categories": [
+      "Category-2",
+      "Category-3"
+    ],
+    "otherField1": [],
+    "otherField2": "something-else-3"
+  }
+]
