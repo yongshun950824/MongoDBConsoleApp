@@ -1,5 +1,5 @@
-﻿using MongoDB.Bson.Serialization.Conventions;
-using MongoDB.Driver;
+﻿using MongoDB.Driver;
+using MongoDB.Driver.Core.Events;
 using MongoDBConsoleApp.Solutions;
 using System;
 using System.Configuration;
@@ -18,12 +18,33 @@ namespace MongoDBConsoleApp
             );
             settings.LinqProvider = MongoDB.Driver.Linq.LinqProvider.V3;
 
+            if (GetAppSettings<bool>("TraceMongoEvent"))
+            {
+                // Query Interceptor: https://stackoverflow.com/q/48947260/8017690
+                settings.ClusterConfigurator = cb =>
+                {
+                    cb.Subscribe<CommandStartedEvent>(e =>
+                    {
+                        Console.WriteLine(e.CommandName);
+                        Helpers.PrintFormattedJson(e.Command);
+                    });
+                };
+            }
+
             MongoClient _client = new MongoClient(settings);
 
             ISolution solution = new Solution_063();
             await solution.RunAsync(_client);
 
             Console.ReadLine();
+        }
+
+        static T GetAppSettings<T>(string key)
+        {
+            if (String.IsNullOrEmpty(ConfigurationManager.AppSettings[key]))
+                return default;
+
+            return (T)Convert.ChangeType(ConfigurationManager.AppSettings[key], typeof(T));
         }
     }
 }
