@@ -1,0 +1,25 @@
+[
+  {
+    "_id": {
+      "$oid": "65644312df4afd43fcd75a1b"
+    },
+    "StatusText": "Finished",
+    "GoodsList": [
+      {
+        "name": "testName",
+        "price": 32,
+        "number": 1,
+        "id": 68345,
+        "cate_id": 6208,
+        "image": "/testimg.png",
+        "use_property": 1,
+        "props_text": "standardtext，standardtext2",
+        "props": [
+          582,
+          585
+        ]
+      }
+    ],
+    "Notes": "this.form.remark"
+  }
+]
