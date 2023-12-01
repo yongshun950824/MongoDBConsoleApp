@@ -81,6 +81,8 @@ Written Solutions for StackOverflow questions.
 | [Solution_072][131] | [MongoDB C# Property serializing string and int for query][132] |
 | [Solution_073][133] | [MongoDB C# Driver: Convert time buckets to a dictionary with key as bucket's time][134] |
 | [Solution_074][135] | [How to update different fields based on conditions in single call][136] |
+| [Solution_075][137] | [MongoDB query to transform documents][138] |
+| [Solution_076][139] | [c# Problem reading MongoDb data as name + value][140] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -282,3 +284,9 @@ Written Solutions for StackOverflow questions.
 
 [135]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_074.cs
 [136]: https://stackoverflow.com/questions/75315776/how-to-update-different-fields-based-on-conditions-in-single-call/75317967#75317967
+
+[137]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_075.cs
+[138]: https://stackoverflow.com/questions/77493473/mongodb-query-to-transform-documents/77493707#77493707
+
+[139]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_076.cs
+[140]: https://stackoverflow.com/questions/77555006/c-sharp-problem-reading-mongodb-data-as-name-value/77555092#77555092
