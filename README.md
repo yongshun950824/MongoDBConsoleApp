@@ -83,6 +83,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_074][135] | [How to update different fields based on conditions in single call][136] |
 | [Solution_075][137] | [MongoDB query to transform documents][138] |
 | [Solution_076][139] | [c# Problem reading MongoDb data as name + value][140] |
+| [Solution_077][141] | [Delete and return document in nested array with mongodb c# driver][142] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -290,3 +291,6 @@ Written Solutions for StackOverflow questions.
 
 [139]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_076.cs
 [140]: https://stackoverflow.com/questions/77555006/c-sharp-problem-reading-mongodb-data-as-name-value/77555092#77555092
+
+[141]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_077.cs
+[142]: https://stackoverflow.com/questions/77609329/delete-and-return-document-in-nested-array-with-mongodb-c-sharp-driver/77609926#77609926
