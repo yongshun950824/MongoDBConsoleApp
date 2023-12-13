@@ -84,6 +84,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_075][137] | [MongoDB query to transform documents][138] |
 | [Solution_076][139] | [c# Problem reading MongoDb data as name + value][140] |
 | [Solution_077][141] | [Delete and return document in nested array with mongodb c# driver][142] |
+| [Solution_078][143] | [Dotnet API Error Type System.Text.Json.JsonElement is not configured as a type that is allowed to be serialized for this instance of ObjectSerializer][144] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -294,3 +295,6 @@ Written Solutions for StackOverflow questions.
 
 [141]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_077.cs
 [142]: https://stackoverflow.com/questions/77609329/delete-and-return-document-in-nested-array-with-mongodb-c-sharp-driver/77609926#77609926
+
+[143]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_078.cs
+[144]: https://stackoverflow.com/questions/77484005/dotnet-api-error-type-system-text-json-jsonelement-is-not-configured-as-a-type-t/77484807#77484807
