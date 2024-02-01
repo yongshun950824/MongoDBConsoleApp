@@ -78,7 +78,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_068][123] | [How to filter using FHIR Identifiers from C# to mongoDB][124] |
 | [Solution_070][127] | [How to check last element's property of an array using MongoDB C# driver][128] |
 | [Solution_071][129] | [Serialization inside Mongodb driver filter][130] |
-| [Solution_072][131] | [MongoDB C# Property serializing string and int for query][132] |
+| [Solution_072][131] | [MongoDB C# Property serializing with string and int value for query][132] |
 | [Solution_073][133] | [MongoDB C# Driver: Convert time buckets to a dictionary with key as bucket's time][134] |
 | [Solution_074][135] | [How to update different fields based on conditions in single call][136] |
 | [Solution_075][137] | [MongoDB query to transform documents][138] |
@@ -279,7 +279,7 @@ Written Solutions for StackOverflow questions.
 [130]: https://stackoverflow.com/questions/76782517/serialization-inside-mongodb-driver-filter/76784612#76784612
 
 [131]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_072.cs
-[132]: https://stackoverflow.com/questions/76803275/mongodb-c-sharp-property-serializing-string-and-int-for-query/76804531#76804531
+[132]: https://stackoverflow.com/questions/76803275/mongodb-c-sharp-property-serializing-with-string-and-int-value-for-query/76804531#76804531
 
 [133]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_073.cs
 [134]: https://stackoverflow.com/questions/76964075/mongodb-c-sharp-driver-convert-time-buckets-to-a-dictionary-with-key-as-bucket/76966121#76966121
