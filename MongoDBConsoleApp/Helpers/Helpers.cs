@@ -1,5 +1,6 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Conventions;
+using MongoDBConsoleApp.Conventions;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -31,6 +32,13 @@ namespace MongoDBConsoleApp
             {
                 Console.WriteLine(JsonConvert.SerializeObject(result, Formatting.Indented));
             }
+        }
+
+        public static void MongoDbJsonPropertyConvention()
+        {
+            var pack = new ConventionPack();
+            pack.Add(new MongoDbJsonPropertyConvention());
+            ConventionRegistry.Register("Read JsonProperty Attribute", pack, t => true);
         }
     }
 }
