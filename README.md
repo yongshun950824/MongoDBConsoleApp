@@ -86,6 +86,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_077][141] | [Delete and return document in nested array with mongodb c# driver][142] |
 | [Solution_078][143] | [Dotnet API Error Type System.Text.Json.JsonElement is not configured as a type that is allowed to be serialized for this instance of ObjectSerializer][144] |
 | [Solution_079][145] | [MongoDB .NET Driver - Update field in nested sub array document][146] |
+| [Solution_080][147] | [MongoDB Issues with translating JS query to C#][148] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -302,3 +303,6 @@ Written Solutions for StackOverflow questions.
 
 [145]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_079.cs
 [146]: https://stackoverflow.com/questions/78272913/mongodb-net-driver-update-field-in-nested-sub-array-document/78274046#78274046
+
+[147]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_080.cs
+[148]: https://stackoverflow.com/questions/78283250/mongodb-issues-with-translating-js-query-to-c-sharp/78283453#78283453
