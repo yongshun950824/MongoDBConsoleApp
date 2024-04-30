@@ -76,6 +76,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_064][119] | [Using `$toLong` in MongoDB C# Queries][120] |
 | [Solution_065][121] | [MongoDB .NET Driver - $lookup result to one merged & grouped array][122] |
 | [Solution_068][123] | [How to filter using FHIR Identifiers from C# to mongoDB][124] |
+| [Solution_069][152] | [MongoDB - How to query with multiple AND conditions for phone numbers using FilterDefinition][153] |
 | [Solution_070][127] | [How to check last element's property of an array using MongoDB C# driver][128] |
 | [Solution_071][129] | [Serialization inside Mongodb driver filter][130] |
 | [Solution_072][131] | [MongoDB C# Property serializing string and int for query][132] |
@@ -274,3 +275,6 @@ Written Solutions for StackOverflow questions.
 
 [131]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_072.cs
 [132]: https://stackoverflow.com/questions/76803275/mongodb-c-sharp-property-serializing-string-and-int-for-query/76804531#76804531
+
+[152]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_069.cs
+[153]: https://stackoverflow.com/questions/76740049/mongodb-how-to-query-with-multiple-and-conditions-for-phone-numbers-using-filt/76742141#76742141
