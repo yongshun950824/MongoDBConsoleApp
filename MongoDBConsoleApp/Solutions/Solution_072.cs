@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace MongoDBConsoleApp.Solutions
 {
     /// <summary>
-    /// <a href="https://stackoverflow.com/questions/76803275/mongodb-c-sharp-property-serializing-string-and-int-for-query/76804531#76804531">
+    /// <a href="https://stackoverflow.com/questions/76803275/mongodb-c-sharp-property-serializing-with-string-and-int-value-for-query/76804531#76804531">
     /// Question.
     /// </a>
     /// </summary>
