@@ -1,0 +1,13 @@
+[
+  {
+    "_id": {
+      "$oid": "64e6c1e17bd0952e3bb391d9"
+    },
+    "licenseId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "transactionDay": "2023-08-23",
+    "startTime": "2023-08-23T13:00:00Z",
+    "endTime": "2023-08-23T13:01:00Z",
+    "count": 1,
+    "size": 12345
+  }
+]

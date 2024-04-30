@@ -235,6 +235,12 @@
     <Compile Include="Solutions\Solution_070.cs" />
     <Compile Include="Solutions\Solution_071.cs" />
     <Compile Include="Solutions\Solution_072.cs" />
+    <Compile Include="Solutions\Solution_073.cs" />
+    <Compile Include="Solutions\Solution_074.cs" />
+    <Compile Include="Solutions\Solution_075.cs" />
+    <Compile Include="Solutions\Solution_076.cs" />
+    <Compile Include="Solutions\Solution_077.cs" />
+    <Compile Include="Solutions\Solution_078.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -304,6 +310,11 @@
     <None Include="Data\Solution_070_app.json" />
     <None Include="Data\Solution_071_CloudFile.json" />
     <None Include="Data\Solution_072_A.json" />
+    <None Include="Data\Solution_073_transaction.json" />
+    <None Include="Data\Solution_074_job.json" />
+    <None Include="Data\Solution_075_tag_categories.json" />
+    <None Include="Data\Solution_076.json" />
+    <None Include="Data\Solution_077_holder.json" />
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />
     <None Include="packages.config" />

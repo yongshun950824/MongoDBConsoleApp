@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace MongoDBConsoleApp.Solutions
 {
     /// <summary>
-    /// <a href="https://stackoverflow.com/questions/74909307/need-help-filter-list-of-array-based-on-specific-item-id-using-mongodb-c-sharp/74917629#74917629">
+    /// <a href="https://stackoverflow.com/questions/74909307/mongodb-c-sharp-driver-filter-list-of-array-based-on-specific-item-id/74917629#74917629">
     /// Question.
     /// </a>
     /// </summary>

@@ -65,7 +65,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_052][99] | [MongoDB .NET Driver - Aggregation query with calculation based on category][100] |
 | [Solution_053][125] | [MongoDB .NET Driver - How to access nested element][126] |
 | [Solution_055][101] | [newbie to CosmoDB how to query collection with multiple values?][102] |
-| [Solution_056][103] | [Need help - Filter list of array based on specific item id using MongoDb C# driver][104] |
+| [Solution_056][103] | [MongoDB C# driver - Filter list of array based on specific item id][104] |
 | [Solution_057][105] | [Cannot dynamically create an instance of type 'System.Text.Json.Nodes.JsonObject'. Reason: No parameterless constructor defined][106] |
 | [Solution_058][107] | [MongoDB C#/.NET Driver - How to deserialize UUID and ISODate][108] |
 | [Solution_059][109] | [MongoDB - How do I join the second collection to a child document using LINQ][110] |
@@ -79,7 +79,13 @@ Written Solutions for StackOverflow questions.
 | [Solution_069][152] | [MongoDB - How to query with multiple AND conditions for phone numbers using FilterDefinition][153] |
 | [Solution_070][127] | [How to check last element's property of an array using MongoDB C# driver][128] |
 | [Solution_071][129] | [Serialization inside Mongodb driver filter][130] |
-| [Solution_072][131] | [MongoDB C# Property serializing string and int for query][132] |
+| [Solution_072][131] | [MongoDB C# Property serializing with string and int value for query][132] |
+| [Solution_073][133] | [MongoDB C# Driver: Convert time buckets to a dictionary with key as bucket's time][134] |
+| [Solution_074][135] | [How to update different fields based on conditions in single call][136] |
+| [Solution_075][137] | [MongoDB query to transform documents][138] |
+| [Solution_076][139] | [c# Problem reading MongoDb data as name + value][140] |
+| [Solution_077][141] | [Delete and return document in nested array with mongodb c# driver][142] |
+| [Solution_078][143] | [Dotnet API Error Type System.Text.Json.JsonElement is not configured as a type that is allowed to be serialized for this instance of ObjectSerializer][144] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -232,7 +238,7 @@ Written Solutions for StackOverflow questions.
 [102]: https://stackoverflow.com/questions/74883970/newbie-to-cosmodb-how-to-query-collection-with-multiple-values/74884127#
 
 [103]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_056.cs
-[104]: https://stackoverflow.com/questions/74909307/need-help-filter-list-of-array-based-on-specific-item-id-using-mongodb-c-sharp/74917629#74917629
+[104]: https://stackoverflow.com/questions/74909307/mongodb-c-sharp-driver-filter-list-of-array-based-on-specific-item-id/74917629#74917629
 
 [105]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_057.cs
 [106]: https://stackoverflow.com/questions/75000121/cannot-dynamically-create-an-instance-of-type-system-text-json-nodes-jsonobject/75000361#75000361
@@ -274,7 +280,25 @@ Written Solutions for StackOverflow questions.
 [130]: https://stackoverflow.com/questions/76782517/serialization-inside-mongodb-driver-filter/76784612#76784612
 
 [131]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_072.cs
-[132]: https://stackoverflow.com/questions/76803275/mongodb-c-sharp-property-serializing-string-and-int-for-query/76804531#76804531
+[132]: https://stackoverflow.com/questions/76803275/mongodb-c-sharp-property-serializing-with-string-and-int-value-for-query/76804531#76804531
+
+[133]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_073.cs
+[134]: https://stackoverflow.com/questions/76964075/mongodb-c-sharp-driver-convert-time-buckets-to-a-dictionary-with-key-as-bucket/76966121#76966121
+
+[135]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_074.cs
+[136]: https://stackoverflow.com/questions/75315776/how-to-update-different-fields-based-on-conditions-in-single-call/75317967#75317967
+
+[137]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_075.cs
+[138]: https://stackoverflow.com/questions/77493473/mongodb-query-to-transform-documents/77493707#77493707
+
+[139]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_076.cs
+[140]: https://stackoverflow.com/questions/77555006/c-sharp-problem-reading-mongodb-data-as-name-value/77555092#77555092
+
+[141]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_077.cs
+[142]: https://stackoverflow.com/questions/77609329/delete-and-return-document-in-nested-array-with-mongodb-c-sharp-driver/77609926#77609926
+
+[143]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_078.cs
+[144]: https://stackoverflow.com/questions/77484005/dotnet-api-error-type-system-text-json-jsonelement-is-not-configured-as-a-type-t/77484807#77484807
 
 [152]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_069.cs
 [153]: https://stackoverflow.com/questions/76740049/mongodb-how-to-query-with-multiple-and-conditions-for-phone-numbers-using-filt/76742141#76742141
