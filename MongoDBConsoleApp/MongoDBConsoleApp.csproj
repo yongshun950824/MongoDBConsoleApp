@@ -310,6 +310,7 @@
     <None Include="Data\Solution_065_Portfolio.json" />
     <None Include="Data\Solution_065_Securities.json" />
     <None Include="Data\Solution_068_FHIR.json" />
+    <None Include="Data\Solution_069_people.json" />
     <None Include="Data\Solution_070_app.json" />
     <None Include="Data\Solution_071_CloudFile.json" />
     <None Include="Data\Solution_072_A.json" />
