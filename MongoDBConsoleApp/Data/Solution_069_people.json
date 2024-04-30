@@ -1,0 +1,23 @@
+[
+  {
+    "_id": {
+      "$oid": "61791ecf2abf206fd5e5e322"
+    },
+    "LastName": "Smith",
+    "Type": "P",
+    "PhoneNumbers": [
+      {
+        "Type": "home",
+        "Value": "111-111-1111"
+      },
+      {
+        "Type": "cell",
+        "Value": "222-222-2222"
+      },
+      {
+        "Type": "office",
+        "Value": "333-333-3333"
+      }
+    ]
+  }
+]
