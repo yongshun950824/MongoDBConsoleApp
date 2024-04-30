@@ -87,6 +87,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_078][143] | [Dotnet API Error Type System.Text.Json.JsonElement is not configured as a type that is allowed to be serialized for this instance of ObjectSerializer][144] |
 | [Solution_079][145] | [MongoDB .NET Driver - Update field in nested sub array document][146] |
 | [Solution_080][147] | [MongoDB Issues with translating JS query to C#][148] |
+| [Solution_081][149] | <ul><li>[MongoDB Entity Framework Core: Expression Must be Writeable][150]</li> <li>[Entity Framework: Save Private Field][151]</li></ul> |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -306,3 +307,7 @@ Written Solutions for StackOverflow questions.
 
 [147]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_080.cs
 [148]: https://stackoverflow.com/questions/78283250/mongodb-issues-with-translating-js-query-to-c-sharp/78283453#78283453
+
+[149]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_081.cs
+[150]: https://stackoverflow.com/questions/78356762/mongodb-entity-framework-core-expression-must-be-writeable/78360100#78360100
+[151]: https://stackoverflow.com/questions/78359482/entity-framework-save-private-field/78360277#78360277
