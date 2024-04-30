@@ -232,6 +232,7 @@
     <Compile Include="Solutions\Solution_064.cs" />
     <Compile Include="Solutions\Solution_065.cs" />
     <Compile Include="Solutions\Solution_068.cs" />
+    <Compile Include="Solutions\Solution_069.cs" />
     <Compile Include="Solutions\Solution_070.cs" />
     <Compile Include="Solutions\Solution_071.cs" />
     <Compile Include="Solutions\Solution_072.cs" />
