@@ -164,6 +164,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conventions\MongoDbJsonPropertyConvention.cs" />
     <Compile Include="Helpers\EnumExtensions.cs" />
     <Compile Include="Helpers\Helpers.cs" />
     <Compile Include="Helpers\IMongoCollectionExtensions.cs" />
@@ -241,6 +242,8 @@
     <Compile Include="Solutions\Solution_076.cs" />
     <Compile Include="Solutions\Solution_077.cs" />
     <Compile Include="Solutions\Solution_078.cs" />
+    <Compile Include="Solutions\Solution_079.cs" />
+    <Compile Include="Solutions\Solution_080.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -316,6 +319,8 @@
     <None Include="Data\Solution_075_tag_categories.json" />
     <None Include="Data\Solution_076.json" />
     <None Include="Data\Solution_077_holder.json" />
+    <None Include="Data\Solution_079_product.json" />
+    <None Include="Data\Solution_080_sirens.json" />
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />
     <None Include="packages.config" />
@@ -326,6 +331,7 @@
     <Content Include="Core\Compression\Zstandard\lib\win\libzstd.dll" />
     <Content Include="mongocrypt.dll" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions />
   <Import Project="..\packages\MongoDB.Libmongocrypt.1.5.5\build\MongoDB.Libmongocrypt.targets" Condition="Exists('..\packages\MongoDB.Libmongocrypt.1.5.5\build\MongoDB.Libmongocrypt.targets')" />

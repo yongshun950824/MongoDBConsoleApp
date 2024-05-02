@@ -1,0 +1,43 @@
+[
+  {
+    "_id": {
+      "$binary": {
+        "base64": "+rOZ9RBMrkK5zbMpqvomaw==",
+        "subType": "03"
+      }
+    },
+    "Title": "Prod 1",
+    "Variants": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "r3NwpqZoXUuJ2hc2sd704A==",
+            "subType": "03"
+          }
+        },
+        "CategoryImageId": {
+          "$binary": {
+            "base64": "H/5+3Kx51UGFcOb/IEh1Xw==",
+            "subType": "03"
+          }
+        },
+        "ImageName": "New image"
+      },
+      {
+        "_id": {
+          "$binary": {
+            "base64": "TrVMoHHRAEqMKY5VuTDO0A==",
+            "subType": "03"
+          }
+        },
+        "CategoryImageId": {
+          "$binary": {
+            "base64": "AAAAAAAAAAAAAAAAAAAAAA==",
+            "subType": "03"
+          }
+        },
+        "ImageName": null
+      }
+    ]
+  }
+]
