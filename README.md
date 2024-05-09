@@ -89,6 +89,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_079][145] | [MongoDB .NET Driver - Update field in nested sub array document][146] |
 | [Solution_080][147] | [MongoDB Issues with translating JS query to C#][148] |
 | [Solution_081][149] | <ul><li>[MongoDB Entity Framework Core: Expression Must be Writeable][150]</li> <li>[Entity Framework: Save Private Field][151]</li></ul> |
+| [Solution_082][154] | [How to perform operations on Grandchild using Builders?][155] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -315,3 +316,6 @@ Written Solutions for StackOverflow questions.
 
 [152]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_069.cs
 [153]: https://stackoverflow.com/questions/76740049/mongodb-how-to-query-with-multiple-and-conditions-for-phone-numbers-using-filt/76742141#76742141
+
+[154]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_082.cs
+[155]: https://stackoverflow.com/questions/78417280/how-to-perform-operations-on-grandchild-using-builders/78417532#78417532
