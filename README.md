@@ -83,12 +83,13 @@ Written Solutions for StackOverflow questions.
 | [Solution_073][133] | [MongoDB C# Driver: Convert time buckets to a dictionary with key as bucket's time][134] |
 | [Solution_074][135] | [How to update different fields based on conditions in single call][136] |
 | [Solution_075][137] | [MongoDB query to transform documents][138] |
-| [Solution_076][139] | [c# Problem reading MongoDb data as name + value][140] |
+| [Solution_076][139] | [Problem reading MongoDB data as name + value][140] |
 | [Solution_077][141] | [Delete and return document in nested array with mongodb c# driver][142] |
 | [Solution_078][143] | [Dotnet API Error Type System.Text.Json.JsonElement is not configured as a type that is allowed to be serialized for this instance of ObjectSerializer][144] |
 | [Solution_079][145] | [MongoDB .NET Driver - Update field in nested sub array document][146] |
 | [Solution_080][147] | [MongoDB Issues with translating JS query to C#][148] |
 | [Solution_081][149] | <ul><li>[MongoDB Entity Framework Core: Expression Must be Writeable][150]</li> <li>[Entity Framework: Save Private Field][151]</li></ul> |
+| [Solution_082][154] | [How to perform operations on Grandchild using Builders?][155] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -295,7 +296,7 @@ Written Solutions for StackOverflow questions.
 [138]: https://stackoverflow.com/questions/77493473/mongodb-query-to-transform-documents/77493707#77493707
 
 [139]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_076.cs
-[140]: https://stackoverflow.com/questions/77555006/c-sharp-problem-reading-mongodb-data-as-name-value/77555092#77555092
+[140]: https://stackoverflow.com/questions/77555006/problem-reading-mongodb-data-as-name-value/77555092#77555092
 
 [141]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_077.cs
 [142]: https://stackoverflow.com/questions/77609329/delete-and-return-document-in-nested-array-with-mongodb-c-sharp-driver/77609926#77609926
@@ -315,3 +316,6 @@ Written Solutions for StackOverflow questions.
 
 [152]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_069.cs
 [153]: https://stackoverflow.com/questions/76740049/mongodb-how-to-query-with-multiple-and-conditions-for-phone-numbers-using-filt/76742141#76742141
+
+[154]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_082.cs
+[155]: https://stackoverflow.com/questions/78417280/how-to-perform-operations-on-grandchild-using-builders/78417532#78417532

@@ -1,0 +1,28 @@
+[
+  {
+    "_id": {
+      "$oid": "66333c457f5a5e7ae36e2e6d"
+    },
+    "parentKey": "1",
+    "children": [
+      {
+        "childKey": "2",
+        "grandChildren": [
+          {
+            "grandChildKey": "3",
+            "greatGrandChildren": [
+              {
+                "greatGrandChildKey": "4",
+                "someValue": "5"
+              },
+              {
+                "greatGrandChildKey": "6",
+                "someValue": "6"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

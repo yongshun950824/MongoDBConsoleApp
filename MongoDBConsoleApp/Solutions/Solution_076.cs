@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace MongoDBConsoleApp.Solutions
 {
     /// <summary>
-    /// <a href="https://stackoverflow.com/questions/77555006/c-sharp-problem-reading-mongodb-data-as-name-value/77555092#77555092">
+    /// <a href="https://stackoverflow.com/questions/77555006/problem-reading-mongodb-data-as-name-value/77555092#77555092">
     /// Question.
     /// </a>
     /// </summary>
