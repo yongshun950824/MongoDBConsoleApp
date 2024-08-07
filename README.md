@@ -90,6 +90,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_080][147] | [MongoDB Issues with translating JS query to C#][148] |
 | [Solution_081][149] | <ul><li>[MongoDB Entity Framework Core: Expression Must be Writeable][150]</li> <li>[Entity Framework: Save Private Field][151]</li></ul> |
 | [Solution_082][154] | [How to perform operations on Grandchild using Builders?][155] |
+| [Solution_083][156] | [MongoDB - How to filter and update on a child of a child][157] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -319,3 +320,6 @@ Written Solutions for StackOverflow questions.
 
 [154]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_082.cs
 [155]: https://stackoverflow.com/questions/78417280/how-to-perform-operations-on-grandchild-using-builders/78417532#78417532
+
+[156]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_083.cs
+[157]: https://stackoverflow.com/questions/78814121/mongodb-how-to-filter-and-update-on-a-child-of-a-child/78814123#78814123
