@@ -1,29 +1,31 @@
-[{
-  "_id": {
-    "$oid": "66a9879d1f9279787a7e7f16"
-  },
-  "Stores": [
-    {
-      "_id": {
-        "$oid": "66a9879d1f9279787a7e7f27"
-      },
-      "Customers": [
-        {
-          "UUID": "2e29f91d-c3eb-46f5-869c-2cf152349eb3",
-          "Name": "Old name"
-        }
-      ]
+[
+  {
+    "_id": {
+      "$oid": "66a9879d1f9279787a7e7f16"
     },
-    {
-      "_id": {
-        "$oid": "66a9879d1f9279787a7e7f17"
+    "Stores": [
+      {
+        "_id": {
+          "$oid": "66a9879d1f9279787a7e7f27"
+        },
+        "Customers": [
+          {
+            "UUID": "2e29f91d-c3eb-46f5-869c-2cf152349eb3",
+            "Name": "Old name"
+          }
+        ]
       },
-      "Customers": [
-        {
-          "UUID": "2e29f91d-c3eb-46f5-869c-2cf152349eb3",
-          "Name": "Old name"
-        }
-      ]
-    }
-  ]
-}]
+      {
+        "_id": {
+          "$oid": "66a9879d1f9279787a7e7f17"
+        },
+        "Customers": [
+          {
+            "UUID": "2e29f91d-c3eb-46f5-869c-2cf152349eb3",
+            "Name": "Old name"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -91,6 +91,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_081][149] | <ul><li>[MongoDB Entity Framework Core: Expression Must be Writeable][150]</li> <li>[Entity Framework: Save Private Field][151]</li></ul> |
 | [Solution_082][154] | [How to perform operations on Grandchild using Builders?][155] |
 | [Solution_083][156] | [MongoDB - How to filter and update on a child of a child][157] |
+| [Solution_084][158] | [MongoDB document does not map correctly to an object][159] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -311,7 +312,7 @@ Written Solutions for StackOverflow questions.
 [147]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_080.cs
 [148]: https://stackoverflow.com/questions/78283250/mongodb-issues-with-translating-js-query-to-c-sharp/78283453#78283453
 
-[149]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_081.cs
+[149]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoEFCoreConsoleApp/Solutions/Solution_081.cs
 [150]: https://stackoverflow.com/questions/78356762/mongodb-entity-framework-core-expression-must-be-writeable/78360100#78360100
 [151]: https://stackoverflow.com/questions/78359482/entity-framework-save-private-field/78360277#78360277
 
@@ -323,3 +324,6 @@ Written Solutions for StackOverflow questions.
 
 [156]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_083.cs
 [157]: https://stackoverflow.com/questions/78814121/mongodb-how-to-filter-and-update-on-a-child-of-a-child/78814123#78814123
+
+[158]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_084.cs
+[159]: https://stackoverflow.com/questions/78823678/mongodb-document-does-not-map-correctly-to-an-object/78823706#78823706
