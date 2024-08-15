@@ -92,6 +92,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_082][154] | [How to perform operations on Grandchild using Builders?][155] |
 | [Solution_083][156] | [MongoDB - How to filter and update on a child of a child][157] |
 | [Solution_084][158] | [MongoDB document does not map correctly to an object][159] |
+| [Solution_085][160] | [How to filter on an array of objects that equals name and contains value?][161] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -327,3 +328,6 @@ Written Solutions for StackOverflow questions.
 
 [158]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_084.cs
 [159]: https://stackoverflow.com/questions/78823678/mongodb-document-does-not-map-correctly-to-an-object/78823706#78823706
+
+[160]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_085.cs
+[161]: https://stackoverflow.com/questions/78873427/how-to-filter-on-an-array-of-objects-that-equals-name-and-contains-value/78874082#78874082

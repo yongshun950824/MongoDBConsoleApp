@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 
 namespace MongoDBConsoleApp.Solutions
 {
+    /// <summary>
+    /// <a href="https://stackoverflow.com/questions/78823678/mongodb-document-does-not-map-correctly-to-an-object/78823706#78823706">
+    /// Question.
+    /// </a>
+    /// </summary>
     internal class Solution_084 : ISolution
     {
         public void Run(IMongoClient _client)
