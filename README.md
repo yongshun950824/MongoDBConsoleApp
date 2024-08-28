@@ -93,6 +93,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_083][156] | [MongoDB - How to filter and update on a child of a child][157] |
 | [Solution_084][158] | [MongoDB document does not map correctly to an object][159] |
 | [Solution_085][160] | [How to filter on an array of objects that equals name and contains value?][161] |
+| [Solution_086][162] | [MongoDB C# - How to do sorting and pagination with an array of objects on a record][163] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -331,3 +332,6 @@ Written Solutions for StackOverflow questions.
 
 [160]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_085.cs
 [161]: https://stackoverflow.com/questions/78873427/how-to-filter-on-an-array-of-objects-that-equals-name-and-contains-value/78874082#78874082
+
+[162]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_086.cs
+[163]: https://stackoverflow.com/questions/78921190/mongodb-c-sharp-how-to-do-sorting-and-pagination-with-an-array-of-objects-on-a/78921324#78921324
