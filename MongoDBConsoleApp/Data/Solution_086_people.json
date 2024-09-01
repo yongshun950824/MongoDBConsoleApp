@@ -1,0 +1,72 @@
+[
+  {
+    "_id": 0,
+    "name": "lucas",
+    "properties": [
+      {
+        "Name": "powers",
+        "Values": [
+          "fireball",
+          "icebeam",
+          "thunderbolt"
+        ]
+      },
+      {
+        "Name": "weakness",
+        "Values": [
+          "poison",
+          "rain"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1,
+    "name": "cage",
+    "properties": [
+      {
+        "Name": "powers",
+        "Values": [
+          "flight",
+          "strength",
+          "fireball"
+        ]
+      },
+      {
+        "Name": "weakness",
+        "Values": [
+          "lightning",
+          "ice"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 2,
+    "name": "joe",
+    "properties": [
+      {
+        "Name": "powers",
+        "Values": [
+          "immortality",
+          "strength",
+          "flight"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 3,
+    "name": "bob",
+    "properties": [
+      {
+        "Name": "weakness",
+        "Values": [
+          "cold",
+          "flu",
+          "no food"
+        ]
+      }
+    ]
+  }
+]
