@@ -3,6 +3,8 @@ using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson.Serialization.Serializers;
 using MongoDB.Driver;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 using System;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -59,6 +61,7 @@ namespace MongoDBConsoleApp.Solutions
             public string Id { get; set; }
             [BsonElement("name")] public string Name { get; set; }
             //[JsonConverter(typeof(JsonStringEnumConverter))]
+            [JsonConverter(typeof(StringEnumConverter))]
             [BsonElement("type")] public CloudFileTypes Type { get; set; }
             [BsonElement("size")] public int Size { get; set; }
             [BsonElement("path")] public string Path { get; set; }
@@ -77,29 +80,29 @@ namespace MongoDBConsoleApp.Solutions
             [EnumMember(Value = "file")] File,
         }
 
-        class EnumMemberStringSerializer<TEnum> : ObjectSerializer, IBsonSerializer<TEnum>
+        class EnumMemberStringSerializer<TEnum> : IBsonSerializer<TEnum>
             where TEnum : struct, Enum
         {
             public new Type ValueType => typeof(TEnum);
 
             public TEnum Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
             {
-                return EnumExtensions.EnumMemberValueToEnum<TEnum>(base.Deserialize(context, args)?.ToString());
+                return EnumExtensions.EnumMemberValueToEnum<TEnum>(context.Reader.ReadString());
             }
 
             public void Serialize(BsonSerializationContext context, BsonSerializationArgs args, TEnum value)
             {
-                base.Serialize(context, args, EnumExtensions.GetEnumMemberValue((TEnum)value));
+                context.Writer.WriteString(EnumExtensions.GetEnumMemberValue((TEnum)value));
             }
 
-            public override void Serialize(BsonSerializationContext context, BsonSerializationArgs args, object value)
+            public void Serialize(BsonSerializationContext context, BsonSerializationArgs args, object value)
             {
-                base.Serialize(context, args, EnumExtensions.GetEnumMemberValue((TEnum)value));
+                context.Writer.WriteString(EnumExtensions.GetEnumMemberValue((TEnum)value));
             }
 
             object IBsonSerializer.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
             {
-                return EnumExtensions.EnumMemberValueToEnum<TEnum>(base.Deserialize(context, args)?.ToString());
+                return EnumExtensions.EnumMemberValueToEnum<TEnum>(context.Reader.ReadString());
             }
         }
     }
