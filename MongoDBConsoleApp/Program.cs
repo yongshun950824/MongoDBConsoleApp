@@ -16,7 +16,6 @@ namespace MongoDBConsoleApp
             MongoClientSettings settings = MongoClientSettings.FromConnectionString(
                 mongoUri
             );
-            settings.LinqProvider = MongoDB.Driver.Linq.LinqProvider.V3;
 
             if (GetAppSettings<bool>("TraceMongoEvent"))
             {
@@ -33,7 +32,7 @@ namespace MongoDBConsoleApp
 
             MongoClient _client = new MongoClient(settings);
 
-            ISolution solution = new Solution_063();
+            ISolution solution = new Solution_086();
             await solution.RunAsync(_client);
 
             Console.ReadLine();
