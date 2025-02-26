@@ -264,6 +264,7 @@
     <Compile Include="Solutions\Solution_084.cs" />
     <Compile Include="Solutions\Solution_085.cs" />
     <Compile Include="Solutions\Solution_086.cs" />
+    <Compile Include="Solutions\Solution_087.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -342,6 +343,7 @@
     <None Include="Data\Solution_084_customer.json" />
     <None Include="Data\Solution_085.json" />
     <None Include="Data\Solution_086_people.json" />
+    <None Include="Data\Solution_087_Class.json" />
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />
     <None Include="packages.config" />

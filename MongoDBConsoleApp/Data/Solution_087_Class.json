@@ -1,0 +1,15 @@
+[
+  {
+    "_id": {
+      "$oid": "630811c0867dcfbaeb3cf61a"
+    },
+    "Name": "Politics 101",
+    "Students": [
+      {
+        "_id": "1",
+        "Name": "Ghengis Khan",
+        "StudentId": 12345
+      }
+    ]
+  }
+]
