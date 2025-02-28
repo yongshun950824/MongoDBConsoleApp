@@ -94,6 +94,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_084][158] | [MongoDB document does not map correctly to an object][159] |
 | [Solution_085][160] | [How to filter on an array of objects that equals name and contains value?][161] |
 | [Solution_086][162] | [MongoDB C# - How to do sorting and pagination with an array of objects on a record][163] |
+| [Solution_087][164] | [MongoDB - Count number of object in array][165] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -335,3 +336,6 @@ Written Solutions for StackOverflow questions.
 
 [162]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_086.cs
 [163]: https://stackoverflow.com/questions/78921190/mongodb-c-sharp-how-to-do-sorting-and-pagination-with-an-array-of-objects-on-a/78921324#78921324
+
+[164]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_087.cs
+[165]: https://stackoverflow.com/questions/79433036/mongodb-count-number-of-object-in-array/79433069#79433069
