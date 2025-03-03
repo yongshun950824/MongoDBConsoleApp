@@ -24,12 +24,9 @@ jobs:
       - name: Setup NuGet
         uses: NuGet/setup-nuget@v1.0.5
         
-      - name: setup-msbuild
-        uses: microsoft/setup-msbuild@v1.1
-        
       # Restore & Build .NET Framework project
       - name: Restore NuGet Packages (.NET Framework)
-        run: nuget restore MongoDBConsoleApp/MongoDBConsoleApp.csproj
+        run: nuget restore MongoDBConsoleApp/MongoDBConsoleApp.csproj -SolutionDirectory .
 
       - name: Build .NET Framework Project
-        run: msbuild MongoDBConsoleApp/MongoDBConsoleApp.csproj
+        run: msbuild MongoDBConsoleApp/MongoDBConsoleApp.csproj /p:Configuration=Debug
