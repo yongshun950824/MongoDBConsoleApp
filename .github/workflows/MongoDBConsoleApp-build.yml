@@ -33,16 +33,3 @@ jobs:
 
       - name: Build .NET Framework Project
         run: msbuild MongoDBConsoleApp/MongoDBConsoleApp/MongoDBConsoleApp.csproj
-
-       # Setup .NET SDK for .NET Core project
-      - name: Setup .NET Core
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: 8.0.0
-
-      # Restore & Build .NET Core project
-      - name: Restore & Build .NET Core Project
-        run: |
-          dotnet restore MongoDBConsoleApp/MongoEFCoreConsoleApp/MongoEFCoreConsoleApp.csproj
-          dotnet build MongoDBConsoleApp/MongoEFCoreConsoleApp/MongoEFCoreConsoleApp.csproj --configuration Release
-     
