@@ -1,4 +1,4 @@
-name: CI - Build MongoDB Console Apps
+name: CI - Build MongoDB .NET Console App
 
 on:
   workflow_dispatch:    # Allows manual trigger
