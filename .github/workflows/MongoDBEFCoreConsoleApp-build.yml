@@ -21,11 +21,12 @@ jobs:
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: 8.0.0
+          dotnet-version: '8.0.x'
 
       # Restore & Build .NET Core project
       - name: Restore & Build .NET Core Project
         run: |
           dotnet restore MongoEFCoreConsoleApp/MongoEFCoreConsoleApp.csproj
-          dotnet build MongoEFCoreConsoleApp/MongoEFCoreConsoleApp.csproj --configuration Release
+          dotnet build MongoEFCoreConsoleApp/MongoEFCoreConsoleApp.csproj -c Debug
+          dotnet test MongoEFCoreConsoleApp/MongoEFCoreConsoleApp.csproj -c Debug --no-build --no-restore
      
