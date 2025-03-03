@@ -1,0 +1,31 @@
+name: CI - Build MongoDB Console Apps
+
+on:
+  workflow_dispatch:    # Allows manual trigger
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+       # Setup .NET SDK for .NET Core project
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 8.0.0
+
+      # Restore & Build .NET Core project
+      - name: Restore & Build .NET Core Project
+        run: |
+          dotnet restore MongoDBConsoleApp/MongoEFCoreConsoleApp/MongoEFCoreConsoleApp.csproj
+          dotnet build MongoDBConsoleApp/MongoEFCoreConsoleApp/MongoEFCoreConsoleApp.csproj --configuration Release
+     
