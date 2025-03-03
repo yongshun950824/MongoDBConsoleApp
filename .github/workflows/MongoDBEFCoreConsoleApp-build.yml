@@ -1,4 +1,4 @@
-name: CI - Build MongoDB Console Apps
+name: CI - Build MongoDB EF Core Console App
 
 on:
   workflow_dispatch:    # Allows manual trigger
@@ -26,6 +26,6 @@ jobs:
       # Restore & Build .NET Core project
       - name: Restore & Build .NET Core Project
         run: |
-          dotnet restore MongoDBConsoleApp/MongoEFCoreConsoleApp/MongoEFCoreConsoleApp.csproj
-          dotnet build MongoDBConsoleApp/MongoEFCoreConsoleApp/MongoEFCoreConsoleApp.csproj --configuration Release
+          dotnet restore MongoEFCoreConsoleApp/MongoEFCoreConsoleApp.csproj
+          dotnet build MongoEFCoreConsoleApp/MongoEFCoreConsoleApp.csproj --configuration Release
      
