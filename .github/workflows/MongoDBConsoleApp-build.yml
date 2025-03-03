@@ -29,7 +29,7 @@ jobs:
         
       # Restore & Build .NET Framework project
       - name: Restore NuGet Packages (.NET Framework)
-        run: nuget restore MongoDBConsoleApp/MongoDBConsoleApp/MongoDBConsoleApp.csproj
+        run: nuget restore MongoDBConsoleApp/MongoDBConsoleApp.csproj
 
       - name: Build .NET Framework Project
-        run: msbuild MongoDBConsoleApp/MongoDBConsoleApp/MongoDBConsoleApp.csproj
+        run: msbuild MongoDBConsoleApp/MongoDBConsoleApp.csproj
