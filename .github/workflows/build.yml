@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: windows-2019
 
     steps:
       - name: Checkout repository
@@ -19,10 +19,16 @@ jobs:
 
       # Setup MSBuild for .NET Framework project
       - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v.1.1
-
+        uses: microsoft/setup-msbuild@v1
+        
+      - name: Setup NuGet
+        uses: NuGet/setup-nuget@v1.0.5
+        
+      - name: setup-msbuild
+        uses: microsoft/setup-msbuild@v1.1
+        
       # Restore & Build .NET Framework project
-      - name: Restore NuGet Pacages (.NET Framework)
+      - name: Restore NuGet Packages (.NET Framework)
         run: nuget restore MongoDBConsoleApp/MongoDBConsoleApp/MongoDBConsoleApp.csproj
 
       - name: Build .NET Framework Project
