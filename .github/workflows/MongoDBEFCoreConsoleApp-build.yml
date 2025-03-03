@@ -17,17 +17,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Setup MSBuild for .NET Framework project
-      - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v.1.1
-
-      # Restore & Build .NET Framework project
-      - name: Restore NuGet Pacages (.NET Framework)
-        run: nuget restore MongoDBConsoleApp/MongoDBConsoleApp/MongoDBConsoleApp.csproj
-
-      - name: Build .NET Framework Project
-        run: msbuild MongoDBConsoleApp/MongoDBConsoleApp/MongoDBConsoleApp.csproj
-
        # Setup .NET SDK for .NET Core project
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v3
