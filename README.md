@@ -95,6 +95,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_085][160] | [How to filter on an array of objects that equals name and contains value?][161] |
 | [Solution_086][162] | [MongoDB C# - How to do sorting and pagination with an array of objects on a record][163] |
 | [Solution_087][164] | [MongoDB - Count number of object in array][165] |
+| [Solution_088][166] | [Backward Compatible Mongo fields using C# and .NET][167] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -339,3 +340,6 @@ Written Solutions for StackOverflow questions.
 
 [164]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_087.cs
 [165]: https://stackoverflow.com/questions/79433036/mongodb-count-number-of-object-in-array/79433069#79433069
+
+[166]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_088.cs
+[167]: https://stackoverflow.com/questions/79568837/backward-compatible-mongo-fields-using-c-sharp-and-net/79568869#79568869

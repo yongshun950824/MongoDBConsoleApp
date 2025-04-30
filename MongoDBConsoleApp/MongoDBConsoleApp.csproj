@@ -265,6 +265,7 @@
     <Compile Include="Solutions\Solution_085.cs" />
     <Compile Include="Solutions\Solution_086.cs" />
     <Compile Include="Solutions\Solution_087.cs" />
+    <Compile Include="Solutions\Solution_088.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
