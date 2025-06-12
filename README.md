@@ -96,6 +96,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_086][162] | [MongoDB C# - How to do sorting and pagination with an array of objects on a record][163] |
 | [Solution_087][164] | [MongoDB - Count number of object in array][165] |
 | [Solution_088][166] | [Backward Compatible Mongo fields using C# and .NET][167] |
+| [Solution_089][168] | [How to Aggregate MongoDB Collections using C# Classes][169] |
 
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
@@ -343,3 +344,6 @@ Written Solutions for StackOverflow questions.
 
 [166]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_088.cs
 [167]: https://stackoverflow.com/questions/79568837/backward-compatible-mongo-fields-using-c-sharp-and-net/79568869#79568869
+
+[168]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_089.cs
+[169]: https://stackoverflow.com/questions/77728716/how-to-aggregate-mongodb-collections-using-c-sharp-classes/77730452#77730452

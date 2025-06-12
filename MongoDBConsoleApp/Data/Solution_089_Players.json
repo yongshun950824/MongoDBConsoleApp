@@ -1,0 +1,18 @@
+[
+  {
+    "_id": {
+      "$oid": "658e529b7b7649b28fbbf5ee"
+    },
+    "FirstName": "Player",
+    "LastName": "One",
+    "Handicap": 0
+  },
+  {
+    "_id": {
+      "$oid": "658e52d87b7649b28fbbf5ef"
+    },
+    "FirstName": "Player",
+    "LastName": "Two",
+    "Handicap": 0
+  }
+]

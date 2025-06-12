@@ -1,0 +1,17 @@
+[
+  {
+    "_id": {
+      "$oid": "658e53097b7649b28fbbf5f3"
+    },
+    "Number": 1,
+    "LeagueId": {
+      "$oid": "658e52ec7b7649b28fbbf5f1"
+    },
+    "Player1Id": {
+      "$oid": "658e529b7b7649b28fbbf5ee"
+    },
+    "Player2Id": {
+      "$oid": "658e52d87b7649b28fbbf5ef"
+    }
+  }
+]
