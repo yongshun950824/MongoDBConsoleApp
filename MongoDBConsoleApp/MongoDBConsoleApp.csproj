@@ -266,6 +266,7 @@
     <Compile Include="Solutions\Solution_086.cs" />
     <Compile Include="Solutions\Solution_087.cs" />
     <Compile Include="Solutions\Solution_088.cs" />
+    <Compile Include="Solutions\Solution_089.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -345,6 +346,9 @@
     <None Include="Data\Solution_085.json" />
     <None Include="Data\Solution_086_people.json" />
     <None Include="Data\Solution_087_Class.json" />
+    <None Include="Data\Solution_089_Leagues.json" />
+    <None Include="Data\Solution_089_Players.json" />
+    <None Include="Data\Solution_089_Teams.json" />
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />
     <None Include="packages.config" />
