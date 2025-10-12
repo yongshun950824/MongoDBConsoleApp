@@ -97,7 +97,7 @@ Written Solutions for StackOverflow questions.
 | [Solution_087][164] | [MongoDB - Count number of object in array][165] |
 | [Solution_088][166] | [Backward Compatible Mongo fields using C# and .NET][167] |
 | [Solution_089][168] | [How to Aggregate MongoDB Collections using C# Classes][169] |
-
+| [Solution_090][170] | [MongoDB .NET - Updating embedded document in list with filters based on Parent and Child][171] |
 
 [1]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_001.cs
 [2]: https://stackoverflow.com/questions/69079627/mongodb-net-driver-filter-builder-throwing-an-exception/69414324#69414324
@@ -347,3 +347,6 @@ Written Solutions for StackOverflow questions.
 
 [168]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_089.cs
 [169]: https://stackoverflow.com/questions/77728716/how-to-aggregate-mongodb-collections-using-c-sharp-classes/77730452#77730452
+
+[170]: https://github.com/yongshun950824/MongoDBConsoleApp/blob/master/MongoDBConsoleApp/Solutions/Solution_090.cs
+[171]: https://stackoverflow.com/questions/79786685/mongodb-net-updating-embedded-document-in-list-with-filters-based-on-parent-a/79786923#79786923

@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 
 namespace MongoDBConsoleApp.Solutions
 {
+    /// <summary>
+    /// <a href="https://stackoverflow.com/questions/79786685/mongodb-net-updating-embedded-document-in-list-with-filters-based-on-parent-a/79786923#79786923">
+    /// Question.
+    /// </a>
+    /// </summary>
     internal class Solution_090 : ISolution
     {
         public void Run(IMongoClient _client)
