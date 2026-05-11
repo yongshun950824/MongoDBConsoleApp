@@ -22,7 +22,7 @@ jobs:
         uses: microsoft/setup-msbuild@v3
         
       - name: Setup NuGet
-        uses: NuGet/setup-nuget@v3.1.0
+        uses: NuGet/setup-nuget@v4
         
       # Restore & Build .NET Framework project
       - name: Restore NuGet Packages (.NET Framework)
